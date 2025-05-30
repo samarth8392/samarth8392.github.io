@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: Naynee Singh
-email: "nayneesingh1410@gmail.com"
+title: Samarth Mathur
+email: "samarth8392@gmail.com"
 # Your name to show in the footer
-author: Naynee Singh
+author: Samarth Mathur, PhD
 
 
 ###############################################
@@ -39,7 +39,7 @@ navbar-links:
 
 description: Personal website
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://nayneesingh.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://samarth8392.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 ################
 # --- Logo --- #
@@ -47,7 +47,7 @@ url: "https://nayneesingh.com" # the base hostname & protocol for your site, e.g
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.jpeg"
+avatar: "/assets/img/Mathur_S_1.JPG"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -65,10 +65,12 @@ title-img: "/assets/img/logo2.png"
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "nayneesingh1410@gmail.com"
-  linkedin: "nayneesingh1410"
-  # github: daattali
-  # twitter: daattali
+  email: "samarth8392@gmail.com"
+  linkedin: "samarthmathurphd"
+  github: samarth8392
+  twitter: samarthphd
+  ORCID: 0000-0002-6446-5718
+  google-scholar: kL0KaxQAAAAJ&hl=en
   # patreon: DeanAttali
   # youtube: "@daattali"
   # whatsapp: 15551212
@@ -113,7 +115,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "www.nayneesingh.com"
+url-pretty: "www.samarth8392.github.io"
 
 # Add the website title to the title of every page
 title-on-all-pages: true

@@ -1,14 +1,18 @@
 ---
 layout: page
-title: Hi, I'm Naynee
-subtitle: Psychiatric Social Worker & Junior Consultant @ NIMHANS
+title: Samarth Mathur, PhD
+subtitle: Bioinformatics Analyst II @ NCI/NIH
 use-site-title: true
 css : "assets/css/justify-content.css"
 ---
 
+<br>
+Welcome to my personal website!
+<br>
 
+<p> I am a bioinformatics scientist with 8+ years experience in computational biology with expertise in <i>“multi-omics” </i>research. I analyze <strong>high throughput biomedical data</strong> from complex experimental designs to study the genetics of cancer. I have a PhD in the field of evolutionary genomics and computational life sciences. My technical expertise is in advanced computing, data science and statistics, UNIX-based command line tools, and programming languages like Bash, R, and Python </p>
 
-Welcome to my personal website! I am **Naynee Singh** (pronounced *Na-yay-nee SingH*), a dedicated Psychiatric Social Worker with a steadfast commitment to promoting mental health and well-being. With a background in social work and specialized training in psychiatric care, I bring a unique blend of empathy, expertise, and advocacy to my role.
+I work at the [Frederick National Laboratory for Cancer Research](https://frederick.cancer.gov) on the [CCBR](https://github.com/ccbr) core team.
 
 <div class="button-container">
     <div style="display: flex; justify-content: center; gap: 15px;">
