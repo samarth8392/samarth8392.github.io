@@ -21,6 +21,42 @@
     flex-shrink: 0;
 }
 
+.square-logo {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-top: 0px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background-color: #f8f9fa;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Alternative version without background/padding for clean logos */
+.square-logo-clean {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin-top: 40px;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+/* Smaller version for compact layouts */
+.square-logo-small {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-top: 0px;
+    border-radius: 6px;
+    flex-shrink: 0;
+    background-color: #f8f9fa;
+    padding: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
 .text-content {
     flex: 1;
     text-align: justify;
