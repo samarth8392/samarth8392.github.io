@@ -11,7 +11,7 @@
 }
 
 .download-button a {
-    background-color: #232A71; /* Bootstrap primary blue */
+    background-color: #344C3D; /* Bootstrap primary blue */
     color: white;
     padding: 12px 24px;
     text-decoration: none;
@@ -20,5 +20,5 @@
 }
 
 .download-button a:hover {
-    background-color: #F4B347;
+    background-color: #344C3D;
 }

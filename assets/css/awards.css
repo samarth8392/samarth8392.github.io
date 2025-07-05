@@ -1,0 +1,88 @@
+/* ===== Container for all badges ===== */
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: flex-start;
+    margin: 30px 0;
+    padding: 0;
+  }
+  
+  /* ===== Each badge + description card ===== */
+  .badge-item {
+    flex: 1 1 200px;
+    /* max-width: 300px; */
+    background: #ffffff;
+    padding: 16px 14px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+  }
+
+  
+  .badge-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* ===== Badge style ===== */
+  .badge {
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 16px;
+    font-size: 1.2rem;
+    /* font-weight: 600; */
+    border-radius: 999px;
+    white-space: nowrap;
+    transition: all 0.25s ease-in-out;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+  }
+  
+  .badge-logo {
+    width: 100%;
+    object-fit: contain;
+    margin-left: 12px;
+  }
+  
+  /* ===== Badge color categories ===== */
+  .badge-student     { background-color: #e3f2fd; color: #0d47a1; }  /* Light Blue */
+  .badge-research    { background-color: #ede7f6; color: #4a148c; }  /* Deep Purple */
+  .badge-publication { background-color: #e8f5e9; color: #1b5e20; }  /* Green */
+  .badge-leadership  { background-color: #fff3e0; color: #e65100; }  /* Orange */
+  .badge-award       { background-color: #fce4ec; color: #880e4f; }  /* Pink */
+  .badge-honor       { background-color: #ffebee; color: #b71c1c; }  /* Red */
+  .badge-talk        { background-color: #f3e5f5; color: #6a1b9a; }  /* Violet */
+  
+  /* ===== Hover behavior ===== */
+  .badge:hover {
+    opacity: 0.95;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    text-decoration: none;
+  }
+  
+  /* ===== Badge icon spacing (optional) ===== */
+  .badge i {
+    margin-right: 6px;
+    font-size: 1em;
+  }
+  
+  /* ===== Description below each badge ===== */
+  .badge-description {
+    /* font-size: 0.88rem; */
+    color: #444;
+    line-height: 1.5;
+  }
+  
+  .badge-description em {
+    font-style: italic;
+    color: #666;
+  }
+  

@@ -19,8 +19,13 @@ layout: null
   --footer-hover-col: {{ site.footer-hover-col | default: "#0085A1" }};
 
   /* common CSS variables */
-  --body-font: 'Lora', 'Times New Roman', serif;
-  --header-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --body-font: 'Inter', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --header-font: 'Poppins', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --mono-font: 'Fira Code', 'Courier New', Courier, monospace;
+
+  --color-primary: #2F8FED; 
+  --color-accent: #00C8B7;
+  --color-dark: #333333;
   --mid-col: #808080;
 }
 
@@ -673,14 +678,17 @@ footer .footer-custom-content {
 }
 
 .btn-primary {
-  background-color: #232A71 !important;  /* Use !important if needed to override Bootstrap */
-  border-color: #232A71;    /* Match the border color */
+  background-color: #E7937D !important;  /* Use !important if needed to override Bootstrap */
+  border-color: #E7937D;    /* Match the border color */
+  color: #030303;
+  font-weight: 600;
 }
 
 /* Add hover effect */
 .btn-primary:hover {
-  background-color: #F4B347 !important;
-  border-color: #F4B347;
+  background-color: #004aad !important;
+  border-color: #004aad;
+  color: #ffffff;
 }
 
 /* --- Post and page headers --- */

@@ -29,7 +29,7 @@
 
   {%- if network[0] == "calendly" -%}
   <li class="list-inline-item">
-    <a href="https://calendly.com/{{ network[1] }}" title="Schedule a meeting with me">
+    <a href="https://calendly.com/{{ network[1] }}" target="_blank" title="Schedule a meeting with me">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fas fa-calendar-check fa-stack-1x fa-inverse"></i>
@@ -41,7 +41,7 @@
 
   {%- if network[0] == "facebook" -%}
   <li class="list-inline-item">
-    <a href="https://www.facebook.com/{{ network[1] }}" title="Facebook">
+    <a href="https://www.facebook.com/{{ network[1] }}" target="_blank" title="Facebook">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
@@ -53,7 +53,7 @@
 
   {%- if network[0] == "telegram" -%}
   <li class="list-inline-item">
-    <a href="https://t.me/{{ network[1] }}" title="Telegram">
+    <a href="https://t.me/{{ network[1] }}" target="_blank" title="Telegram">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-telegram-plane fa-stack-1x fa-inverse"></i>
@@ -65,7 +65,7 @@
 
   {%- if network[0] == "whatsapp" -%}
   <li class="list-inline-item">
-    <a href="https://wa.me/{{ network[1] }}" title="Whatsapp">
+    <a href="https://wa.me/{{ network[1] }}" target="_blank" title="Whatsapp">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-whatsapp fa-stack-1x fa-inverse"></i>
@@ -77,7 +77,7 @@
 
   {%- if network[0] == "github" -%}
   <li class="list-inline-item">
-    <a href="https://github.com/{{ network[1] }}" title="GitHub">
+    <a href="https://github.com/{{ network[1] }}" target="_blank" title="GitHub">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -89,7 +89,7 @@
 
   {%- if network[0] == "gitlab" -%}
   <li class="list-inline-item">
-    <a href="https://gitlab.com/{{ network[1] }}" title="GitLab">
+    <a href="https://gitlab.com/{{ network[1] }}" target="_blank" title="GitLab">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
@@ -101,7 +101,7 @@
 
   {%- if network[0] == "twitter" -%}
   <li class="list-inline-item">
-    <a href="https://twitter.com/{{ network[1] }}" title="X (Twitter)">
+    <a href="https://twitter.com/{{ network[1] }}" target="_blank" title="X (Twitter)">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-x-twitter fa-stack-1x fa-inverse"></i>
@@ -117,7 +117,7 @@
     {% assign reddit_url_prefix = 'u/' -%}
   {% endunless -%}
   <li class="list-inline-item">
-    <a href="https://reddit.com/{{ reddit_url_prefix }}{{ network[1] }}" title="Reddit">
+    <a href="https://reddit.com/{{ reddit_url_prefix }}{{ network[1] }}" target="_blank" title="Reddit">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
@@ -285,7 +285,7 @@
 
   {%- if network[0] == "ORCID" -%}
  <li class="list-inline-item">
-   <a href="https://orcid.org/{{ network[1] }}" title="ORCID">
+   <a href="https://orcid.org/{{ network[1] }}" target="_blank" title="ORCID">
      <span class="fa-stack fa-lg" aria-hidden="true">
        <i class="fas fa-circle fa-stack-2x"></i>
        <i class="fab fa-orcid fa-stack-1x fa-inverse"></i>
@@ -297,7 +297,7 @@
 
   {%- if network[0] == "google-scholar" -%}
   <li class="list-inline-item">
-    <a href="https://scholar.google.com/citations?user={{ network[1] }}" title="Google Scholar">
+    <a href="https://scholar.google.com/citations?user={{ network[1] }}" target="_blank" title="Google Scholar">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>

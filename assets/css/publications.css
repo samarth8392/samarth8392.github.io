@@ -1,0 +1,158 @@
+/* Publications Page Styles */
+
+.publications-container {
+    max-width: 100%;
+}
+
+.publication-card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.publication-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.publication-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.publication-authors {
+    font-size: 1rem;
+    color: #495057;
+    margin-bottom: 0.75rem;
+}
+
+.publication-authors strong {
+    color: #007bff;
+    font-weight: 700;
+}
+
+.publication-details {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.journal-name {
+    font-style: italic;
+    color: #007bff;
+    font-weight: 500;
+}
+
+.publication-footer {
+    border-top: 1px solid #dee2e6;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.doi-link {
+    color: #b847a1;
+    text-decoration: none;
+    font-size: 0.75rem;
+    word-break: break-all;
+}
+
+.doi-link:hover {
+    color: #2a3e31;
+    text-decoration: underline;
+}
+
+.metrics-section {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.metrics-label {
+    color: #6f42c1;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.scholar-badge {
+    background: #4285f4;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    transition: background-color 0.2s ease;
+}
+
+.scholar-badge:hover {
+    background: #3367d6;
+    color: white;
+    text-decoration: none;
+}
+
+.citation-badge {
+    background: #2a3e31;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.citation-loading {
+    background: #6c757d;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.publisher-info {
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.spinner-border {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .publication-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .publication-details {
+        font-size: 0.85rem;
+    }
+    
+    .publication-card {
+        padding: 1rem;
+    }
+    
+    .publication-title {
+        font-size: 1.1rem;
+    }
+}

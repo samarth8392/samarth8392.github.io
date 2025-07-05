@@ -21,20 +21,20 @@ author: Samarth Mathur, PhD
 ###############################################
 
 navbar-links:
+  Summary: "summary"
   Experience:
-  - Summary: "summary"
-  - PSW @ NIMHANS: "psw_nimhans"
-  - Udayan Care: "udayan_care"
-  - Urmul Seemant: "urmul_seemant"
+  - BA II @ FNL-CR: "fnlcr"
+  - Postdoc @ OSU: "osu"
+  - GRF @ Purdue: "purdue"
   Publications: "pubs"
   More:
   - Projects: "projects"
-  - Conferences: "conferences"
+  - Skills: "skills"
+  - Honors & Awards: "awards"
   - Certificates: "certificates"
-  About Me:
   - Timeline: "timeline"
-  - Testimonials: "testimonials"
   - Resume: "resume"
+  
 
 
 description: Personal website
@@ -150,17 +150,17 @@ title-separator: "|"
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-page-col: "#e6e6e6"
-text-col: "#404040"
-link-col: "#232A71"
-hover-col: "#232A71"
-navbar-col: "#F4B347"
-navbar-text-col: "#232A71"
-navbar-border-col: "#F4B347"
-footer-col: "#F4B347"
+page-col: "#FEF8F7"
+text-col: "#030303"
+link-col: "#004aad"
+hover-col: "#EA615C"
+navbar-col: "#fad1c5"
+navbar-text-col: "#030303"
+navbar-border-col: "#030303"
+footer-col: "#fad1c5"
 footer-text-col: "#0f0f0f"
-footer-link-col: "#0f0f0f"
-footer-hover-col: "#232A71"
+footer-link-col: "#030303"
+footer-hover-col: "#b847a1"
 
 
 # Alternatively, the navbar, footer, and page background can be set to an image

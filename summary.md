@@ -8,9 +8,9 @@ css : "assets/css/justify-content.css"
 
 <div class="content-wrapper">
     <div class="image-text-container">
-        <img class="circular-img" src="/assets/img/me.jpg" alt="Profile Image"/>
+        <img class="circular-img" src="/assets/img/me.jpeg" alt="Profile Image"/>
         <div class="text-content">
-            My journey in the field of mental health began with a Bachelor's degree in Home Science specialized in Human Development & Childhood studies from <a href="https://ladyirwin.edu.in/" target="_blank">Lady Irwin College, Delhi University</a>, followed by a Master's in Social Work from <a href="https://jmi.ac.in/" target="_blank">Jamia Millia Islamia</a>. I furthered my education with an M.Phil in Psychiatric Social Work from <a href="http://www.pgimsrohtak.ac.in/" target="_blank">PGIMS Rohtak Haryana</a>, where I delved into advanced studies in mental health services and allied professions.
+            I am a computational biologist and bioinformatics scientist with over nine years of experience at the intersection of evolutionary genomics, conservation biology, and cancer research. I currently work as a Bioinformatics Analyst at the National Cancer Institute (NCI) through Frederick National Laboratory for Cancer Research, where I am a part of the Collaborative Bioinformatics Resource (CCBR) — a specialized team supporting investigators across the NIH's intramural cancer research programs.
         </div>
     </div>
     <div class="button-container">
@@ -18,13 +18,8 @@ css : "assets/css/justify-content.css"
     </div>
 </div>
 
-    
+I earned my Ph.D. in Biological Sciences from Purdue University, where my research focused on understanding genetic load, functional diversity, and adaptive potential in small or endangered populations. As a Welder Wildlife Fouundation Graduate Research Fellow, my work combining whole-genome resequencing, simulation modeling, and theoretical genomics has been recognized with multiple national awards, including the 2024 Society for the Study of Evolution's Presidents’ Award for most outstanding dissertation publication.
 
+Following my doctorate, I completed a postdoctoral fellowship at The Ohio State University, studying host immune responses to emerging fungal diseases in endangered rattlesnakes using multi-tissue RNA-seq data. My research has contributed to conservation planning through collaborations with state wildlife agencies and I have published over 15 peer-reviewed articles in leading journals including PNAS, Evolution, and Molecular Ecology.
 
-Throughout my career, I have had the privilege of working with esteemed organizations such as the [National Institute of Mental Health and Neuro Sciences](https://nimhans.ac.in/) (NIMHANS), Bengaluru and the [Cosmos Institute of Mental Health & Behavioural Sciences](https://www.cimbs.in/) (CIMBS), New Delhi. In the role of a Psychiatric Social Worker (PSW), I have provided therapeutic support, case management, and community outreach services to individuals and families facing mental health challenges.
-
-My experience extends beyond clinical practice to include program coordination and community development initiatives. As a former Programme Coordinator at [Udayan Care](https://www.udayancare.org/), I led efforts to empower vulnerable populations and promote social inclusion. Additionally, my tenure as an Assistant Project Coordinator at [Urmul Seemant Samiti](https://seemant.org/) allowed me to spearhead projects focused on early childhood care and education, emphasizing holistic development and well-being.
-
-In my current role, I am privileged to continue my journey at the forefront of mental health care, collaborating with interdisciplinary teams to deliver personalized, compassionate care to those in need. My approach is rooted in evidence-based practices, cultural sensitivity, and a deep respect for the dignity and autonomy of every individual.
-
-Outside of my professional endeavors, I am passionate about ongoing learning and advocacy efforts to reduce stigma and increase access to mental health services. I am committed to fostering dialogue, raising awareness, and driving positive change in our communities.
+My technical expertise spans R, Python, Bash, and high-performance computing, with deep experience in NGS analysis, genome assembly, and multi-omics integration. Passionate about applied genomics and interdisciplinary science, I bridge fundamental evolutionary theory with practical insights in wildlife management and biomedicine. I am also an invited speaker, mentor, and peer reviewer committed to advancing open and collaborative science.
