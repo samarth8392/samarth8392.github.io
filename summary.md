@@ -5,17 +5,10 @@ css : "assets/css/justify-content.css"
 ---
 
 
+I am a computational biologist and bioinformatics scientist with over nine years of experience at the intersection of evolutionary genomics, conservation biology, and cancer research. I currently work as a Bioinformatics Analyst at the National Cancer Institute (NCI) through Frederick National Laboratory for Cancer Research, where I am a part of the Collaborative Bioinformatics Resource (CCBR) — a specialized team supporting investigators across the NIH's intramural cancer research programs.
 
-<div class="content-wrapper">
-    <div class="image-text-container">
-        <img class="circular-img" src="/assets/img/me.jpeg" alt="Profile Image"/>
-        <div class="text-content">
-            I am a computational biologist and bioinformatics scientist with over nine years of experience at the intersection of evolutionary genomics, conservation biology, and cancer research. I currently work as a Bioinformatics Analyst at the National Cancer Institute (NCI) through Frederick National Laboratory for Cancer Research, where I am a part of the Collaborative Bioinformatics Resource (CCBR) — a specialized team supporting investigators across the NIH's intramural cancer research programs.
-        </div>
-    </div>
-    <div class="button-container">
-        <a href="../timeline" class="btn btn-primary">My journey</a>
-    </div>
+<div class="button-container">
+    <a href="../timeline" class="btn btn-primary">My journey</a>
 </div>
 
 I earned my Ph.D. in Biological Sciences from Purdue University, where my research focused on understanding genetic load, functional diversity, and adaptive potential in small or endangered populations. As a Welder Wildlife Fouundation Graduate Research Fellow, my work combining whole-genome resequencing, simulation modeling, and theoretical genomics has been recognized with multiple national awards, including the 2024 Society for the Study of Evolution's Presidents’ Award for most outstanding dissertation publication.
