@@ -3,7 +3,7 @@ layout: page
 title: Postdoctoral Research Scholar
 subtitle:  "@ OSU"
 cover-img: 
-  - "assets/img/osu.jpg"
+  - "assets/img/iitr.png"
 css : "assets/css/image_gallery.css"
 ---
 

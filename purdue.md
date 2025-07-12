@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Asst. Project Coordinator
-subtitle:  "@ Urmul Seemant"
+title: Graduate Research Fellow
+subtitle:  "@ Purdue University"
 cover-img: 
-  - "assets/img/urmul_seemant.png"
+  - "assets/img/purdue.jpg"
 css : "assets/css/image_gallery.css"
 ---
 
