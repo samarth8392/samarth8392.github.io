@@ -4,7 +4,9 @@ title: Graduate Research Fellow
 subtitle:  "@ Purdue University"
 cover-img: 
   - "assets/img/purdue.jpg"
-css : "assets/css/image_gallery.css"
+css : 
+    - "assets/css/image_gallery.css"
+    - "assets/css/justify-content.css"
 ---
 
 Urmul Seemant Samiti has been dedicated to empowering village communities towards self-reliance since its establishment in 1994. The organization aims to create a safe and enabling environment that ensures the rights to health, education, and employment are respected and realized without discrimination or exclusion, with a special focus on children and women. This mission is rooted in the belief that every individual deserves access to essential services that can improve their quality of life and foster community development.
