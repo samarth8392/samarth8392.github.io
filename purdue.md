@@ -8,26 +8,18 @@ css :
     - "assets/css/image_gallery.css"
     - "assets/css/justify-content.css"
 ---
+I earned my PhD in Biological Sciences at Purdue University, where I trained as an evolutionary and conservation genomicist in the lab of Dr. Andrew DeWoody. My research centered on understanding how demographic history shapes the genetic health and adaptive potential of small, isolated wildlife populations, with a focus on the Montezuma quail (Cyrtonyx montezumae)—one of North America's least studied bird species.
 
-Urmul Seemant Samiti has been dedicated to empowering village communities towards self-reliance since its establishment in 1994. The organization aims to create a safe and enabling environment that ensures the rights to health, education, and employment are respected and realized without discrimination or exclusion, with a special focus on children and women. This mission is rooted in the belief that every individual deserves access to essential services that can improve their quality of life and foster community development.
+My dissertation combined whole-genome sequencing, population genomics, and forward-time evolutionary simulations to address a fundamental question in conservation biology: how do deleterious mutations accumulate and affect fitness in small populations? I created the first high-quality nuclear and mitochondrial genome assemblies for Montezuma quail, developed a custom SNP genotyping panel, and conducted comparative analyses across populations in Texas, New Mexico, and Arizona.
 
-<div class="responsive-gallery">
-    <div class="image-card">
-        <img src="https://seemant.org/wp-content/uploads/2021/01/exib8-1.jpg" alt="Image 1">
-    </div>
-    <div class="image-card">
-        <img src="https://seemant.org/wp-content/uploads/2021/01/IMG-20190724-WA0012.jpg" alt="Image 2">
-    </div>
-    <div class="image-card">
-        <img src="https://seemant.org/wp-content/uploads/2021/01/stranusar-shikshan.jpg" alt="Image 3">
-    </div>
-</div>
+One of my key contributions was introducing the conceptual distinction between "potential genetic load" (deleterious variants present) and "realized genetic load" (deleterious variants expressed in homozygous form). This framework helped clarify how inbreeding depression and adaptive erosion unfold in differently structured populations—and was later featured in a Nature Reviews Genetics article for its conceptual impact.
 
+My work demonstrated that historically large populations that have recently declined are at greater risk of inbreeding depression, while chronically small populations are more likely to suffer from reduced adaptive potential. These findings have direct implications for how we assess extinction risk and manage endangered species.
 
-My role as an assistant project coordinator involved contributing to the formulation and implementation of Plan India's Early Childhood Care and Development project. I assisted in developing project plans, including timelines and resource allocations, to ensure optimal efficiency in our efforts.
+My dissertation was recognized with several awards, including:
 
-A significant aspect of my work was facilitating training for beneficiaries, including pregnant and lactating mothers, Auxiliary Nurse Midwives (ANMs), Accredited Social Health Activists (ASHAs), and Anganwadi workers (AWWs). By equipping these individuals with the necessary knowledge and skills, I aimed to enhance the overall effectiveness of the project and improve the health and well-being of children in the community.
+- Clarence Cottam Award (Texas Chapter of The Wildlife Society)
+- Outstanding Interdisciplinary Project Award (Purdue Graduate School, 2020)
+- Journal cover and most-cited article in Evolutionary Applications
 
-Additionally, I contributed to surveys, budget spreadsheets, and Gantt charts for the analysis and assessment of project performance. This analytical work was crucial for understanding the impact of our initiatives and ensuring that we remained accountable to our goals. I also had the responsibility of preparing the Annual Report for the Early Childhood Care and Development project for the year 2015, which provided a comprehensive overview of our achievements and challenges.
-
-
+Purdue was also where I discovered my passion for computational biology, large-scale data analysis, and scientific storytelling—skills I continue to apply and grow today.
