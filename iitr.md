@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Postdoctoral Research Scholar
-subtitle:  "@ OSU"
+title: Undergraduate Research Assistant
+subtitle:  "@ IITR"
 cover-img: 
   - "assets/img/iitr.png"
 css : "assets/css/image_gallery.css"
