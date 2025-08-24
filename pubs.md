@@ -12,6 +12,9 @@ subtitle: Research publications and academic contributions
     <div class="text-center mb-4">
         <p class="text-muted">
             <span id="publication-count">0 Publications</span> • 
+            <span id="total-citations">0 Total Citations</span>
+            <br>
+            <br>
             <a href="https://scholar.google.com/citations?user=kL0KaxQAAAAJ&hl=en" target="_blank" class="scholar-badge">🎓 My Google Scholar Profile</a>
         </p>
     </div>
@@ -178,15 +181,26 @@ function createPublicationCard(pub) {
     `;
 }
 
+function calculateTotalCitations() {
+    return publications.reduce((total, pub) => {
+        return total + (pub.citationCount || 0);
+    }, 0);
+}
+
 function updateUI() {
     const publicationsList = document.getElementById('publications-list');
     const emptyState = document.getElementById('empty-state');
     const errorBox = document.getElementById('error-box');
     const errorList = document.getElementById('error-list');
     const publicationCount = document.getElementById('publication-count');
+    const totalCitations = document.getElementById('total-citations');
 
     // Update publication count
     publicationCount.textContent = `${publications.length} Publication${publications.length !== 1 ? 's' : ''}`;
+    
+    // Update total citations count
+    const totalCitationCount = calculateTotalCitations();
+    totalCitations.textContent = `${totalCitationCount} Total Citation${totalCitationCount !== 1 ? 's' : ''}`;
 
     // Show/hide error box
     if (Object.keys(errors).length > 0) {
@@ -230,6 +244,9 @@ async function loadPublications() {
         try {
             const publication = await fetchPublication(doi);
             publications.push(publication);
+            
+            // Update UI after each publication loads to show progressive total
+            updateUI();
         } catch (error) {
             errors[doi] = error.message;
         }
@@ -258,4 +275,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 </script>
-
