@@ -1,24 +1,68 @@
 ---
 layout: page
-title: Samarth Mathur, PhD
-subtitle: Bioinformatics Analyst II @ NCI/NIH
-use-site-title: true
-css : "assets/css/justify-content.css"
+title: ""
+css : "assets/css/landing.css"
 ---
 
-<h3 align="center"> Welcome to my personal website! </h3>
-
-<p> I am a bioinformatics scientist with 9+ years experience in computational biology with expertise in <i>“multi-omics” </i>research. I analyze <strong>high throughput biomedical data</strong> from complex experimental designs to study the genetics of cancer. </p>
-
-<p> I have a PhD in the field of evolutionary genomics and computational life sciences. My technical expertise is in advanced computing, data science and statistics, UNIX-based command line tools, and programming languages like Bash, R, and Python. </p>
-
-I work at the [Frederick National Laboratory for Cancer Research](https://frederick.cancer.gov) on the [CCBR](https://bioinformatics.ccr.cancer.gov/ccbr/) core team.
-
-<div class="button-container">
-    <div style="display: flex; justify-content: center; gap: 15px;">
-        <a href="summary" class="btn btn-primary">Learn More About Me</a>
-        <a href="timeline" class="btn btn-primary">My Professional Journey</a>
-        <a href="resume" class="btn btn-primary">My Resume</a>
-    </div>
+<!-- Hero Section -->
+<div class="hero-section">
+  <div class="hero-content">
+    <h1 class="hero-title">Samarth Mathur, PhD</h1>
+    <p class="hero-description">
+      I work at the intersection of computational genomics and evolutionary biology to study the genetics of cancer. I develop rigorous <i>multi-omic</i> analyses to extract biological insight from complex, high-throughput biomedical data.
+    </p>
+  </div>
 </div>
 
+<!-- Stats Section - Compact Single Line -->
+<div class="stats-grid">
+  <div class="stat-card scroll-animate animate-scale animate-delay-1">
+    <div class="stat-number">9+</div>
+    <div class="stat-label">Years Experience</div>
+  </div>
+
+  <div class="stat-card scroll-animate animate-scale animate-delay-2">
+    <div class="stat-number">20+</div>
+    <div class="stat-label">Publications</div>
+  </div>
+
+  <div class="stat-card scroll-animate animate-scale animate-delay-3">
+    <div class="stat-number">700+</div>
+    <div class="stat-label">Citations</div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="scroll-animate animate-fade-up">
+  <div class="button-container">
+    <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+      <a href="summary" class="btn btn-primary">Learn More About Me</a>
+      <a href="timeline" class="btn btn-primary">My Professional Journey</a>
+      <a href="resume" class="btn btn-primary">My Resume</a>
+    </div>
+  </div>
+</div>
+
+<script>
+// Scroll Animation Observer
+document.addEventListener('DOMContentLoaded', function() {
+  const observerOptions = {
+    threshold: 0.15,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-in');
+        // Optional: stop observing after animation
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Observe all elements with scroll-animate class
+  const animatedElements = document.querySelectorAll('.scroll-animate');
+  animatedElements.forEach(el => observer.observe(el));
+});
+</script>

@@ -11,7 +11,7 @@ css :
 </div>
 
 
-I am a computational biologist and bioinformatics scientist currently working as a Bioinformatics Analyst at the National Cancer Institute (NCI). I am a part of the Center for Cancer Research Collaborative Bioinformatics Resource (CCBR) — a specialized team supporting investigators across the NIH's intramural cancer research programs. 
+I am a computational biologist currently working as a **Bioinformatics Analyst** at the [National Cancer Institute (NCI)]((https://www.cancer.gov/)). I am a part of the [Center for Cancer Research Collaborative Bioinformatics Resource (CCBR)](https://bioinformatics.ccr.cancer.gov/ccbr/) — a specialized team supporting investigators across the NIH's intramural cancer research programs. 
 
 I earned my Ph.D. in Biological Sciences from Purdue University, where my research focused on understanding genetic load, functional diversity, and adaptive potential in small or endangered populations. As a Welder Wildlife Fouundation Graduate Research Fellow, my work combining whole-genome resequencing, simulation modeling, and theoretical genomics has been recognized with multiple national awards, including the 2024 Society for the Study of Evolution's Presidents’ Award for most outstanding dissertation publication. 
 
