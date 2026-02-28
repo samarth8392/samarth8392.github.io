@@ -24,7 +24,7 @@ css : "assets/css/awards.css"
     </div>
     <!-- Second badge -->
     <div class="badge-item">
-      <span class="badge badge-leadership">Outstanding Scientific Publication Award</span>
+      <span class="badge badge-leadership">Outstanding Scientific Publication Award (2025)</span>
       <div class="badge-description">Awarded to a high-impact publication advancing wildlife conservation & management.<br>
         <b>Texas Chapter of The Wildlife Society</b>
       </div>
@@ -34,7 +34,7 @@ css : "assets/css/awards.css"
       </a>
     </div>
     <div class="badge-item">
-      <span class="badge badge-leadership">SSE Presidents’ Award </span>
+      <span class="badge badge-leadership">SSE Presidents’ Award (2024)</span>
       <div class="badge-description">Outstanding dissertation paper published in journal <i>Evolution</i><br>
         <b>Society for the Study of Evolution (SSE)</b>
       </div>
@@ -44,7 +44,7 @@ css : "assets/css/awards.css"
       </a>
     </div>
     <div class="badge-item">
-      <span class="badge badge-leadership">Top Cited Author (2021–22) </span>
+      <span class="badge badge-leadership">Top Cited Author (2023) </span>
       <div class="badge-description">Mathur & DeWoody (2021) was one of the top-cited research papers in journal <i>Evolutionary Applications</i><br>
         <b>John Wiley & Sons, Inc</b>
       </div>
@@ -54,11 +54,11 @@ css : "assets/css/awards.css"
       </a>
     </div>
     <div class="badge-item">
-      <span class="badge badge-leadership">Most Outstanding Interdisciplinary Project Award </span>
+      <span class="badge badge-leadership">Most Outstanding Interdisciplinary Project Award</span>
       <div class="badge-description">Office of Interdisciplinary Graduate Programs<br>
         <b>Purdue University</b>
       </div>
-      <img src="https://www.purdue.edu/home/wp-content/themes/purdue-home-theme/imgs/PU-H-light.svg" alt="Award Logo" class="badge-logo">
+      <img src="../assets/img/purdue_logo.png" alt="Award Logo" class="badge-logo">
       <a href="https://example.com/leadership-award-details" class="badge-read-more leadership" target="_blank">
         Read more <i class="fas fa-external-link-alt"></i>
       </a>
@@ -75,7 +75,7 @@ css : "assets/css/awards.css"
   <div class="category-badges research"> <!-- Single container for all badges in this category -->
     <!-- First badge -->
     <div class="badge-item">
-      <span class="badge badge-research"> 1st Place, Clarence Cottam Award </span>
+      <span class="badge badge-research"> 1st Place, Clarence Cottam Award (2020)</span>
       <div class="badge-description"><br>
         <b>Texas Chapter of The Wildlife Society</b>
       </div>
