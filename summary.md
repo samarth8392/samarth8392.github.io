@@ -6,11 +6,6 @@ css :
     - "assets/css/awards.css"
 ---
 
-<div class="button-container">
-    <a href="../timeline" class="btn btn-primary">My journey</a>
-</div>
-
-
 I am a computational biologist currently working as a **Bioinformatics Analyst** at the [National Cancer Institute (NCI)]((https://www.cancer.gov/)). I am a part of the [Center for Cancer Research Collaborative Bioinformatics Resource (CCBR)](https://bioinformatics.ccr.cancer.gov/ccbr/) — a specialized team supporting investigators across the NIH's intramural cancer research programs. 
 
 I earned my Ph.D. in Biological Sciences from Purdue University, where my research focused on understanding genetic load, functional diversity, and adaptive potential in small or endangered populations. As a Welder Wildlife Fouundation Graduate Research Fellow, my work combining whole-genome resequencing, simulation modeling, and theoretical genomics has been recognized with multiple national awards, including the 2024 Society for the Study of Evolution's Presidents’ Award for most outstanding dissertation publication. 
@@ -22,13 +17,6 @@ My technical expertise spans R, Python, Bash, and high-performance computing, wi
 
 ---
 
-<h3 align="center"> Read more about</h3>
-
 <div class="button-container">
-    <div style="display: flex; justify-content: center; gap: 5px;">
-        <a href="https://example.com/nci-award-details" class="badge-read-more student" target="_blank">
-        NCI/NIH<i class="fas fa-external-link-alt"></i>
-        <a href="https://example.com/nci-award-details" class="badge-read-more student" target="_blank">
-        My doctoral research<i class="fas fa-external-link-alt"></i>
-        <a href="../skills" class="badge-read-more student" target="_blank">
-        My skills<i class="fas fa-external-link-alt"></i>
+    <a href="../timeline" class="btn btn-primary">My journey</a>
+</div>
