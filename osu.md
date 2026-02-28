@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Postdoctoral Research Scholar
-subtitle:  "@ OSU"
+subtitle:  "@ The Ohio State University"
 cover-img: 
-  - "assets/img/osu.jpg"
+  - "assets/img/osu.webp"
 css : 
     - "assets/css/image_gallery.css"
     - "assets/css/justify-content.css"

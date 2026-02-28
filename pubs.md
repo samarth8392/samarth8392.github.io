@@ -12,6 +12,9 @@ subtitle: Research publications and academic contributions
     <div class="text-center mb-4">
         <p class="text-muted">
             <span id="publication-count">0 Publications</span> • 
+            <span id="total-citations">0 Total Citations</span>
+            <br>
+            <br>
             <a href="https://scholar.google.com/citations?user=kL0KaxQAAAAJ&hl=en" target="_blank" class="scholar-badge">🎓 My Google Scholar Profile</a>
         </p>
     </div>
@@ -42,23 +45,28 @@ subtitle: Research publications and academic contributions
 <script>
 // Add your DOIs here
 const myDOIs = [
-    '10.1111/mec.16051',
-    '10.1111/eva.13216',
-    '10.1016/j.jhazmat.2015.08.055',
-    '10.1093/evolut/qpac061',
-    '10.1073/pnas.2303043120',
-    '10.1007/s10592-019-01218-9',
-    '10.1186/s12862-019-1435-y',
-    '10.1038/s41598-019-39793-z',
-    '10.3390/d14070577',
-    '10.1073/pnas.2320040121',
-    '10.1371/journal.pcbi.1012566',
-    '10.1007/s10709-019-00081-3',
-    '10.1186/s12862-023-02191-1',
-    '10.1111/mec.17210',
-    '10.21203/rs.3.rs-6206868/v1',
-    '10.22541/au.168371288.85881657/v1',
-    '10.1111/mec.70014'
+    '10.1111/mec.70014', // Genomic Evaluation of Assisted Gene Flow Options in an ...
+    '10.1136/jitc-2025-SITC2025.0038', // 38 Liquid biopsy detects treatment resistance ...
+    '10.1093/jhered/esaf088', // A multifaceted approach to identify disease response ...
+    '10.1055/s-0045-1803100', // Evaluation of Targeted and Immunotherapeutic Approaches ...
+    '10.1101/2025.11.25.690472', // Phylogenomic and comparative genome analysis of the Juglandaceae ...
+    '10.1111/mec.16051', // The long‐standing significance of genetic diversity in ...
+    '10.1111/eva.13216', // Genetic load has potential in large populations but is ...
+    '10.1016/j.jhazmat.2015.08.055', // A study on metabolic prowess of Pseudomonas sp. RPT 52 ...
+    '10.1093/evolut/qpac061', // An evolutionary perspective on genetic load in small, isolated ...
+    '10.1073/pnas.2303043120', // Functional genomic diversity is correlated with neutral ...
+    '10.1007/s10592-019-01218-9', // Evidence of genetic erosion in a peripheral population ...
+    '10.1186/s12862-019-1435-y', // Immunogenetic response of the bananaquit in the face ...
+    '10.1038/s41598-019-39793-z', // Microsatellite Borders and Micro-sequence Conservation ...
+    '10.3390/d14070577', // The First Complete Chloroplast Genome Sequence and ...
+    '10.1073/pnas.2320040121', // Rapid vertebrate speciation via isolation, bottlenecks, and ...
+    '10.1371/journal.pcbi.1012566', // Detectability of runs of homozygosity is influenced by analysis ...
+    '10.1007/s10709-019-00081-3', // Episodic positive diversifying selection on key immune system ...
+    '10.1186/s12862-023-02191-1', // Genetic approaches reveal a healthy population and an ...
+    '10.1111/mec.17210', // Genetic mechanisms and biological processes underlying ...
+    '10.1186/s12870-025-07678-1', // Comparative analysis of butternut (Juglans cinerea) and Japanese ...
+    '10.22541/au.168371288.85881657/v1', // Conservation genomics of California towhee (Melozone ...
+    
 
 ];
 
@@ -178,15 +186,26 @@ function createPublicationCard(pub) {
     `;
 }
 
+function calculateTotalCitations() {
+    return publications.reduce((total, pub) => {
+        return total + (pub.citationCount || 0);
+    }, 0);
+}
+
 function updateUI() {
     const publicationsList = document.getElementById('publications-list');
     const emptyState = document.getElementById('empty-state');
     const errorBox = document.getElementById('error-box');
     const errorList = document.getElementById('error-list');
     const publicationCount = document.getElementById('publication-count');
+    const totalCitations = document.getElementById('total-citations');
 
     // Update publication count
     publicationCount.textContent = `${publications.length} Publication${publications.length !== 1 ? 's' : ''}`;
+    
+    // Update total citations count
+    const totalCitationCount = calculateTotalCitations();
+    totalCitations.textContent = `${totalCitationCount} Total Citation${totalCitationCount !== 1 ? 's' : ''}`;
 
     // Show/hide error box
     if (Object.keys(errors).length > 0) {
@@ -230,6 +249,9 @@ async function loadPublications() {
         try {
             const publication = await fetchPublication(doi);
             publications.push(publication);
+            
+            // Update UI after each publication loads to show progressive total
+            updateUI();
         } catch (error) {
             errors[doi] = error.message;
         }
@@ -258,4 +280,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 </script>
-
