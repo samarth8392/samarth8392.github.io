@@ -38,7 +38,7 @@ navbar-links:
 
 description: Personal website
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://samarth8392.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://samarthmathurphd.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 ################
 # --- Logo --- #
@@ -46,7 +46,7 @@ url: "https://samarth8392.github.io" # the base hostname & protocol for your sit
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/Mathur_S_3.JPG"
+avatar: "/assets/img/Mathur_S_3.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -114,7 +114,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "www.samarth8392.github.io"
+url-pretty: "www.samarthmathurphd.com"
 
 # Add the website title to the title of every page
 title-on-all-pages: true
@@ -316,4 +316,3 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-

@@ -32,10 +32,6 @@ One of my key contributions was introducing the conceptual distinction between "
 
 My work demonstrated that historically large populations that have recently declined are at greater risk of inbreeding depression, while chronically small populations are more likely to suffer from reduced adaptive potential. These findings have direct implications for how we assess extinction risk and manage endangered species.
 
-<div class="showcase-image">
-  <img src="/assets/img/genomic-analysis-results.jpg" alt="Genomic analysis results showing correlation between neutral and functional diversity">
-</div>
-
 
 <div class="callout info">
 <strong>My dissertation was recognized with several awards:</strong>

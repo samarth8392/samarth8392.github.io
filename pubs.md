@@ -18,11 +18,6 @@ subtitle: Research publications and academic contributions
             <a href="https://scholar.google.com/citations?user=kL0KaxQAAAAJ&hl=en" target="_blank" class="scholar-badge">🎓 My Google Scholar Profile</a>
         </p>
     </div>
-    <!-- Error Box -->
-    <div id="error-box" class="alert alert-danger" style="display: none;">
-        <strong>Failed to load some publications:</strong>
-        <div id="error-list"></div>
-    </div>
     <!-- Loading State -->
     <div id="loading" class="text-center" style="display: none;">
         <div class="spinner-border text-primary" role="status">
@@ -74,37 +69,79 @@ const myDOIs = [
 const GOOGLE_SCHOLAR_URL = 'https://scholar.google.com/citations?user=kL0KaxQAAAAJ&hl=en&oi=ao';
 
 let publications = [];
-let errors = {};
 let isLoading = false;
 
-async function fetchCitationCount(doi) {
-    try {
-        // Try Crossref for citation count
-        const response = await fetch(`https://api.crossref.org/works/${doi}`);
-        if (response.ok) {
-            const data = await response.json();
-            return data.message['is-referenced-by-count'] || 0;
+async function fetchWithRetry(url, options = {}, retries = 2, timeoutMs = 8000) {
+    let lastError = null;
+
+    for (let attempt = 0; attempt <= retries; attempt++) {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+
+        try {
+            const response = await fetch(url, {
+                ...options,
+                signal: controller.signal
+            });
+
+            clearTimeout(timeoutId);
+
+            if (response.ok) {
+                return response;
+            }
+
+            if (response.status === 404) {
+                return null;
+            }
+
+            if (response.status === 429 || response.status >= 500) {
+                lastError = new Error(`Crossref temporary error (${response.status})`);
+            } else {
+                return null;
+            }
+        } catch (error) {
+            clearTimeout(timeoutId);
+            lastError = error;
         }
-    } catch (error) {
-        console.warn(`Failed to fetch citation count for ${doi}:`, error);
+
+        if (attempt < retries) {
+            const backoffMs = 500 * Math.pow(2, attempt);
+            await new Promise(resolve => setTimeout(resolve, backoffMs));
+        }
     }
-    return null;
+
+    throw lastError || new Error('Request failed');
 }
 
 async function fetchPublication(doi) {
+    const doiUrl = `https://doi.org/${doi}`;
+
     try {
-        const response = await fetch(`https://api.crossref.org/works/${doi}`);
-        
-        if (!response.ok) {
-            throw new Error(`Failed to fetch publication for DOI: ${doi}`);
+        const encodedDoi = encodeURIComponent(doi);
+        const response = await fetchWithRetry(`https://api.crossref.org/works/${encodedDoi}`);
+
+        // DOI not found or non-retriable response: show a graceful fallback card
+        if (!response) {
+            return {
+                title: 'Publication metadata unavailable',
+                authors: [],
+                journal: 'Unknown journal',
+                year: 'n.d.',
+                volume: '',
+                issue: '',
+                pages: '',
+                publisher: '',
+                doi: doi,
+                url: doiUrl,
+                type: 'journal-article',
+                originalDoi: doi,
+                citationCount: null
+            };
         }
-        
+
         const data = await response.json();
         const work = data.message;
-        
-        // Fetch citation count
-        const citationCount = await fetchCitationCount(doi);
-        
+
         return {
             title: work.title?.[0] || 'Title not available',
             authors: work.author?.map(author => 
@@ -116,14 +153,29 @@ async function fetchPublication(doi) {
             issue: work.issue || '',
             pages: work.page || '',
             publisher: work.publisher || '',
-            doi: work.DOI,
-            url: work.URL,
+            doi: work.DOI || doi,
+            url: work.URL || doiUrl,
             type: work.type || 'journal-article',
             originalDoi: doi,
-            citationCount: citationCount
+            citationCount: work['is-referenced-by-count'] ?? null
         };
     } catch (error) {
-        throw new Error(`Error fetching ${doi}: ${error.message}`);
+        console.warn(`Crossref fetch failed for DOI ${doi}:`, error);
+        return {
+            title: 'Publication metadata unavailable',
+            authors: [],
+            journal: 'Unknown journal',
+            year: 'n.d.',
+            volume: '',
+            issue: '',
+            pages: '',
+            publisher: '',
+            doi: doi,
+            url: doiUrl,
+            type: 'journal-article',
+            originalDoi: doi,
+            citationCount: null
+        };
     }
 }
 
@@ -172,7 +224,7 @@ function createPublicationCard(pub) {
                     <span class="metrics-label">📊 Metrics:</span>
                     ${pub.citationCount !== null ? 
                         `<span class="citation-badge"> ${pub.citationCount} citations</span>` : 
-                        '<span class="citation-loading"> Loading...</span>'
+                        '<span class="citation-loading"> N/A</span>'
                     }
                     <a href="${scholarSearchUrl}" target="_blank" class="scholar-badge">
                         🎓 Google Scholar
@@ -195,8 +247,6 @@ function calculateTotalCitations() {
 function updateUI() {
     const publicationsList = document.getElementById('publications-list');
     const emptyState = document.getElementById('empty-state');
-    const errorBox = document.getElementById('error-box');
-    const errorList = document.getElementById('error-list');
     const publicationCount = document.getElementById('publication-count');
     const totalCitations = document.getElementById('total-citations');
 
@@ -206,16 +256,6 @@ function updateUI() {
     // Update total citations count
     const totalCitationCount = calculateTotalCitations();
     totalCitations.textContent = `${totalCitationCount} Total Citation${totalCitationCount !== 1 ? 's' : ''}`;
-
-    // Show/hide error box
-    if (Object.keys(errors).length > 0) {
-        errorList.innerHTML = Object.entries(errors)
-            .map(([doi, error]) => `<div>• ${error}</div>`)
-            .join('');
-        errorBox.style.display = 'block';
-    } else {
-        errorBox.style.display = 'none';
-    }
 
     // Show/hide empty state and publications
     if (publications.length === 0) {
@@ -243,18 +283,13 @@ async function loadPublications() {
     loadingDiv.style.display = 'block';
     
     publications = [];
-    errors = {};
 
     for (const doi of myDOIs) {
-        try {
-            const publication = await fetchPublication(doi);
-            publications.push(publication);
-            
-            // Update UI after each publication loads to show progressive total
-            updateUI();
-        } catch (error) {
-            errors[doi] = error.message;
-        }
+        const publication = await fetchPublication(doi);
+        publications.push(publication);
+        
+        // Update UI after each publication loads to show progressive total
+        updateUI();
     }
 
     // Sort publications by year (newest first)

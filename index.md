@@ -8,6 +8,7 @@ css : "assets/css/landing.css"
 <div class="hero-section">
   <div class="hero-content">
     <h1 class="hero-title">Samarth Mathur, PhD</h1>
+    <p class="hero-welcome-banner">welcome to my personal website</p>
     <p class="hero-description">
       I work at the intersection of computational genomics and evolutionary biology to study the genetics of cancer. I develop rigorous <i>multi-omic</i> analyses to extract biological insight from complex, high-throughput biomedical data.
     </p>
