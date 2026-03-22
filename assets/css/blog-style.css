@@ -457,7 +457,7 @@
 }
 
 .callout.info::before {
-  content: 'ℹ️';
+  content: '🏆';
 }
 
 /* Responsive design */

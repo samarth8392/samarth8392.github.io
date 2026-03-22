@@ -10,7 +10,7 @@ css : "assets/css/landing.css"
     <h1 class="hero-title">Samarth Mathur, PhD</h1>
     <p class="hero-welcome-banner">welcome to my personal website</p>
     <p class="hero-description">
-      I work at the intersection of computational genomics and evolutionary biology to study the genetics of cancer. I develop rigorous <i>multi-omic</i> analyses to extract biological insight from complex, high-throughput biomedical data.
+      I am a <b> computational biologist </b> who work at the intersection of genomics and evolutionary biology to study the genetics of cancer. I develop rigorous <i>multi-omic</i> analyses to extract biological insight from complex, high-throughput biomedical data.
     </p>
   </div>
 </div>
@@ -28,7 +28,7 @@ css : "assets/css/landing.css"
   </div>
 
   <div class="stat-card scroll-animate animate-scale animate-delay-3">
-    <div class="stat-number">700+</div>
+    <div class="stat-number">750+</div>
     <div class="stat-label">Citations</div>
   </div>
 </div>

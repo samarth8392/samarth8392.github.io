@@ -1,14 +1,16 @@
 ---
 layout: page
 title: Bioinformatics Analyst II
-subtitle:  "@ FNLCR"
+subtitle:  "@ NCI/NIH"
 cover-img: 
-  - "assets/img/fnlcr.jpg" : "Frederick National Laboratory for Cancer Research"
+  - "assets/img/nih.jpg" : "National Institutes of Health"
 css : "assets/css/image_gallery.css"
 css : "assets/css/justify-content.css"
 ---
 
-As a member of the CCR Collaborative Bioinformatics Resource ([CCBR](https://bioinformatics.ccr.cancer.gov/ccbr/)) core team at the National Cancer Institute ([NCI](https://cancer.gov/)), I work at the intersection of biomedical innovation and cutting-edge cancer research. My role within CCBR allows me to serve as a bridge between computational expertise and life-changing cancer discoveries, supporting researchers across the NIH. Every day, I focus on delivering expert-level computational support that accelerates cancer research through data-driven genomics and high-performance computing.
+As a member of the CCR Collaborative Bioinformatics Resource (<a href="https://bioinformatics.ccr.cancer.gov/ccbr/" target="_blank">CCBR</a>) core team at the National Cancer Institute (<a href="https://cancer.gov/" target="_blank">NCI</a>), I work at the intersection of biomedical innovation and cutting-edge cancer research. My role within CCBR allows me to serve as a bridge between computational expertise and life-changing cancer discoveries, supporting researchers across the <a href="https://nih.gov/" target="_blank">NIH</a>. 
+
+Every day, I focus on delivering expert-level computational support that accelerates cancer research through data-driven genomics and high-performance computing.
 
 
 <div class="responsive-gallery">

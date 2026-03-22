@@ -11,11 +11,10 @@ subtitle: Research publications and academic contributions
     <!-- Header Stats -->
     <div class="text-center mb-4">
         <p class="text-muted">
-            <span id="publication-count">0 Publications</span> • 
-            <span id="total-citations">0 Total Citations</span>
-            <br>
-            <br>
-            <a href="https://scholar.google.com/citations?user=kL0KaxQAAAAJ&hl=en" target="_blank" class="scholar-badge">🎓 My Google Scholar Profile</a>
+        <a href="https://scholar.google.com/citations?user=kL0KaxQAAAAJ&hl=en" target="_blank" class="scholar-badge">🎓 My Google Scholar Profile</a>
+        <br>
+        <br>
+        <span id="publication-count" class="publication-count-banner">0 Publications</span>
         </p>
     </div>
     <!-- Loading State -->
@@ -64,9 +63,6 @@ const myDOIs = [
     
 
 ];
-
-// Google Scholar profile URL (optional)
-const GOOGLE_SCHOLAR_URL = 'https://scholar.google.com/citations?user=kL0KaxQAAAAJ&hl=en&oi=ao';
 
 let publications = [];
 let isLoading = false;
@@ -238,24 +234,13 @@ function createPublicationCard(pub) {
     `;
 }
 
-function calculateTotalCitations() {
-    return publications.reduce((total, pub) => {
-        return total + (pub.citationCount || 0);
-    }, 0);
-}
-
 function updateUI() {
     const publicationsList = document.getElementById('publications-list');
     const emptyState = document.getElementById('empty-state');
     const publicationCount = document.getElementById('publication-count');
-    const totalCitations = document.getElementById('total-citations');
 
     // Update publication count
     publicationCount.textContent = `${publications.length} Publication${publications.length !== 1 ? 's' : ''}`;
-    
-    // Update total citations count
-    const totalCitationCount = calculateTotalCitations();
-    totalCitations.textContent = `${totalCitationCount} Total Citation${totalCitationCount !== 1 ? 's' : ''}`;
 
     // Show/hide empty state and publications
     if (publications.length === 0) {

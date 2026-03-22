@@ -202,12 +202,12 @@
 .timeline-date {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: linear-gradient(135deg, #E0F3FF 0%, #2F8FED 100%);
+    background: linear-gradient(135deg, #E0F3FF 0%, #96c7f7 100%);
     border-radius: 25px;
     font-size: 0.85rem;
     font-weight: 500;
     color: #030303;
-    border: 1px #2F8FED;
+    border: 1px #072e55;
     margin-top: 1rem;
 }
 
