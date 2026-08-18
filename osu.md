@@ -17,9 +17,9 @@ css :
   </div>
 </div>
 
-At The Ohio State, I continued to explore the intersection of evolutionary genomics and conservation biology, shifting my focus from birds to reptiles. I worked with Dr. H. Lisle Gibbs in the Department of Evolution, Ecology, and Organismal Biology (EEOB), where my projects centered on federally endangered Eastern Massasauga rattlesnakes.
+At The Ohio State, I continued to explore the intersection of evolutionary genomics and conservation biology, shifting my focus from birds to reptiles. I worked with <a href="https://eeob.osu.edu/people/gibbs.128" target="_blank">Dr. H. Lisle Gibbs</a> in the Department of Evolution, Ecology, and Organismal Biology (EEOB), where my projects centered on federally endangered Eastern Massasauga rattlesnakes.
 
-My work addressed big-picture questions about how small, isolated populations maintain genetic health, and how functional and neutral genetic diversity interact in the face of demographic decline. In one study, we used population genomic data from rattlesnakes to evaluate a hotly debated question in conservation genetics—whether neutral markers can still reliably inform functional diversity. Our findings, published in PNAS, provided a nuanced perspective: neutral and functional diversity are indeed correlated, but the strength of that correlation might decrease due to recent demographic declines.
+My work addressed big-picture questions about how small, isolated populations maintain genetic health, and how functional and neutral genetic diversity interact in the face of demographic decline. In one study, we used population genomic data from rattlesnakes to evaluate a hotly debated question in conservation genetics—whether neutral markers can still reliably inform functional diversity. Our findings, published in <a href="https://doi.org/10.1073/pnas.2303043120" target="_blank"><i><b>PNAS</b></i></a>, provided a nuanced perspective: neutral and functional diversity are indeed correlated, but the strength of that correlation might decrease due to recent demographic declines.
 
 
   <div class="image-card">

@@ -14,7 +14,6 @@ subtitle: Research publications and academic contributions
         <a href="https://scholar.google.com/citations?user=kL0KaxQAAAAJ&hl=en" target="_blank" class="scholar-badge">🎓 My Google Scholar Profile</a>
         <br>
         <br>
-        <span id="publication-count" class="publication-count-banner">0 Publications</span>
         </p>
     </div>
     <!-- Loading State -->
@@ -237,10 +236,6 @@ function createPublicationCard(pub) {
 function updateUI() {
     const publicationsList = document.getElementById('publications-list');
     const emptyState = document.getElementById('empty-state');
-    const publicationCount = document.getElementById('publication-count');
-
-    // Update publication count
-    publicationCount.textContent = `${publications.length} Publication${publications.length !== 1 ? 's' : ''}`;
 
     // Show/hide empty state and publications
     if (publications.length === 0) {

@@ -276,6 +276,12 @@
   margin-bottom: 1rem;
 }
 
+.image-card.small {
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .image-caption {
   color: #030303;
   font-style: italic;
@@ -460,11 +466,56 @@
   content: '🏆';
 }
 
+.callout-content {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.callout-text {
+  flex: 1 1 60%;
+}
+
+.callout-media {
+  flex: 0 0 260px;
+}
+
+.callout-media img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.callout-media .image-caption {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.callout-media.small img {
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.callout-media.medium img {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .posts-container {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  .callout-content {
+    flex-direction: column;
+  }
+
+  .callout-media {
+    flex-basis: auto;
   }
   
   .blog-header {

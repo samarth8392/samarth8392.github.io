@@ -4,25 +4,6 @@
     max-width: 100%;
 }
 
-.publication-count-banner {
-  display: block;
-  width: fit-content;
-  max-width: 100%;
-  margin: 0 auto 1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  border: 1px solid rgba(0, 74, 173, 0.3);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(240, 247, 255, 0.95));
-  box-shadow: 0 8px 20px rgba(0, 74, 173, 0.12);
-  color: #1f4f9e;
-  font-size: 0.86rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  line-height: 1.2;
-  white-space: nowrap;
-  animation: fadeInUp 0.8s ease-out 0.3s both;
-}
 
 .publication-card {
     border: 1px solid #dee2e6;
@@ -159,11 +140,6 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .publication-count-banner {
-        font-size: 1rem;
-        padding: 0.5rem 0.9rem;
-    }
-
     .publication-footer {
         flex-direction: column;
         align-items: flex-start;

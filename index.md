@@ -28,7 +28,7 @@ css : "assets/css/landing.css"
   </div>
 
   <div class="stat-card scroll-animate animate-scale animate-delay-3">
-    <div class="stat-number">750+</div>
+    <div class="stat-number">800+</div>
     <div class="stat-label">Citations</div>
   </div>
 </div>

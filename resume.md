@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Resume"
-subtitle: "Last Updated: 06/24/25"
+subtitle: "Last Updated: 03/21/26"
 use-site-title: true
 css : "assets/css/pdf.css"
 ---
@@ -10,12 +10,12 @@ css : "assets/css/pdf.css"
 <script src="../assets/js/pdfobject.min.js"></script>
 
 <div class="pdf-container" id="pdf-viewer">
-    <embed src="../SamarthMathur_Resume_June25.pdf" type="application/pdf" width="100%" height="100%">
+    <embed src="../SamarthMathur_Resume_March26.pdf" type="application/pdf" width="100%" height="100%">
 </div>
 
 <!-- Download Button (hidden by default) -->
 <div class="download-button" id="download-btn">
-    <a href="../SamarthMathur_Resume_June25.pdf" download>Download</a>
+    <a href="../SamarthMathur_Resume_March26.pdf" download>Download</a>
 </div>
 
 <script>

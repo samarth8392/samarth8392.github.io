@@ -1,16 +1,18 @@
 /* Modern Professional Timeline CSS */
 /* Compatible with Beautiful Jekyll theme */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 /* Timeline container styling */
 .timeline-wrapper {
     min-height: 100vh;
-    color: #00420c;
+    color: #0c1b33;
     line-height: 1.6;
     overflow-x: hidden;
     padding: 4rem 0;
     margin: -2rem -15px 0 -15px; /* Override Beautiful Jekyll container margins */
+    font-family: "Space Grotesk", system-ui, -apple-system, sans-serif;
+    background: transparent;
 }
 
 .timeline-container {
@@ -28,10 +30,7 @@
 .timeline-title {
     font-size: 3rem;
     font-weight: 700;
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #1a2a6c;
     margin-bottom: 1rem;
     position: relative;
 }
@@ -40,7 +39,7 @@
     font-size: 1.2rem;
     opacity: 0.8;
     font-weight: 300;
-    color: #00420c;
+    color: #0c1b33;
 }
 
 .timeline {
@@ -56,19 +55,16 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 2px;
+    width: 3px;
     height: 100%;
-    background: linear-gradient(180deg,
-    rgb(7, 122, 237) 0%,       /* Bold modern blue */
-    rgba(0, 80, 200, 0.9) 50%,     /* Teal aqua accent */
-    rgba(224, 243, 255, 1) 100%     /* Soft pastel blue */
-    );
+    background: #1a2a6c;
     z-index: 1;
+    border-radius: 999px;
 }
 
 .timeline-item {
     position: relative;
-    margin: 3rem 0;
+    margin: 3.5rem 0;
     opacity: 0;
     animation: slideInUp 0.8s ease forwards;
 }
@@ -94,23 +90,34 @@
     position: relative;
     width: 45%;
     padding: 2rem;
-    background: linear-gradient(135deg, rgba(255, 192, 203, 0.08), rgba(250, 128, 114, 0.08)); /* light pink to salmon */
-    backdrop-filter: blur(20px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 105, 135, 0.3); /* rosy border */
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(14px);
+    border-radius: 18px;
+    border: 1px solid rgba(26, 42, 108, 0.08);
     box-shadow: 
-        0 20px 40px rgba(255, 105, 135, 0.3),  /* outer pinkish glow */
-        inset 0 1px 0 rgba(255, 182, 193, 0.2); /* soft blush inner light */
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        0 25px 60px rgba(26, 42, 108, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    transition: all 0.35s ease;
     cursor: pointer;
 }
 
 .timeline-content:hover {
-    transform: translateY(-8px) scale(1.02);
+    transform: translateY(-8px) scale(1.01);
     box-shadow: 
-        0 30px 60px rgba(68, 2, 88, 0.4),
-        0 0 40px rgba(152, 7, 214, 0.2);
-    border-color: rgba(235, 19, 173, 0.3);
+        0 35px 70px rgba(26, 42, 108, 0.18),
+        0 0 0 1px rgba(79, 172, 254, 0.2);
+    border-color: rgba(79, 172, 254, 0.35);
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    border-radius: 18px 18px 0 0;
+    background: #1a2a6c;
 }
 
 .timeline-item:nth-child(odd) .timeline-content {
@@ -131,12 +138,12 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .timeline-link:hover .timeline-content {
-    transform: translateY(-8px) scale(1.02);
+.timeline-link:hover .timeline-content {
+    transform: translateY(-8px) scale(1.01);
     box-shadow:
-      0 30px 60px rgba(68, 2, 88, 0.4),
-      0 0 40px rgba(152, 7, 214, 0.2);
-    border-color: rgba(235, 19, 173, 0.3);
+      0 35px 70px rgba(26, 42, 108, 0.18),
+      0 0 0 1px rgba(79, 172, 254, 0.2);
+    border-color: rgba(79, 172, 254, 0.35);
   }
   
 
@@ -146,11 +153,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background: linear-gradient(135deg, #FFD1DC 0%, #FF7F7F 100%);
+    width: 18px;
+    height: 18px;
+    background: #1a2a6c;
     border-radius: 50%;
-    border: 2px solid rgba(162, 11, 56, 0.9);
+    border: 2px solid #f4f8ff;
     z-index: 10;
     animation: pulse 2s infinite;
 }
@@ -168,46 +175,49 @@
 .job-title {
     font-size: 1.4rem;
     font-weight: 600;
-    color: #ea615c;
+    color: #1a2a6c;
     margin-bottom: 0.5rem;
     text-decoration: none;
     display: inline-block;
     transition: color 0.3s ease;
 }
 
-.job-title:hover {
-    color: #ea615c;
-    text-decoration: none;
+/* Class-based color split */
+.job-title,
+.company-full {
+    color: #b33a6a;
+}
+
+.company-name,
+.company-full-name,
+.timeline-date {
+    color: #1a2a6c;
 }
 
 .company-name {
     font-size: 1.1rem;
     font-weight: 500;
-    color: #ea615c;
     margin-bottom: 0.5rem;
 }
 
 .company-full {
     font-size: 1.15rem;
-    color: #ea615c;
     margin-bottom: 1rem;
 }
 
 .company-full-name {
     font-size: 0.95rem;
-    color: #004aad;
     margin-bottom: 1rem;
 }
 
 .timeline-date {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: linear-gradient(135deg, #E0F3FF 0%, #96c7f7 100%);
-    border-radius: 25px;
+    background: linear-gradient(135deg, #eef5ff 0%, #cde2ff 100%);
+    border-radius: 999px;
     font-size: 0.85rem;
     font-weight: 500;
-    color: #030303;
-    border: 1px #072e55;
+    border: 1px solid rgba(26, 42, 108, 0.15);
     margin-top: 1rem;
 }
 
@@ -224,12 +234,12 @@
 
 .timeline-item:nth-child(odd) .timeline-content::after {
     right: -30px;
-    border-left-color: rgba(255, 255, 255, 0.05);
+    border-left-color: rgba(255, 255, 255, 0.7);
 }
 
 .timeline-item:nth-child(even) .timeline-content::after {
     left: -30px;
-    border-right-color: rgba(255, 255, 255, 0.05);
+    border-right-color: rgba(255, 255, 255, 0.7);
 }
 
 /* Floating particles animation */
@@ -286,7 +296,7 @@
     .timeline-content::after {
         left: -30px !important;
         right: auto !important;
-        border-right-color: rgba(255, 255, 255, 0.05) !important;
+        border-right-color: rgba(255, 255, 255, 0.7) !important;
         border-left-color: transparent !important;
     }
 
