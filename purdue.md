@@ -26,7 +26,7 @@ My dissertation combined whole-genome sequencing, population genomics, and forwa
 
 
 <div class="image-card small">
-  <img src="/assets/img/puurdue_lab.png" alt="Research team in the field">
+  <img src="/assets/img/purdue_lab.png" alt="Research team in the field">
   <div class="image-caption">
     DeWoody Lab Group
   </div>
