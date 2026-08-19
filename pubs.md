@@ -197,6 +197,25 @@ function formatAuthors(authors, highlightName = 'Singh, N') {
     return `${formattedAuthors.slice(0, 3).join(', ')}, et al.`;
 }
 
+const TOPIC_KEYWORDS = {
+    'Cancer & Oncology': ['cancer', 'tumor', 'tumour', 'oncolog', 'carcinoma', 'organoid', 'car t', 'chimeric antigen', 'immunotherap', 'liquid biopsy', 'ceramide', 'glioma', 'sarcoma', 'leukemia', 'biomarker'],
+    'Population Genetics': ['population genetic', 'genetic diversity', 'genetic load', 'gene flow', 'heterozygosity', 'runs of homozygosity', 'inbreeding', 'genetic erosion', 'effective population size'],
+    'Conservation Genomics': ['conservation', 'endanger', 'threatened species', 'assisted gene flow', 'wildlife', 'reintroduc'],
+    'Evolutionary Biology': ['evolution', 'speciation', 'adaptive', 'selection', 'diversifying selection'],
+    'Immunogenetics': ['immune', 'immunogenetic', 'mhc', 'major histocompatibility', 'disease response', 'pathogen'],
+    'Genomics & Bioinformatics': ['genome', 'genomic', 'sequenc', 'microsatellite', 'chloroplast', 'assembly', 'comparative genome'],
+    'Plant Science': ['juglandaceae', 'walnut', 'butternut', 'plant'],
+    'Microbiology': ['pseudomonas', 'bacteri', 'microbial', 'bioremediation', 'metabolic'],
+};
+
+function extractTopics(pub) {
+    const text = `${pub.title || ''} ${pub.journal || ''}`.toLowerCase();
+    const topics = Object.keys(TOPIC_KEYWORDS).filter(topic =>
+        TOPIC_KEYWORDS[topic].some(keyword => text.includes(keyword))
+    );
+    return topics.length > 0 ? topics : ['General Biology'];
+}
+
 function createPublicationCard(pub) {
     const scholarSearchUrl = `https://scholar.google.com/scholar?q=${encodeURIComponent(pub.title)}`;
     
