@@ -85,15 +85,14 @@
 .badge-item {
   width: 100%;
   background: #ffffff;
-  padding: 2rem;
+  padding: 1.1rem 1.5rem;
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-template-rows: auto auto 1fr auto;
-  gap: 1rem 2rem;
-  transition: all 0.3s ease;
-  min-height: 180px;
+  grid-template-rows: auto auto;
+  gap: 0.4rem 1.5rem;
+  transition: all 0.2s ease;
   position: relative;
-  border-bottom: 1px solid var(--category-light-border);
+  border-bottom: 1px solid var(--category-border);
 }
 
 .badge-item:last-child {
@@ -102,7 +101,7 @@
 
 .badge-item:hover {
   background: var(--category-hover-bg);
-  transform: translateX(4px);
+  transform: translateX(2px);
 }
 
 /* ===== Grid Layout for Badge Content ===== */
@@ -133,10 +132,10 @@
 
 .badge-description {
   grid-column: 1;
-  grid-row: 2 / 4;
+  grid-row: 2;
   color: #444;
-  line-height: 1.6;
-  font-size: 1.1rem;
+  line-height: 1.45;
+  font-size: 1.05rem;
   font-weight: 400;
   margin: 0;
   min-width: 0;
@@ -166,16 +165,16 @@
 /* ===== Logo Positioning - Fixed ===== */
 .badge-logo {
   grid-column: 2;
-  grid-row: 1 / 4;
-  width: 180px;
-  height: 120px;
+  grid-row: 1 / 3;
+  width: 130px;
+  height: 85px;
   object-fit: contain;
   object-position: center;
   justify-self: center;
   align-self: center;
-  padding: 12px;
+  padding: 10px;
   background: rgba(255, 255, 255, 0.9);
-  border-radius: 12px;
+  border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 }
@@ -185,80 +184,34 @@
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
 }
 
-/* ===== Read More Button - Fixed Position ===== */
-.badge-read-more {
-  grid-column: 1 / -1;
-  grid-row: 4;
-  justify-self: end;
-  align-self: end;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 10px 18px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #666;
-  background: linear-gradient(135deg, #f8f9fa, #ffffff);
-  border: 1px solid #dee2e6;
-  border-radius: 25px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  margin-top: 1rem;
-}
-
-.badge-read-more:hover {
-  color: #495057;
-  background: linear-gradient(135deg, #e9ecef, #f8f9fa);
-  text-decoration: none;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.badge-read-more i {
-  font-size: 0.8rem;
-  margin: 0;
-  transition: transform 0.3s ease;
-}
-
-.badge-read-more:hover i {
-  transform: translateX(2px);
-}
-
 /* ===== Mobile Responsive ===== */
 @media (max-width: 768px) {
   .badge-item {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto;
     text-align: center;
-    padding: 1.5rem;
+    padding: 1rem 1.25rem;
   }
-  
+
   .badge {
     grid-column: 1;
     grid-row: 1;
     justify-self: center;
     font-size: 1.1rem;
   }
-  
+
   .badge-description {
     grid-column: 1;
     grid-row: 3;
     text-align: center;
   }
-  
+
   .badge-logo {
     grid-column: 1;
     grid-row: 2;
-    width: 160px;
-    height: 100px;
-    margin: 1rem auto;
-  }
-  
-  .badge-read-more {
-    grid-column: 1;
-    grid-row: 4;
-    justify-self: center;
-    margin-top: 1.5rem;
+    width: 120px;
+    height: 80px;
+    margin: 0.5rem auto;
   }
 }
 
@@ -282,12 +235,6 @@
   color: #e65100; 
 }
 
-.badge-read-more.leadership { 
-  background: linear-gradient(135deg, #fff3e0, #ffffff);
-  color: #e65100; 
-  border-color: #ffcc02; 
-}
-
 /* Research Category */
 .category-header.research {
   background: linear-gradient(135deg, #667eea, #764ba2);
@@ -304,12 +251,6 @@
 .badge-research { 
   background-color: #ede7f6; 
   color: #4a148c; 
-}
-
-.badge-read-more.research { 
-  background: linear-gradient(135deg, #ede7f6, #ffffff);
-  color: #4a148c; 
-  border-color: #d1c4e9; 
 }
 
 /* Publication Category */
@@ -330,12 +271,6 @@
   color: #1b5e20; 
 }
 
-.badge-read-more.publication { 
-  background: linear-gradient(135deg, #e8f5e9, #ffffff);
-  color: #1b5e20; 
-  border-color: #c8e6c9; 
-}
-
 /* Student Category */
 .category-header.student {
   background: linear-gradient(135deg, #42a5f5, #1976d2);
@@ -352,12 +287,6 @@
 .badge-student { 
   background-color: #e3f2fd; 
   color: #0d47a1; 
-}
-
-.badge-read-more.student { 
-  background: linear-gradient(135deg, #e3f2fd, #ffffff);
-  color: #0d47a1; 
-  border-color: #bbdefb; 
 }
 
 /* Award Category */
@@ -378,12 +307,6 @@
   color: #880e4f; 
 }
 
-.badge-read-more.award { 
-  background: linear-gradient(135deg, #fce4ec, #ffffff);
-  color: #880e4f; 
-  border-color: #f8bbd9; 
-}
-
 /* Honor Category */
 .category-header.honor {
   background: linear-gradient(135deg, #f44336, #c62828);
@@ -402,12 +325,6 @@
   color: #b71c1c; 
 }
 
-.badge-read-more.honor { 
-  background: linear-gradient(135deg, #ffebee, #ffffff);
-  color: #b71c1c; 
-  border-color: #ffcdd2; 
-}
-
 /* Talk Category */
 .category-header.talk {
   background: linear-gradient(135deg, #9c27b0, #6a1b9a);
@@ -424,10 +341,4 @@
 .badge-talk { 
   background-color: #f3e5f5; 
   color: #6a1b9a; 
-}
-
-.badge-read-more.talk { 
-  background: linear-gradient(135deg, #f3e5f5, #ffffff);
-  color: #6a1b9a; 
-  border-color: #e1bee7; 
 }

@@ -17,9 +17,6 @@ css : "assets/css/awards.css"
         <b>Frederick National Laboratory for Cancer Research</b>
       </div>
       <img src="../assets/img/fnl-logo.png" alt="FNLCR Logo" class="badge-logo">
-      <a href="https://example.com/nci-award-details" class="badge-read-more leadership" target="_blank">
-        Read more <i class="fas fa-external-link-alt"></i>
-      </a>
     </div>
     <!-- First badge -->
     <div class="badge-item">
@@ -28,9 +25,6 @@ css : "assets/css/awards.css"
         <b>National Cancer Institute/National Institutes of Health</b>
       </div>
       <img src="../assets/img/nci_logo.png" alt="NCI Logo" class="badge-logo">
-      <a href="https://example.com/nci-award-details" class="badge-read-more leadership" target="_blank">
-        Read more <i class="fas fa-external-link-alt"></i>
-      </a>
     </div>
     <div class="badge-item">
       <span class="badge badge-leadership">Most Outstanding Interdisciplinary Project Award (2020)</span>
@@ -38,9 +32,6 @@ css : "assets/css/awards.css"
         <b>Purdue University</b>
       </div>
       <img src="../assets/img/purdue_logo.png" alt="Award Logo" class="badge-logo">
-      <a href="https://example.com/leadership-award-details" class="badge-read-more leadership" target="_blank">
-        Read more <i class="fas fa-external-link-alt"></i>
-      </a>
     </div>
     <div class="badge-item">
       <span class="badge badge-leadership">1st Place, Clarence Cottam Award (2020)</span>
@@ -48,19 +39,13 @@ css : "assets/css/awards.css"
         <b>Texas Chapter of The Wildlife Society</b>
       </div>
       <img src="https://tctws.org/wp/wp-content/uploads/2022/09/Horizontal_MULTI-e1663818339589.png" alt="Award Logo" class="badge-logo">
-      <a href="https://example.com/nci-award-details" class="badge-read-more leadership" target="_blank">
-        Read more <i class="fas fa-external-link-alt"></i>
-      </a>
     </div>
     <div class="badge-item">
       <span class="badge badge-leadership">Institute Silver Medal for Best Undergraduate Research Project (2014)</span>
       <div class="badge-description">Institute-wide honor for the best undergraduate research project<br>
-        <b>IIT Roorkee</b>
+        <b>Indian Institute of Technology Roorkee</b>
       </div>
-      <img src="../assets/img/iitr.png" alt="IIT Roorkee Logo" class="badge-logo">
-      <a href="https://example.com/leadership-award-details" class="badge-read-more leadership" target="_blank">
-        Read more <i class="fas fa-external-link-alt"></i>
-      </a>
+      <img src="../assets/img/iitr-logo.jpeg" alt="IIT Roorkee Logo" class="badge-logo">
     </div>
   </div>
 </div>
@@ -78,9 +63,6 @@ css : "assets/css/awards.css"
         <b>Texas Chapter of The Wildlife Society</b>
       </div>
       <img src="https://tctws.org/wp/wp-content/uploads/2022/09/Horizontal_MULTI-e1663818339589.png" alt="Award Logo" class="badge-logo">
-      <a href="https://example.com/leadership-award-details" class="badge-read-more publication" target="_blank">
-        Read more <i class="fas fa-external-link-alt"></i>
-      </a>
     </div>
     <div class="badge-item">
       <span class="badge badge-publication">SSE Presidents’ Award for Outstanding Dissertation Paper (2024)</span>
@@ -88,9 +70,6 @@ css : "assets/css/awards.css"
         <b>Society for the Study of Evolution (SSE)</b>
       </div>
       <img src="https://www.evolutionsociety.org/themes/SSEResponsive/images/logo.svg" alt="Award Logo" class="badge-logo">
-      <a href="https://example.com/leadership-award-details" class="badge-read-more publication" target="_blank">
-        Read more <i class="fas fa-external-link-alt"></i>
-      </a>
     </div>
     <div class="badge-item">
       <span class="badge badge-publication">Top Cited Author, 2021&ndash;22 (2023) </span>
@@ -98,9 +77,6 @@ css : "assets/css/awards.css"
         <b>John Wiley & Sons, Inc</b>
       </div>
       <img src="../assets/img/eva_logo.png" alt="Award Logo" class="badge-logo">
-      <a href="https://example.com/leadership-award-details" class="badge-read-more publication" target="_blank">
-        Read more <i class="fas fa-external-link-alt"></i>
-      </a>
     </div>
   </div>
 </div>
@@ -118,9 +94,6 @@ css : "assets/css/awards.css"
         <b>Society for the Study of Evolution</b>
       </div>
       <img src="https://www.evolutionsociety.org/themes/SSEResponsive/images/logo.svg" alt="Award Logo" class="badge-logo">
-      <a href="https://example.com/leadership-award-details" class="badge-read-more student" target="_blank">
-        Read more <i class="fas fa-external-link-alt"></i>
-      </a>
     </div>
     <!-- Second badge -->
     <div class="badge-item">
@@ -129,9 +102,6 @@ css : "assets/css/awards.css"
         <b>Purdue University</b>
       </div>
       <img src="../assets/img/purdue_logo.png" alt="Award Logo" class="badge-logo">
-      <a href="https://example.com/leadership-award-details" class="badge-read-more student" target="_blank">
-        Read more <i class="fas fa-external-link-alt"></i>
-      </a>
     </div>
     <!-- Third badge -->
     <div class="badge-item">
@@ -140,9 +110,6 @@ css : "assets/css/awards.css"
         <b>Department of Biological Sciences, Purdue University</b>
       </div>
       <img src="../assets/img/purdue_logo.png" alt="Award Logo" class="badge-logo">
-      <a href="https://example.com/leadership-award-details" class="badge-read-more student" target="_blank">
-        Read more <i class="fas fa-external-link-alt"></i>
-      </a>
     </div>
   </div>
 </div>
