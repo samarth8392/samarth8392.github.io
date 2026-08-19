@@ -114,7 +114,8 @@
   font-size: 1.25rem;
   font-weight: 600;
   border-radius: 12px;
-  white-space: nowrap;
+  white-space: normal;
+  min-width: 0;
   transition: all 0.3s ease;
   text-decoration: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -138,6 +139,7 @@
   font-size: 1.1rem;
   font-weight: 400;
   margin: 0;
+  min-width: 0;
   align-self: start;
 }
 
