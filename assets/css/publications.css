@@ -166,6 +166,10 @@
     margin-bottom: 0.75rem;
 }
 
+#pub-year-filters {
+    margin-bottom: 1.25rem;
+}
+
 .pub-filter-row:last-of-type {
     margin-bottom: 1.5rem;
 }
@@ -184,6 +188,10 @@
 
 .pub-filter-btn:hover {
     background: #e9ecef;
+}
+
+.pub-filter-btn[data-year] {
+    border-radius: 6px;
 }
 
 .pub-filter-btn[data-year].active {
