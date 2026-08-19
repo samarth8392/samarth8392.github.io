@@ -7,7 +7,7 @@ css : "assets/css/awards.css"
 
 <div class="award-category">
   <div class="category-header leadership">
-    <h3 class="category-title" data-emoji="🚀"> Scientific & Research Excellence</h3>
+    <h3 class="category-title" data-emoji="🔬"> Scientific & Research Excellence</h3>
     <p class="category-subtitle">Awards recognizing outstanding research contributions and impact in the scientific community</p>
   </div>
   <div class="category-badges leadership"> <!-- Single container for all badges in this category -->
@@ -52,7 +52,7 @@ css : "assets/css/awards.css"
 
 <div class="award-category">
   <div class="category-header publication">
-    <h3 class="category-title" data-emoji="🚀"> Publication Awards</h3>
+    <h3 class="category-title" data-emoji="📝"> Publication Awards</h3>
     <p class="category-subtitle">Recognition for high-impact scientific publications and their contribution to the field</p>
   </div>
   <div class="category-badges publication"> <!-- Single container for all badges in this category -->

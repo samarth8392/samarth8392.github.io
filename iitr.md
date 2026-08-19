@@ -12,7 +12,7 @@ I completed my undergraduate degree in Biotechnology from the Indian Institute o
 
 My research career was launched during the final years of my undergrad through hands-on work in the Chemical Biology and Drug Discovery Laboratory under <a href="https://iitr.ac.in/Departments/Biosciences%20and%20Bioengineering%20Department/People/Faculty/100504.html" target="_blank">Dr. Naveen Navani</a> and <a href="https://iitr.ac.in/Departments/Biosciences%20and%20Bioengineering%20Department/People/Faculty/100503.html" target="_blank">Dr. Ranjana Pathania</a>. Over two years, I worked on multiple interdisciplinary projects focused on bioremediation, environmental microbiology, and antibiotic resistance.
 
-The main project during my undergraduate research was the bioremediation of pesticide contaminated soil using *Pseudomonas* sp. RPT 52, a soil isolate that could degrade three chemically distinct pesticides (imidacloprid, endosulfan, and coragen). The study reported rapid degradation in minimal media, reduced toxicity of the parent compounds after breakdown, and successful degradation in soil microcosm experiments—evidence that a single bacterial strain could remediate multiple pesticide classes. We published these findings in <a href="https://doi.org/10.1016/j.jhazmat.2015.08.055" target="_blank"><i>Journal of Hazardous Materials</i></a>.
+The main project during my undergraduate research was the bioremediation of pesticide contaminated soil using *Pseudomonas* sp. RPT 52, a soil isolate that could degrade three chemically distinct pesticides (imidacloprid, endosulfan, and coragen). The study reported rapid degradation in minimal media, reduced toxicity of the parent compounds after breakdown, and successful degradation in soil microcosm experiments—evidence that a single bacterial strain could remediate multiple pesticide classes. We published these findings in <a href="https://doi.org/10.1016/j.jhazmat.2015.08.055" target="_blank"><i><b>Journal of Hazardous Materials</b></i></a>.
 
 
 <div class="image-card">
@@ -45,9 +45,3 @@ These experiences nurtured my early fascination with molecular evolution, microb
 
 Beyond academics, IITR was where I developed a deep appreciation for exploration—both scientific and personal. Proximity to the Himalayas led to unforgettable adventures in Rishikesh, white-water rafting, and long-distance motorbike trips. The energy, rigor, and creativity of that time continue to influence how I think and work today.
 
-<div class="image-card">
-  <img src="/assets/img/rishikesh.jpg" alt="Life around Roorkee and the Himalayas">
-  <div class="image-caption">
-    Rishikesh, the Himalayan foothills, and field excursions near Roorkee. (Placeholder image)
-  </div>
-</div>

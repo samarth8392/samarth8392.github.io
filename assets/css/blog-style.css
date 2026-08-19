@@ -277,7 +277,7 @@
 }
 
 .image-card.small {
-  max-width: 520px;
+  max-width: 620px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -414,8 +414,8 @@
 }
 
 .image-card.small img {
-  max-height: 200px;
-  object-fit: cover;
+  max-height: 550px;
+  object-fit: contain;
 }
 
 .image-card.medium img {
@@ -464,6 +464,15 @@
 
 .callout.info::before {
   content: '🏆';
+}
+
+.callout li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.callout li:last-child {
+  margin-bottom: 0;
 }
 
 .callout-content {

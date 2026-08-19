@@ -23,13 +23,12 @@ author: Samarth Mathur, PhD
 navbar-links:
   Summary: "summary"
   Experience:
-  - BA II @ NCI/NIH: "nci"
+  - BA III @ NCI/NIH: "nci"
   - Postdoc @ OSU: "osu"
   - GRF @ Purdue: "purdue"
   - Undergrad @ IITR: "iitr"
   Publications: "pubs"
   More:
-  - Skills: "skills"
   - Honors & Awards: "awards"
   - Timeline: "timeline"
   - Resume: "resume"

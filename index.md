@@ -18,12 +18,12 @@ css : "assets/css/landing.css"
 <!-- Stats Section - Compact Single Line -->
 <div class="stats-grid">
   <div class="stat-card scroll-animate animate-scale animate-delay-1">
-    <div class="stat-number">9+</div>
+    <div class="stat-number">10+</div>
     <div class="stat-label">Years Experience</div>
   </div>
 
   <div class="stat-card scroll-animate animate-scale animate-delay-2">
-    <div class="stat-number">20+</div>
+    <div class="stat-number">25+</div>
     <div class="stat-label">Publications</div>
   </div>
 
