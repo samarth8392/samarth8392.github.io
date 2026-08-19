@@ -23,6 +23,13 @@ subtitle: Research publications and academic contributions
         </div>
         <p class="mt-2 text-muted">Loading publications...</p>
     </div>
+    <!-- Publication Filters -->
+    <div class="pub-filter-row" id="pub-year-filters"></div>
+    <div class="pub-filter-row" id="pub-topic-filters"></div>
+    <div id="pub-no-results" class="pub-no-results" style="display:none;">
+        <i class="fas fa-filter"></i> No publications match the selected filters.
+    </div>
+
     <!-- Publications List -->
     <div id="publications-list"></div>
     <!-- Empty State -->
@@ -69,6 +76,7 @@ const myDOIs = [
 
 let publications = [];
 let isLoading = false;
+let pubFilterState = { year: 'all', topic: 'all' };
 
 async function fetchWithRetry(url, options = {}, retries = 2, timeoutMs = 8000) {
     let lastError = null;
@@ -218,9 +226,10 @@ function extractTopics(pub) {
 
 function createPublicationCard(pub) {
     const scholarSearchUrl = `https://scholar.google.com/scholar?q=${encodeURIComponent(pub.title)}`;
-    
+    const topics = pub.topics || [];
+
     return `
-        <div class="publication-card">
+        <div class="publication-card" data-year="${pub.year || ''}" data-topics="${topics.join(',')}">
             <h3 class="publication-title">${pub.title}</h3>
             
             <div class="publication-authors">
@@ -256,9 +265,84 @@ function createPublicationCard(pub) {
     `;
 }
 
+function getSortedYears() {
+    const years = [...new Set(
+        publications.map(p => p.year).filter(y => y && y !== 'n.d.' && y !== 'Year not available')
+    )];
+    return years.sort((a, b) => b - a);
+}
+
+function getSortedTopics() {
+    const counts = {};
+    publications.forEach(pub => {
+        (pub.topics || []).forEach(topic => {
+            counts[topic] = (counts[topic] || 0) + 1;
+        });
+    });
+    return Object.entries(counts).sort((a, b) => b[1] - a[1]);
+}
+
+function renderPubFilters() {
+    const yearContainer = document.getElementById('pub-year-filters');
+    const topicContainer = document.getElementById('pub-topic-filters');
+    if (!yearContainer || !topicContainer) return;
+
+    const years = getSortedYears();
+    yearContainer.innerHTML = [
+        `<button type="button" class="pub-filter-btn${pubFilterState.year === 'all' ? ' active' : ''}" data-year="all">All years</button>`,
+        ...years.map(y => `<button type="button" class="pub-filter-btn${pubFilterState.year === String(y) ? ' active' : ''}" data-year="${y}">${y}</button>`)
+    ].join('');
+
+    const topics = getSortedTopics();
+    topicContainer.innerHTML = [
+        `<button type="button" class="pub-filter-btn${pubFilterState.topic === 'all' ? ' active' : ''}" data-topic="all">All topics</button>`,
+        ...topics.map(([label, count]) => `<button type="button" class="pub-filter-btn${pubFilterState.topic === label ? ' active' : ''}" data-topic="${label}">${label} <span class="count">${count}</span></button>`)
+    ].join('');
+
+    yearContainer.querySelectorAll('.pub-filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const value = btn.dataset.year;
+            pubFilterState.year = (pubFilterState.year === value) ? 'all' : value;
+            renderPubFilters();
+            applyPubFilters();
+        });
+    });
+
+    topicContainer.querySelectorAll('.pub-filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const value = btn.dataset.topic;
+            pubFilterState.topic = (pubFilterState.topic === value) ? 'all' : value;
+            renderPubFilters();
+            applyPubFilters();
+        });
+    });
+}
+
+function applyPubFilters() {
+    const cards = document.querySelectorAll('#publications-list .publication-card');
+    let visibleCount = 0;
+    cards.forEach(card => {
+        const matchesYear = pubFilterState.year === 'all' || card.dataset.year === pubFilterState.year;
+        const cardTopics = (card.dataset.topics || '').split(',').filter(Boolean);
+        const matchesTopic = pubFilterState.topic === 'all' || cardTopics.includes(pubFilterState.topic);
+        const visible = matchesYear && matchesTopic;
+        card.style.display = visible ? '' : 'none';
+        if (visible) visibleCount++;
+    });
+
+    const noResults = document.getElementById('pub-no-results');
+    if (noResults) {
+        noResults.style.display = (cards.length > 0 && visibleCount === 0) ? 'block' : 'none';
+    }
+}
+
 function updateUI() {
     const publicationsList = document.getElementById('publications-list');
     const emptyState = document.getElementById('empty-state');
+
+    publications.forEach(pub => {
+        if (!pub.topics) pub.topics = extractTopics(pub);
+    });
 
     // Show/hide empty state and publications
     if (publications.length === 0) {
@@ -275,6 +359,13 @@ function updateUI() {
             window._altmetric_embed_init();
         }
     }
+
+    // Filter pill rows only rebuild once loading has finished, so they
+    // don't visibly reshuffle while publications are still streaming in.
+    if (!isLoading) {
+        renderPubFilters();
+    }
+    applyPubFilters();
 }
 
 async function loadPublications() {
