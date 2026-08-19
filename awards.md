@@ -32,27 +32,6 @@ css : "assets/css/awards.css"
         Read more <i class="fas fa-external-link-alt"></i>
       </a>
     </div>
-    <!-- Second badge -->
-    <div class="badge-item">
-      <span class="badge badge-leadership">SSE Presidents’ Award for Outstanding Dissertation Paper (2024)</span>
-      <div class="badge-description">Published in the journal <i>Evolution</i><br>
-        <b>Society for the Study of Evolution (SSE)</b>
-      </div>
-      <img src="https://www.evolutionsociety.org/themes/SSEResponsive/images/logo.svg" alt="Award Logo" class="badge-logo">
-      <a href="https://example.com/leadership-award-details" class="badge-read-more leadership" target="_blank">
-        Read more <i class="fas fa-external-link-alt"></i>
-      </a>
-    </div>
-    <div class="badge-item">
-      <span class="badge badge-leadership">Top Cited Author, 2021&ndash;22 (2023) </span>
-      <div class="badge-description">Top cited author for 2021-22 in journal <i>Evolutionary Applications</i><br>
-        <b>John Wiley & Sons, Inc</b>
-      </div>
-      <img src="../assets/img/eva_logo.png" alt="Award Logo" class="badge-logo">
-      <a href="https://example.com/leadership-award-details" class="badge-read-more leadership" target="_blank">
-        Read more <i class="fas fa-external-link-alt"></i>
-      </a>
-    </div>
     <div class="badge-item">
       <span class="badge badge-leadership">Most Outstanding Interdisciplinary Project Award (2020)</span>
       <div class="badge-description">Graduate School recognition for exceptional interdisciplinary research<br>
@@ -73,6 +52,16 @@ css : "assets/css/awards.css"
         Read more <i class="fas fa-external-link-alt"></i>
       </a>
     </div>
+    <div class="badge-item">
+      <span class="badge badge-leadership">Institute Silver Medal for Best Undergraduate Research Project (2014)</span>
+      <div class="badge-description">Institute-wide honor for the best undergraduate research project<br>
+        <b>IIT Roorkee</b>
+      </div>
+      <img src="../assets/img/iitr.png" alt="IIT Roorkee Logo" class="badge-logo">
+      <a href="https://example.com/leadership-award-details" class="badge-read-more leadership" target="_blank">
+        Read more <i class="fas fa-external-link-alt"></i>
+      </a>
+    </div>
   </div>
 </div>
 
@@ -89,6 +78,26 @@ css : "assets/css/awards.css"
         <b>Texas Chapter of The Wildlife Society</b>
       </div>
       <img src="https://tctws.org/wp/wp-content/uploads/2022/09/Horizontal_MULTI-e1663818339589.png" alt="Award Logo" class="badge-logo">
+      <a href="https://example.com/leadership-award-details" class="badge-read-more publication" target="_blank">
+        Read more <i class="fas fa-external-link-alt"></i>
+      </a>
+    </div>
+    <div class="badge-item">
+      <span class="badge badge-publication">SSE Presidents’ Award for Outstanding Dissertation Paper (2024)</span>
+      <div class="badge-description">Published in the journal <i>Evolution</i><br>
+        <b>Society for the Study of Evolution (SSE)</b>
+      </div>
+      <img src="https://www.evolutionsociety.org/themes/SSEResponsive/images/logo.svg" alt="Award Logo" class="badge-logo">
+      <a href="https://example.com/leadership-award-details" class="badge-read-more publication" target="_blank">
+        Read more <i class="fas fa-external-link-alt"></i>
+      </a>
+    </div>
+    <div class="badge-item">
+      <span class="badge badge-publication">Top Cited Author, 2021&ndash;22 (2023) </span>
+      <div class="badge-description">Top cited author for 2021-22 in journal <i>Evolutionary Applications</i><br>
+        <b>John Wiley & Sons, Inc</b>
+      </div>
+      <img src="../assets/img/eva_logo.png" alt="Award Logo" class="badge-logo">
       <a href="https://example.com/leadership-award-details" class="badge-read-more publication" target="_blank">
         Read more <i class="fas fa-external-link-alt"></i>
       </a>
@@ -131,17 +140,6 @@ css : "assets/css/awards.css"
         <b>Department of Biological Sciences, Purdue University</b>
       </div>
       <img src="../assets/img/purdue_logo.png" alt="Award Logo" class="badge-logo">
-      <a href="https://example.com/leadership-award-details" class="badge-read-more student" target="_blank">
-        Read more <i class="fas fa-external-link-alt"></i>
-      </a>
-    </div>
-    <!-- Fourth badge -->
-    <div class="badge-item">
-      <span class="badge badge-student">Institute Silver Medal for Best Undergraduate Research Project (2014)</span>
-      <div class="badge-description">Institute-wide honor for the best undergraduate research project<br>
-        <b>IIT Roorkee</b>
-      </div>
-      <img src="../assets/img/iitr.png" alt="IIT Roorkee Logo" class="badge-logo">
       <a href="https://example.com/leadership-award-details" class="badge-read-more student" target="_blank">
         Read more <i class="fas fa-external-link-alt"></i>
       </a>
