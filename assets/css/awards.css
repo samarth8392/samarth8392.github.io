@@ -314,12 +314,12 @@
 
 /* Publication Category */
 .category-header.publication {
-  background: linear-gradient(135deg, #00d2d3, #54a0ff);
+  background: linear-gradient(135deg, #2ed573, #1b5e20);
 }
 
 .category-badges.publication {
-  --category-border: rgba(0, 210, 211, 0.3);
-  --category-light-border: rgba(0, 210, 211, 0.15);
+  --category-border: rgba(46, 213, 115, 0.3);
+  --category-light-border: rgba(46, 213, 115, 0.15);
   --category-hover-bg: rgba(46, 213, 115, 0.03);
   --org-background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
   --org-accent-color: #1b5e20;
