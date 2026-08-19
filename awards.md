@@ -11,6 +11,16 @@ css : "assets/css/awards.css"
     <p class="category-subtitle">Awards recognizing outstanding research contributions and impact in the scientific community</p>
   </div>
   <div class="category-badges leadership"> <!-- Single container for all badges in this category -->
+    <div class="badge-item">
+      <span class="badge badge-leadership">Excellence in Collaboration Award (2026) </span>
+      <div class="badge-description"> Individual Achievement Award <br>
+        <b>Frederick National Laboratory for Cancer Research</b>
+      </div>
+      <img src="../assets/img/fnl-logo.png" alt="FNLCR Logo" class="badge-logo">
+      <a href="https://example.com/nci-award-details" class="badge-read-more leadership" target="_blank">
+        Read more <i class="fas fa-external-link-alt"></i>
+      </a>
+    </div>
     <!-- First badge -->
     <div class="badge-item">
       <span class="badge badge-leadership">2024 NCI Director's Award (2025) </span>
@@ -63,35 +73,34 @@ css : "assets/css/awards.css"
         Read more <i class="fas fa-external-link-alt"></i>
       </a>
     </div>
+    <div class="badge-item">
+      <span class="badge badge-leadership"> 1st Place, Clarence Cottam Award (2020)</span>
+      <div class="badge-description"><br>
+        <b>Texas Chapter of The Wildlife Society</b>
+      </div>
+      <img src="https://tctws.org/wp/wp-content/uploads/2022/09/Horizontal_MULTI-e1663818339589.png" alt="NCI Logo" class="badge-logo">
+      <a href="https://example.com/nci-award-details" class="badge-read-more leadership" target="_blank">
+        Read more <i class="fas fa-external-link-alt"></i>
+      </a>
+    </div>
   </div>
 </div>
 
 <!-- Example of another category -->
 <div class="award-category">
-  <div class="category-header research">
-    <h3 class="category-title" data-emoji="🚀"> Early Career & Graduate Honors</h3>
-    <p class="category-subtitle">Recognitions for academic excellence, innovation, and interdisciplinary achievement during graduate studies</p>
+  <div class="category-header publication">
+    <h3 class="category-title" data-emoji="🚀"> Publication Awards</h3>
+    <p class="category-subtitle">Recognition for high-impact scientific publications and their contribution to the field</p>
   </div>
-  <div class="category-badges research"> <!-- Single container for all badges in this category -->
+  <div class="category-badges publication"> <!-- Single container for all badges in this category -->
     <!-- First badge -->
     <div class="badge-item">
-      <span class="badge badge-research"> 1st Place, Clarence Cottam Award (2020)</span>
-      <div class="badge-description"><br>
-        <b>Texas Chapter of The Wildlife Society</b>
-      </div>
-      <img src="https://tctws.org/wp/wp-content/uploads/2022/09/Horizontal_MULTI-e1663818339589.png" alt="NCI Logo" class="badge-logo">
-      <a href="https://example.com/nci-award-details" class="badge-read-more research" target="_blank">
-        Read more <i class="fas fa-external-link-alt"></i>
-      </a>
-    </div>
-    <!-- Second badge -->
-    <div class="badge-item">
-      <span class="badge badge-research">Outstanding Scientific Publication Award</span>
+      <span class="badge badge-publication">Outstanding Scientific Publication Award</span>
       <div class="badge-description">Awarded to a high-impact publication advancing wildlife conservation & management.<br>
         <b>Texas Chapter of The Wildlife Society</b>
       </div>
       <img src="https://tctws.org/wp/wp-content/uploads/2022/09/Horizontal_MULTI-e1663818339589.png" alt="Award Logo" class="badge-logo">
-      <a href="https://example.com/leadership-award-details" class="badge-read-more leadership" target="_blank">
+      <a href="https://example.com/leadership-award-details" class="badge-read-more publication" target="_blank">
         Read more <i class="fas fa-external-link-alt"></i>
       </a>
     </div>
