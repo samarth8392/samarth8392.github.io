@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Fetch citation count from Google Scholar and update index.md
+      - name: Fetch citation count from OpenAlex and update index.md
         run: python3 scripts/update_citations.py
 
       - name: Commit and push if changed
@@ -33,5 +33,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add index.md
-          git commit -m "chore: update citation count from Google Scholar"
+          git commit -m "chore: update citation count from OpenAlex"
           git push
