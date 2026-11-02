@@ -1,0 +1,56 @@
+{
+  "citations": 802,
+  "h_index": 12,
+  "i10_index": 12,
+  "citations_by_year": [
+    {
+      "year": 2015,
+      "citations": 0
+    },
+    {
+      "year": 2016,
+      "citations": 2
+    },
+    {
+      "year": 2017,
+      "citations": 3
+    },
+    {
+      "year": 2018,
+      "citations": 3
+    },
+    {
+      "year": 2019,
+      "citations": 10
+    },
+    {
+      "year": 2020,
+      "citations": 11
+    },
+    {
+      "year": 2021,
+      "citations": 63
+    },
+    {
+      "year": 2022,
+      "citations": 85
+    },
+    {
+      "year": 2023,
+      "citations": 137
+    },
+    {
+      "year": 2024,
+      "citations": 154
+    },
+    {
+      "year": 2025,
+      "citations": 177
+    },
+    {
+      "year": 2026,
+      "citations": 156
+    }
+  ],
+  "updated": "2026-11-01"
+}

@@ -1,0 +1,2023 @@
+[
+  {
+    "doi": "10.1038/s41419-026-09312-w",
+    "title": "Ceramide stress defines a targetable metabolic vulnerability in IDH1-mutant oligodendroglioma",
+    "authors": [
+      {
+        "id": "A5074819736",
+        "name": "Helena Muley",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5068673778",
+        "name": "Tyrone Dowdy",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "",
+        "name": "Viney Kumar",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5024766026",
+        "name": "Faris Zaibaq",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5100696943",
+        "name": "Meili Zhang",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5087243296",
+        "name": "Dionne L. Davis",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5061205525",
+        "name": "Michael J. Kruhlak",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "National Institutes of Health",
+          "Frederick National Laboratory for Cancer Research",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5076270318",
+        "name": "Adrian Lita",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5157554588",
+        "name": "Hua Song",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5157484629",
+        "name": "Wei Zhang",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5113192777",
+        "name": "Zalman Wong",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5056212584",
+        "name": "Taylor A. Harmon",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5074013766",
+        "name": "Lumin Zhang",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5023535310",
+        "name": "Chen Makranz",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5049649487",
+        "name": "Aiguo Li",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5120338056",
+        "name": "George Karadimov",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5026621558",
+        "name": "Fengchao Lang",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5025477516",
+        "name": "Christel C. Herold‐Mende",
+        "institutions": [
+          "Heidelberg University"
+        ]
+      },
+      {
+        "id": "A5059419027",
+        "name": "Chunzhang Yang",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5035492692",
+        "name": "Mioara Larion",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      }
+    ],
+    "journal": "Cell Death & Disease",
+    "year": 2026,
+    "month": 10,
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "kind": "article",
+    "citations": 0,
+    "abstract": "Oligodendroglioma is genetically defined by mutations in isocitrate dehydrogenase 1 or 2 (IDH1/IDH2) and 1p/19q codeletion. These tumors exhibit a distinct metabolic state driven by the oncometabolite D-2-hydroxyglutarate, which shifts the sphingosine-1-phosphate–ceramide rheostat toward ceramide accumulation. Taking advantage of this intrinsic metabolic state, we investigated whether further elevating ceramide levels through inhibition of acid ceramidase—a key enzyme that degrades ceramide to sphingosine—could promote apoptotic cell death. Analysis of patient datasets demonstrated that acid ceramidase is expressed at higher levels in both low- and high-grade gliomas compared with normal tissue. Treatment with SABRAC, a small-molecule inhibitor of acid ceramidase, robustly reduced viability in IDH1-mutant oligodendroglioma cell lines and induced rapid, marked accumulation of multiple ceramide species with coordinated sphingolipid remodeling. Subcellular imaging using a fluorescent ceramide analogue revealed increased ceramide localization to lysosomes and mitochondria following SABRAC treatment. This was associated with cytochrome c redistribution, executioner caspase activation, and apoptotic cell death, consistent with engagement of the intrinsic mitochondrial pathway. Transcriptomic and biochemical analyses further demonstrated activation of endoplasmic reticulum stress and unfolded protein response signaling, including PERK- and IRE1α-associated programs, indicating a coordinated multi-organelle stress response to sustained ceramide elevation. These mechanistic effects translated into prolonged survival in oligodendroglioma xenograft-bearing mice. Together, these findings suggest that IDH1-mutant oligodendroglioma harbors a heightened sensitivity to ceramide stress and identify ceramide accumulation as a therapeutically actionable metabolic vulnerability.",
+    "era": "NCI",
+    "highlights": []
+  },
+  {
+    "doi": "10.1111/eva.70313",
+    "title": "Natural and Anthropogenic Drivers of Genomic Diversity in the California Towhee: Conservation Implications for Peripheral Populations",
+    "authors": [
+      {
+        "id": "A5017535718",
+        "name": "Andrew N. Black",
+        "institutions": [
+          "Purdue University West Lafayette",
+          "Western Association of Fish and Wildlife Agencies"
+        ]
+      },
+      {
+        "id": "A5042010029",
+        "name": "Jong Yoon Jeon",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5035927162",
+        "name": "Chris McCreedy",
+        "institutions": [
+          "Point Blue Conservation Science"
+        ]
+      },
+      {
+        "id": "A5070334575",
+        "name": "Safia Janjua",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5050212068",
+        "name": "Erangi J. Heenkenda",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "The Ohio State University"
+        ]
+      },
+      {
+        "id": "A5013848913",
+        "name": "Elise D. Ferree",
+        "institutions": [
+          "Pitzer College",
+          "Scripps College"
+        ]
+      },
+      {
+        "id": "A5085523610",
+        "name": "Amy L. Fesnock",
+        "institutions": [
+          "Bureau of Land Management"
+        ]
+      },
+      {
+        "id": "A5001434945",
+        "name": "Alvaro Gonzalo Hernandez",
+        "institutions": [
+          "University of Illinois Urbana-Champaign"
+        ]
+      },
+      {
+        "id": "A5056324109",
+        "name": "J. Andrew DeWoody",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      }
+    ],
+    "journal": "Evolutionary Applications",
+    "year": 2026,
+    "month": 8,
+    "volume": "19",
+    "issue": "8",
+    "pages": "e70313",
+    "publisher": "Wiley",
+    "kind": "article",
+    "citations": 0,
+    "abstract": "Demographic, geographic, and environmental factors such as effective population size, isolation, and habitat availability interact to shape contemporary levels of population genomic diversity. Such factors must be carefully evaluated and contextualized at both the intraspecific and interspecific levels when assessing the conservation status of imperiled species. Here, we studied the population genomics of a perching songbird, the California towhee ( Melozone crissalis ), by generating a high‐quality annotated reference genome assembly (N50 = 22 Mb among 627 contigs, max contig size 89.1 Mb) and conducting whole‐genome resequencing on n = 81 individual birds sampled from multiple geographic sites across much of the species' range. California towhee sampled from Inyo County and from Southern Oregon, on the periphery of their geographic range, showed reduced heterozygosity and elevated inbreeding compared (a) to other sampled California towhee populations and (b) to related Threatened songbirds. Contemporary effective population sizes ( N e ) were low for these two peripheral populations, and ancestry patterns of the federally protected Inyo population reveal the remarkably clear genomic signature of a documented, human‐induced demographic bottleneck. Elevated genomic differentiation ( F ST ) in the Oregon and Inyo populations, ecological niche modeling, and spatial patterns of gene flow all provide strong support for genetic isolation, limited connectivity, and demographic independence. Both peripheral populations show evidence indicative of local adaptation, as gauged by landscape genetic approaches. Our data highlight the tension that exists between the idealistic goal of conserving all the diversity in a gene pool (e.g., isolated peripheral populations that may contain locally adapted variants) versus the less desirable but more practical goal of focusing expensive conservation efforts on the core gene pool.",
+    "era": "OSU",
+    "highlights": []
+  },
+  {
+    "doi": "10.1126/sciadv.aea4296",
+    "title": "Expanded GEP-NET organoid culture for personalized therapy evaluation",
+    "authors": [
+      {
+        "id": "A5058662053",
+        "name": "Steven Donald Forsythe",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5114138782",
+        "name": "Srujana V. Yellapragada",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5066167510",
+        "name": "Tracey Pu",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5032270617",
+        "name": "Darryl Nousome",
+        "institutions": [
+          "National Institutes of Health",
+          "Frederick National Laboratory for Cancer Research",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "National Institutes of Health",
+          "Frederick National Laboratory for Cancer Research",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5072815288",
+        "name": "Dilara Akbulut",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5059398432",
+        "name": "Andrews Sb",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5143556972",
+        "name": "Kamala A. Kenny",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5080209137",
+        "name": "Martha Quezado",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5017573974",
+        "name": "Maggie Cam",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5027938558",
+        "name": "Jaydira Del Rivero",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5101894075",
+        "name": "Serguei V. Kozlov",
+        "institutions": [
+          "Frederick National Laboratory for Cancer Research",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5033639338",
+        "name": "Jonathan Matthew Hernandez",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5006574108",
+        "name": "Naris Nilubol",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5014881195",
+        "name": "James P. Madigan",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5050780818",
+        "name": "Samira Mercedes Sadowski",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      }
+    ],
+    "journal": "Science Advances",
+    "year": 2026,
+    "month": 7,
+    "volume": "12",
+    "issue": "30",
+    "pages": "eaea4296",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "kind": "article",
+    "citations": 1,
+    "abstract": "Gastro-entero-pancreatic neuroendocrine tumors (GEP-NETs) are a rare subset of cancers with increasing incidence. Due to their slow growth and lack of targetable mutations, the identification of effective treatments remains limited. One reason behind this stagnation is the lack of applicable, accurate study models. One solution is patient tumor organoids (PTOs) that maintain tumor characteristics and can scale for high throughput assays. In this study, PTOs were generated from 35 tumors of pancreatic, small intestinal, and gastric origin, obtained from 17 patients. Important subtypes including hormone functional and MEN1 / VHL mutant GEP-NETs are represented, with each demonstrating growth in culture while maintaining GEP-NET immunohistochemistry and genomic characteristics. Half of G2/G3 tumors (10 of 20) could be cultured past passage 6, whereas G1 tumors ( n = 15) were capable of growth until passage 4. Therapeutic targeting of the PTOs displayed both tissue-origin and grade-based response to standard of care and investigational therapies while maintaining patient tumor sensitivity and resistance. Last, a successful PTO xenograft model was developed from one PTO line. This study describes GEP-NET organoid development that demonstrates feasibility for expansion, enabling their use for translational investigations.",
+    "era": "NCI",
+    "highlights": []
+  },
+  {
+    "doi": "10.1136/jitc-2025-013726",
+    "title": "ENPP3 CAR T cells combined with CD206 modulation suppress adrenocortical carcinoma",
+    "authors": [
+      {
+        "id": "A5011762153",
+        "name": "Reona Okada",
+        "institutions": [
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5066348866",
+        "name": "Arnulfo Mendoza",
+        "institutions": [
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5032270617",
+        "name": "Darryl Nousome",
+        "institutions": [
+          "Frederick National Laboratory for Cancer Research",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "Frederick National Laboratory for Cancer Research",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5101412825",
+        "name": "Constanza Rodríguez",
+        "institutions": [
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5014668792",
+        "name": "James Maiarana",
+        "institutions": [
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5137699320",
+        "name": "Jangsuk Oh",
+        "institutions": [
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5139771000",
+        "name": "Katie Pendo",
+        "institutions": [
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5062895477",
+        "name": "Ira Phadke",
+        "institutions": [
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5075741329",
+        "name": "Haiying Qin",
+        "institutions": [
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5139787365",
+        "name": "Sitanshu S Singh",
+        "institutions": [
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5083516893",
+        "name": "Rosie Kaplan",
+        "institutions": [
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5027938558",
+        "name": "Jaydira Del Rivero",
+        "institutions": [
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5005634440",
+        "name": "Mary Frances Wedekind",
+        "institutions": [
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5067560793",
+        "name": "Elijah F. Edmondson",
+        "institutions": [
+          "Frederick National Laboratory for Cancer Research",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5111945210",
+        "name": "Markku Miettinen",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5007580753",
+        "name": "Kelli M. Wilson",
+        "institutions": [
+          "National Center for Advancing Translational Sciences"
+        ]
+      },
+      {
+        "id": "A5048354597",
+        "name": "Shinjen Lin",
+        "institutions": [
+          "National Center for Advancing Translational Sciences"
+        ]
+      },
+      {
+        "id": "A5004159026",
+        "name": "Glenn Y. Gomba",
+        "institutions": [
+          "National Center for Advancing Translational Sciences"
+        ]
+      },
+      {
+        "id": "A5039256508",
+        "name": "David O. Holland",
+        "institutions": [
+          "National Center for Advancing Translational Sciences"
+        ]
+      },
+      {
+        "id": "A5139733182",
+        "name": "Sudipto Das",
+        "institutions": [
+          "Frederick National Laboratory for Cancer Research",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5028439777",
+        "name": "Udo Rudloff",
+        "institutions": [
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5047456350",
+        "name": "Þorkell Andrésson",
+        "institutions": [
+          "Frederick National Laboratory for Cancer Research",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5139745358",
+        "name": "Ken Chih-Chien Cheng",
+        "institutions": [
+          "National Center for Advancing Translational Sciences"
+        ]
+      },
+      {
+        "id": "A5100725660",
+        "name": "Xiyuan Zhang",
+        "institutions": [
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5088087345",
+        "name": "Karlyne M. Reilly",
+        "institutions": [
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5071679104",
+        "name": "Brigitte C. Widemann",
+        "institutions": [
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5036154152",
+        "name": "Rosa Nguyen",
+        "institutions": [
+          "National Cancer Institute"
+        ]
+      }
+    ],
+    "journal": "Journal for ImmunoTherapy of Cancer",
+    "year": 2026,
+    "month": 7,
+    "volume": "14",
+    "issue": "7",
+    "pages": "e013726",
+    "publisher": "BMJ",
+    "kind": "article",
+    "citations": 1,
+    "abstract": "Background Adrenocortical carcinoma (ACC) is a rare and aggressive malignancy with poor prognosis and limited curative treatment options. While chimeric antigen receptor (CAR) T cells have shown some promise in solid tumors, ACC remains largely unexplored in this context. Here, we used patient-derived xenograft (PDX) models of ACC to identify immunotherapeutic targets and develop novel CAR T-cell strategies. Methods Target identification and tumor microenvironment (TME) profiling were conducted using publicly available bulk and single-cell RNA sequencing data from patients with ACC samples. Surface proteomic analysis and flow cytometry of PDXs were conducted to validate antigen candidates. CAR T cells were engineered and tested for cytotoxicity in vitro and in vivo and profiled using flow cytometry and cytokine analysis. Results We identified ectonucleotide pyrophosphatase/phosphodiesterase family member 3 (ENPP3) as a shared immunotherapy target in 4/7 (57%) ACC PDXs. ENPP3-targeted CAR T-cells eradicated >85% of ENPP3 + ACC cells in vitro but showed attenuated efficacy in PDX mouse models. Restrained ENPP3 CAR T-cell activity correlated with immunosuppressive features of the TME, particularly the presence of CD206 + tumor-associated macrophages (TAMs). Co-treatment with an agent modulating CD206 + TAMs restored CAR T-cell function and improved antitumor responses in ENPP3 high and ENPP3 low PDX models (difference between mean tumor weights −270.1 mg±117.4; p < 0.05). Conclusion ENPP3 is a novel target for CAR T-cell therapy in ACC. ENPP3 CAR T cells, when combined with CD206 modulation to overcome immune suppression within the TME, have therapeutic efficacy in ACC by mediating robust tumor growth suppression. This combinatorial strategy, which includes CAR T cells alongside therapies that recalibrate immunosuppressive CD206 + TAMs, may be a novel approach for improved immunotherapy of solid cancers beyond ACC.",
+    "era": "NCI",
+    "highlights": []
+  },
+  {
+    "doi": "10.64898/2026.06.09.731222",
+    "title": "SCD1 inhibition synergizes with TMZ to improve IDH1 MUT glioma survival of mice via lipotoxic stress",
+    "authors": [
+      {
+        "id": "A5100314398",
+        "name": "Laurence Zhang",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5023817429",
+        "name": "Tomohiro Yamasaki",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5039579330",
+        "name": "Viney Kumar",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5056212584",
+        "name": "Taylor A. Harmon",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5074819736",
+        "name": "Helena Muley",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5100696943",
+        "name": "Meili Zhang",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5004088858",
+        "name": "D. S. Davis",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "National Institutes of Health",
+          "Frederick National Laboratory for Cancer Research",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5042566684",
+        "name": "Ross G. Lake",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5074502648",
+        "name": "Christel Herold Mende",
+        "institutions": [
+          "Heidelberg University"
+        ]
+      },
+      {
+        "id": "A5068673778",
+        "name": "Tyrone Dowdy",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5076270318",
+        "name": "Adrian Lita",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      },
+      {
+        "id": "A5035492692",
+        "name": "Mioara Larion",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute",
+          "Center for Cancer Research"
+        ]
+      }
+    ],
+    "journal": "bioRxiv",
+    "year": 2026,
+    "month": 6,
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "publisher": "openRxiv",
+    "kind": "preprint",
+    "citations": 0,
+    "abstract": "Mutations in the isocitrate dehydrogenase enzyme (IDH1) are prevalent in low-grade gliomas, such as oligodendrogliomas. Other than surgery, radiation, and chemotherapy, few options for treatment exist. The standard of care for patients currently consists of maximal safe resection, as well as the potential use of radiation and chemotherapy, typically followed by radiographic surveillance. Although significant advances have been achieved, these have not translated into meaningful improvements in overall survival, warranting the development of novel therapies. Herein, we demonstrate that the inhibition of SCD1 in vitro leads to decreased colony formation and is more specific to IDH1 MUT glioma than the IDH1 WT cells, We further identified MF-438 as an active inhibitor of this enzyme and showed that this inhibitor is linked with iron transport and ferroptosis. MF438 depleted oleic (C18:1) and palmitoleic acid (C16:1) levels, driving saturated phosphatidylcholine (PC) accumulation and ER stress (INSIG1, SEL1L upregulation). TS603 exhibited selective polyunsaturated phosphatidylcholine reduction with downregulation of GPX4, FTH1, and KEAP1, and upregulation of NCOA4, SLC11A2, ALDH7A1, and DPP4, consistent with ferroptosis priming via ferritinophagy-driven expansion of the labile iron pool, as confirmed by FerroOrange flow cytometry. Neutral lipid metabolism genes (LPIN1, LDLR, PNPLA3, ACSL1), intracellular lipid transport genes (TMEM41B, OSBP, STARD4), and lipid droplet organization genes (SQLE, CHKA, AUP1) were coordinately upregulated in TS603 after treatment with MF-438. MF438+TMZ activated the integrated stress response (ATF3, DDIT3, IRF1, CDKN1A, GADD45B) and synergistically suppressed TS603 neurosphere growth (p=0.0326). In vivo combination between MF-438 and TMZ showed improved survival versus the TMZ-alone group, in an IDH1-mutant oligodendroglioma model. Tissue analyses showed significant reduced Ki67 expression, a marker of cellular proliferation, in the combination treatment. Collectively, these findings suggest that targeting lipid metabolism may enhance the efficacy of standard-of-care therapy in IDH1-mutant oligodendroglioma.",
+    "era": "NCI",
+    "highlights": []
+  },
+  {
+    "doi": "10.1186/s12870-025-07678-1",
+    "title": "Comparative analysis of butternut (Juglans cinerea) and Japanese walnut (Juglans ailantifolia) chloroplast genomes",
+    "authors": [
+      {
+        "id": "A5101943620",
+        "name": "Aziz Ebrahimi",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5117466038",
+        "name": "Mojtaba Zamani Faradonbeh",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5101783553",
+        "name": "Abdullah Abdullah",
+        "institutions": [
+          "Tianjin University of Traditional Chinese Medicine"
+        ]
+      },
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "The Ohio State University"
+        ]
+      },
+      {
+        "id": "A5054255613",
+        "name": "Martin Williams",
+        "institutions": [
+          "Natural Resources Canada"
+        ]
+      },
+      {
+        "id": "A5078696617",
+        "name": "Anna O. Conrad",
+        "institutions": [
+          "US Forest Service",
+          "Northern Research Station"
+        ]
+      },
+      {
+        "id": "A5074857174",
+        "name": "Douglass Frederick Jacobs",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      }
+    ],
+    "journal": "BMC Plant Biology",
+    "year": 2025,
+    "month": 12,
+    "volume": "26",
+    "issue": "1",
+    "pages": "68",
+    "publisher": "Springer Science and Business Media LLC",
+    "kind": "article",
+    "citations": 3,
+    "abstract": "Juglans cinerea L. (2n = 16), commonly known as butternut, is a diploid species native to the eastern forests of the United States and Canada. It plays a crucial ecological role as a food source for wildlife and is traditionally used as a medicine by tribal communities. Butternut populations have severely declined over 50 years due to butternut canker disease (BCD). The ability of butternut to hybridize with Japanese walnut, which exhibits resistance to BCD, complicates hybrid identification based on morphological traits alone. In this study, we assembled the chloroplast genome of butternut using next-generation sequencing, resulting in a genome size of 160,289 bp. The genome comprises 112 genes, including 78 protein-coding genes, 30 tRNA genes, and four rRNA genes, with a GC content of 36%. Comparative analysis revealed 1,156 SNPs, including 500 species-specific SNPs between 13 butternut and 6 Japanese walnut accessions. Of these, 367 SNPs were in coding regions, 32 of which exhibited unique variations causing codon and amino acid changes between the two species. We developed and validated 12 species-specific CAPS markers in matK and ycf1 genes for assessing the genetic background of Juglans species. The ycf1 gene displayed the highest variability, harboring 37 unique SNPs, many resulting in non-synonymous mutations. The newly sequenced chloroplast genome of J. cinerea and the identified SNP resources provide valuable genetic tools for characterizing butternut’s genetic diversity and distinguishing it from Japanese walnut. These findings enhance our understanding of Juglans species and contribute significantly to plant genetics and genomics by comprehensively analyzing chloroplast genomes and SNP variation, addressing a critical gap in previous studies.",
+    "era": "OSU",
+    "highlights": []
+  },
+  {
+    "doi": "10.1136/jitc-2025-SITC2025.0038",
+    "title": "38 Liquid biopsy detects treatment resistance to T cell receptor (TCR)-T cell therapy",
+    "authors": [
+      {
+        "id": "A5030536741",
+        "name": "Scott Michael Norberg",
+        "institutions": [
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5027689256",
+        "name": "Andrew L. Sinkoe",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5032270617",
+        "name": "Darryl Nousome",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5010311406",
+        "name": "Xiaolin Wu",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5080551882",
+        "name": "Stacey L. Doran",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5066468457",
+        "name": "Christian S. Hinrichs",
+        "institutions": [
+          "Rutgers Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5070669850",
+        "name": "James L. Gulley",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      }
+    ],
+    "journal": "Regular and Young Investigator Award Abstracts",
+    "year": 2025,
+    "month": 11,
+    "volume": "",
+    "issue": "",
+    "pages": "A44-A44",
+    "publisher": "BMJ Publishing Group Ltd",
+    "kind": "abstract",
+    "citations": 0,
+    "abstract": "Background T cell receptor (TCR)-T cell therapy has shown clinical activity in a variety of cancers including melanoma, synovial cell sarcoma, and human papillomavirus (HPV)-associated cancers. 1–3 Despite responses in an assortment of malignancies, damaging mutations to human leukocyte antigen (HLA) class I alleles have been identified in non-responding tumors.3 4 To date, these alterations have been identified through examination of solid tumor biopsies. Practical limitations of tumor biopsy acquisition pose a challenge to studying the frequency and timing of these resistance mechanisms.5 6 Conversely, liquid biopsy offers a minimally invasive and easily repeatable method for real-time monitoring of tumors difficult or inaccessible to biopsy.7 8 This study aimed to determine if HLA-A*02:01 damaging mutations previously identified in tumor biopsies from 2 patients treated in a phase I trial of E7 TCR-T cell therapy for HPV-associated cancers could also be detected with liquid biopsy.3 Methods Archived plasma specimens collected before and after treatment from each of the 2 patients (Patients 4 and 5) were studied. Cell-free (cf)DNA was extracted using the QIAamp Circulating Nucleic Acid kit. Whole exome sequencing (WES) was performed on the Illumina NextSeq200. Somatic damaging mutations were identified by comparing patient-matched germline sequencing to WES of cfDNA using manual curation and the mutation callers mutect, mutect2, vardict and strelka.Results Patient 4 had primary resistance to E7 TCR-T cell therapy due to a nonsense mutation at amino acid position 51 in the α1 helix of HLA-A*02:01 as determined by a tumor biopsy on day +40 ( figure 1, left).3 Liquid biopsy detected this mutation in samples collected at each timepoint: pre-treatment (day -10), early post-treatment (day +10) and progression (day +40). Patient 5 had acquired resistance following a deep partial response with elimination of over 80 tumors. A progressing tumor specimen from day +349 showed a damaging mutation at amino acid position 141 in the peptide binding region of the α2 helix of HLA-A*02:01 (figure 1, right).3 Liquid biopsy did not detect this mutation pre-treatment (day -12) and at day +150 but did detect it at day +284.Conclusions These findings highlight the potential for liquid biopsy to detect both primary and acquired resistance to TCR-T cell therapy. This method holds promise for prospectively predicting response and monitoring for the development of resistance to TCR-based therapeutics.Ethics Approval The trial was registered on clinicaltrials.gov, trial number NCT02858310. This study was approved by the NIH IRB; approval number 16C0154.References Robbins PF, Kassim SH, Tran TLN, Crystal JS, Morgan RA, Feldman SA, et al. A pilot trial using lymphocytes genetically engineered with an NY-ESO-1-reactive T-cell receptor: long-term follow-up and correlates with response. Clin Cancer Res Off J Am Assoc Cancer Res. 2015 Mar 1;21(5):1019–27.D’Angelo SP, Araujo DM, Abdul Razak AR, Agulnik M, Attia S, Blay JY, et al. Afamitresgene autoleucel for advanced synovial sarcoma and myxoid round cell liposarcoma (SPEARHEAD-1): an international, open-label, phase 2 trial. Lancet Lond Engl. 2024 Apr 13;403(10435):1460–71.Nagarsheth NB, Norberg SM, Sinkoe AL, Adhikary S, Meyer TJ, Lack JB, et al. TCR-engineered T cells targeting E7 for patients with metastatic HPV-associated epithelial cancers. Nat Med. 2021 Mar;27(3):419–25.Norberg SM, Hinrichs CS. Engineered T cell therapy for viral and non-viral epithelial cancers. Cancer Cell. 2023 Jan 9;41(1):58–69.Boeddinghaus I, Johnson SRD. Serial biopsies/fine-needle aspirates and their assessment. Methods Mol Med. 2006;120:29–41.Hirahata T, Ul Quraish R, Quraish AU, Ul Quraish S, Naz M, Razzaq MA. Liquid biopsy: a distinctive approach to the diagnosis and prognosis of cancer. Cancer Inform. 2022;21:11769351221076062.Herberts C, Annala M, Sipola J, Ng SWS, Chen XE, Nurminen A, et al. Deep whole-genome ctDNA chronology of treatment-resistant prostate cancer. Nature. 2022 Aug;608(7921):199–208.Scaini MC, Catoni C, Poggiana C, Pigozzo J, Piccin L, Leone K, et al. A multiparameter liquid biopsy approach allows to track melanoma dynamics and identify early treatment resistance. NPJ Precis Oncol. 2024 Mar 28;8(1):78.Abstract 38 Figure 1Detection of damaging mutations in HLA-A*o2:01 by liquid biopsy. Illustration depicting somatic damaging mutations in HLA-A*02:01 molecule from treatment resistant tumor for patient 4 (left) and patient 5 (right)",
+    "era": "NCI",
+    "highlights": []
+  },
+  {
+    "doi": "10.1101/2025.11.25.690472",
+    "title": "Phylogenomic and comparative genome analysis of the Juglandaceae family reveals black walnut ( Juglans nigra ) as an ancient lineage of the Rhysocaryon section",
+    "authors": [
+      {
+        "id": "A5101943620",
+        "name": "Aziz Ebrahimi",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "The Ohio State University"
+        ]
+      },
+      {
+        "id": "A5026245857",
+        "name": "Mohammad Mehdi Arab",
+        "institutions": [
+          "University of Tehran"
+        ]
+      },
+      {
+        "id": "A5064967130",
+        "name": "Nicholas R. LaBonte",
+        "institutions": [
+          "US Forest Service",
+          "United States Department of Agriculture"
+        ]
+      },
+      {
+        "id": "A5090159487",
+        "name": "Evan M. Long",
+        "institutions": [
+          "University of California, Davis"
+        ]
+      },
+      {
+        "id": "A5011144858",
+        "name": "J. Grey Monroe",
+        "institutions": [
+          "University of California, Davis"
+        ]
+      },
+      {
+        "id": "A5074857174",
+        "name": "Douglass Frederick Jacobs",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      }
+    ],
+    "journal": "bioRxiv",
+    "year": 2025,
+    "month": 11,
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "publisher": "openRxiv",
+    "kind": "preprint",
+    "citations": 2,
+    "abstract": "Accelerated climate change causes heatwaves, droughts, and severe freezes, posing threats to tree regeneration and to global biodiversity. Deeper genomic insights are crucial for breeding, conserving genetic resources, guiding management, and building resilience to these threats. Juglans , a globally distributed genus of timber and nut-producing trees, still has unresolved species relationships; comprehensive genomic data would clarify adaptation to rapid climate change and inform assisted migration strategies. We analyzed 20 Juglans species from North and South America and Asia using whole-genome data, chloroplast genome data, cold-hardiness gene families, and environmental variables related to freezing tolerance. Phylogenomic analyses indicate that black walnuts ( J. nigra , section Rhysocaryon ) may have diverged ~28.7 MYA (late Oligocene). J. nigra reveals higher nucleotide diversity with more genes than other Juglans , whereas J. hindsii clusters with Central/South American species, consistent with a more recent divergence within Rhysocaryon . As expected, Juglans species originating from mild-winter regions are distinct from those in cold-climate regions in genome-wide and cold-hardiness gene analyses, with introgression occurring mainly from temperate into tropical lineages. Juglans species from milder or warmer winters show CBF gene deletions, whereas cold-adapted species lack such gene deletions. These results support J. nigra as an ancient lineage within Rhysocaryon, consistent with subsequent colonization of Central/South America and longer evolutionary histories. Genome analyses further suggest Rhysocaryon is ancestral to Cardicaryon, Trachycaryon, and Dioscaryon. These findings illuminate the demographic history of the Juglans , particularly Rhysocaryon, and have direct implications for gene conservation, breeding, and assisted migration.",
+    "era": "OSU",
+    "highlights": []
+  },
+  {
+    "doi": "10.1093/jhered/esaf088",
+    "title": "A multifaceted approach to identify disease response genes in the endangered massasauga rattlesnake",
+    "authors": [
+      {
+        "id": "A5041676437",
+        "name": "Peri E. Bolton",
+        "institutions": [
+          "The Ohio State University"
+        ]
+      },
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "The Ohio State University"
+        ]
+      },
+      {
+        "id": "A5081289191",
+        "name": "H. Lisle Gibbs",
+        "institutions": [
+          "The Ohio State University"
+        ]
+      }
+    ],
+    "journal": "Journal of Heredity",
+    "year": 2025,
+    "month": 10,
+    "volume": "117",
+    "issue": "3",
+    "pages": "383-394",
+    "publisher": "Oxford University Press (OUP)",
+    "kind": "article",
+    "citations": 2,
+    "abstract": "Disease can impact the long-term viability of threatened species. Levels of genetic variation in disease response genes could influence the magnitude of these impacts, but identifying candidate genes in endangered species is difficult. We used a multifaceted approach to identify candidate genes involved in disease response and resistance of an endangered snake, the eastern massasauga rattlesnake (Sistrurus catenatus), possibly related to an emerging infectious disease, Snake Fungal Disease (SFD). We assessed whether genes differentially expressed in an SFD disease challenge experiment showed patterns of non-neutral evolution in outlier tests of nucleotide diversity and Tajima’s D. We evaluated these patterns in two populations of S. catenatus with varying effective population sizes, and a closely-related non-endangered species, Sistrurus tergeminus. In general, we find reduced diversity in functional sites in S. catenatus relative to the outbred sister species, but not between S. catenatus populations of different sizes. Further, genetic drift in the smaller populations likely limited the number of outlier genes detected. Finally, FST outlier tests identified a small set of protein coding genes that may be linked to local adaptation in disease response. In sum, our approach identified 218 candidate genes that were differentially expressed in response to disease that contain functional variation relevant to disease resistance or defense, pending further validation for SFD specifically. Our results also demonstrate how drift complicates the detection of functional variation in rare species with small population sizes, a process that is essential for assessing adaptive variation and load.",
+    "era": "OSU",
+    "highlights": []
+  },
+  {
+    "doi": "10.1111/mec.70014",
+    "title": "Genomic Evaluation of Assisted Gene Flow Options in an Endangered Rattlesnake",
+    "authors": [
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "The Ohio State University"
+        ]
+      },
+      {
+        "id": "A5081289191",
+        "name": "H. Lisle Gibbs",
+        "institutions": [
+          "The Ohio State University"
+        ]
+      }
+    ],
+    "journal": "Molecular Ecology",
+    "year": 2025,
+    "month": 7,
+    "volume": "34",
+    "issue": "16",
+    "pages": "e70014",
+    "publisher": "Wiley",
+    "kind": "article",
+    "citations": 5,
+    "abstract": "Assisted gene flow is used to counteract genetic erosion in small populations of endangered species, yet an evaluation of genetic compatibility of potential donor populations and recipient populations is rare. We developed new metrics for assessing the genetic impact of genetic augmentation based on genotype identity of functional variants between donor and recipient genomes and used these metrics to evaluate options for assisted gene flow in Eastern Massasauga rattlesnake ( Sistrurus catenatus ) populations in Ohio, USA. We used putatively deleterious variants and genetic variants likely under positive selection (termed ‘adaptive’ variants) as the two components of functional variation. For potential donor and recipient populations, we estimated three key aspects of genetic compatibility: (a) introduction of novel variants, (b) masking or unmasking of existing deleterious variants and (c) potential for outbreeding depression through disruption of local adaptation. The main impact of augmentation from diverse donor populations was to introduce novel deleterious variants and to a lesser extent novel adaptive variants into each recipient population. Both donor populations had a similar minor impact in terms of masking existing deleterious variants. Finally, only ~7% of adaptive variants show evidence for local adaptation, arguing that the negative effect of outbreeding depression would be small. These results draw attention to the importance of considering the potential impact of both deleterious and adaptive genetic variants in augmentation efforts and suggest that in the case of these endangered rattlesnakes, the net effect of proposed assisted gene flow may lead to an increase in absolute levels of mutation load.",
+    "era": "OSU",
+    "highlights": []
+  },
+  {
+    "doi": "10.1055/s-0045-1803100",
+    "title": "Evaluation of Targeted and Immunotherapeutic Approaches Using an Organoid Model of Sinonasal Intestinal-Type Adenocarcinoma (ITAC)",
+    "authors": [
+      {
+        "id": "A5003734881",
+        "name": "Sreenivasulu Gunti",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5058784311",
+        "name": "Riley M. Larkin",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5046126261",
+        "name": "Kenny Vu",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5032270617",
+        "name": "Darryl Nousome",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5073969657",
+        "name": "Yvette L. Robbins",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      },
+      {
+        "id": "A5075519184",
+        "name": "Nicholas R. Rowan",
+        "institutions": [
+          "Johns Hopkins Medicine"
+        ]
+      },
+      {
+        "id": "A5047365774",
+        "name": "Nyall R. London",
+        "institutions": [
+          "National Institutes of Health",
+          "National Cancer Institute"
+        ]
+      }
+    ],
+    "journal": "Journal of Neurological Surgery Part B: Skull Base",
+    "year": 2025,
+    "month": 2,
+    "volume": "86",
+    "issue": "",
+    "pages": "",
+    "publisher": "Georg Thieme Verlag KG",
+    "kind": "article",
+    "citations": 0,
+    "abstract": "Introduction: Sinonasal intestinal-type adenocarcinoma (ITAC) is rare tumors representing about 8 to 25% of sinonasal and skull base malignancies. Sinonasal ITAC is highly prevalent in European counties, strongly associated with exposure to wood dust, and typically arises in the ethmoid cavity. Sinonasal ITAC is locally aggressive and may invade nearby structures including the skull base, dura, orbit, optic nerve, and others. Standard treatment oftentimes includes surgical resection followed by adjuvant radiation and the 5-year overall survival rate is 45 to 73%. Cell lines, organoids, or xenograft models of ITAC are scarce, thus hindering functional, molecular, or mechanistic studies. We recently developed a sinonasal ITAC organoid model from a 50-year-old male patient with T1N0M0 high-grade sinonasal tumor. This organoid model has been passaged >40 times and closely resemble the histologic structure of the primary tumor and retains a similar pattern of copy number variations. We hypothesized that whole-exome sequencing and tumor immune microenvironment evaluation would reveal potential targetable and immunotherapeutic approaches that could be evaluated using a unique organoid model of sinonasal ITAC. Methods: Targetable mutations in the primary tumor and organoid model were identified through whole-exome sequencing analysis. Organoid viability experiments were conducted by measuring ATP levels following exposure to cisplatin and small molecule inhibitors targeting WEE1 kinase (AZD1775) and the receptor tyrosine kinase EGFR/ErbB2 (AZD8931). IC50 values were calculated by generating killing curves with data normalized to vehicle and baseline controls. Multiplex immunofluorescence of the patient’s primary tumor tissue was performed to assess the presence of immune cell compartments. T cell killing assays were performed by culturing tumor infiltrating lymphocytes (TIL) from the primary tumor and combining TIL with ITAC organoids at various effectors to target ratios. Apoptotic cell death was measured by flow cytometry via staining for caspase3/Sytox. Results: Whole-exome sequencing analysis identified potential targetable mutations in APC (frame shift), FGFR1, ERBB3 and JAK3 (all missense). Organoid viability experiments with targeted small molecular inhibitors AZD8931 (mean IC50 0.016 μmol/L, SEM 0.0049), AZD1775 (mean IC50 0.2349 μmol/L, SEM 0.1142) and chemotherapeutic agent cisplatin (mean IC50 3.692 μmol/L, SEM 0.7523) demonstrated that ITAC organoids are susceptible to targeting these pathways ([ Fig. 1A ]–[ D ]). Multiplex immunofluorescence of the patient’s primary tissue detected the presence of CD8+, CD4+ FOXP3 cells, and CD11b myeloid cells and PD-L1 staining was observed on both immune cells and tumor cells ([ Fig. 2A, B ]). In ITAC organoid and autologous TIL co-culture experiments TILs were able to kill the sinonasal ITAC organoid cells at increasing effector to target ratios ([ Fig. 2C ], p < 0.05). Conclusion: Collectively these data identify potential targetable pathways in sinonasal ITAC and reveal that these tumors may also be susceptible to approaches that enhance TIL. Publication History Article published online: 07 February 2025 © 2025. Thieme. All rights reserved. Georg Thieme Verlag KG Oswald-Hesse-Straße 50, 70469 Stuttgart, Germany",
+    "era": "NCI",
+    "highlights": []
+  },
+  {
+    "doi": "10.1371/journal.pcbi.1012566",
+    "title": "Detectability of runs of homozygosity is influenced by analysis parameters and population-specific demographic history",
+    "authors": [
+      {
+        "id": "A5075823569",
+        "name": "Gabriel Amorim de Albuquerque Silva",
+        "institutions": [
+          "Auburn University"
+        ]
+      },
+      {
+        "id": "A5058829061",
+        "name": "Avril M. Harder",
+        "institutions": [
+          "Auburn University"
+        ]
+      },
+      {
+        "id": "A5069388159",
+        "name": "Kenneth B. Kirksey",
+        "institutions": [
+          "Appalachian State University"
+        ]
+      },
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "The Ohio State University"
+        ]
+      },
+      {
+        "id": "A5041603593",
+        "name": "Janna R. Willoughby",
+        "institutions": [
+          "Auburn University"
+        ]
+      }
+    ],
+    "journal": "PLOS Computational Biology",
+    "year": 2024,
+    "month": 10,
+    "volume": "20",
+    "issue": "10",
+    "pages": "e1012566",
+    "publisher": "Public Library of Science (PLoS)",
+    "kind": "article",
+    "citations": 31,
+    "abstract": "Wild populations are increasingly threatened by human-mediated climate change and land use changes. As populations decline, the probability of inbreeding increases, along with the potential for negative effects on individual fitness. Detecting and characterizing runs of homozygosity (ROHs) is a popular strategy for assessing the extent of individual inbreeding present in a population and can also shed light on the genetic mechanisms contributing to inbreeding depression. Here, we analyze simulated and empirical datasets to demonstrate the downstream effects of program selection and long-term demographic history on ROH inference, leading to context-dependent biases in the results. Through a sensitivity analysis we evaluate how various parameter values impact ROH-calling results, highlighting its utility as a tool for parameter exploration. Our results indicate that ROH inferences are sensitive to factors such as sequencing depth and ROH length distribution, with bias direction and magnitude varying with demographic history and the programs used. Estimation biases are particularly pronounced at lower sequencing depths, potentially leading to either underestimation or overestimation of inbreeding. These results are particularly important for the management of endangered species, as underestimating inbreeding signals in the genome can substantially undermine conservation initiatives. We also found that small true ROHs can be incorrectly lumped together and called as longer ROHs, leading to erroneous inference of recent inbreeding. To address these challenges, we suggest using a combination of ROH detection tools and ROH length-specific inferences, along with sensitivity analysis, to generate robust and context-appropriate population inferences regarding inbreeding history. We outline these recommendations for ROH estimation at multiple levels of sequencing effort, which are typical of conservation genomics studies.",
+    "era": "OSU",
+    "highlights": []
+  },
+  {
+    "doi": "10.1073/pnas.2320040121",
+    "title": "Rapid vertebrate speciation via isolation, bottlenecks, and drift",
+    "authors": [
+      {
+        "id": "A5017535718",
+        "name": "Andrew N. Black",
+        "institutions": [
+          "Purdue University West Lafayette",
+          "Western Association of Fish and Wildlife Agencies"
+        ]
+      },
+      {
+        "id": "A5050212068",
+        "name": "Erangi J. Heenkenda",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "The Ohio State University"
+        ]
+      },
+      {
+        "id": "A5041603593",
+        "name": "Janna R. Willoughby",
+        "institutions": [
+          "Auburn University"
+        ]
+      },
+      {
+        "id": "A5044042507",
+        "name": "Brian L. Pierce",
+        "institutions": [
+          "Texas A&M University"
+        ]
+      },
+      {
+        "id": "",
+        "name": "Sarah J. Turner",
+        "institutions": [
+          "Texas A&M University"
+        ]
+      },
+      {
+        "id": "A5098729094",
+        "name": "David Rizzuto",
+        "institutions": [
+          "Texas A&M University"
+        ]
+      },
+      {
+        "id": "A5056324109",
+        "name": "J. Andrew DeWoody",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      }
+    ],
+    "journal": "Proceedings of the National Academy of Sciences",
+    "year": 2024,
+    "month": 5,
+    "volume": "121",
+    "issue": "22",
+    "pages": "e2320040121",
+    "publisher": "National Academy of Sciences",
+    "kind": "article",
+    "citations": 23,
+    "abstract": "Speciation is often driven by selective processes like those associated with viability, mate choice, or local adaptation, and “speciation genes” have been identified in many eukaryotic lineages. In contrast, neutral processes are rarely considered as the primary drivers of speciation, especially over short evolutionary timeframes. Here, we describe a rapid vertebrate speciation event driven primarily by genetic drift. The White Sands pupfish ( Cyprinodon tularosa ) is endemic to New Mexico’s Tularosa Basin where the species is currently managed as two Evolutionarily significant units (ESUs) and is of international conservation concern (Endangered). Whole-genome resequencing data from each ESU showed remarkably high and uniform levels of differentiation across the entire genome (global F ST ≈ 0.40). Despite inhabiting ecologically dissimilar springs and streams, our whole-genome analysis revealed no discrete islands of divergence indicative of strong selection, even when we focused on an array of candidate genes. Demographic modeling of the joint allele frequency spectrum indicates the two ESUs split only ~4 to 5 kya and that both ESUs have undergone major bottlenecks within the last 2.5 millennia. Our results indicate the genome-wide disparities between the two ESUs are not driven by divergent selection but by neutral drift due to small population sizes, geographic isolation, and repeated bottlenecks. While rapid speciation is often driven by natural or sexual selection, here we show that isolation and drift have led to speciation within a few thousand generations. We discuss these evolutionary insights in light of the conservation management challenges they pose.",
+    "era": "OSU",
+    "highlights": []
+  },
+  {
+    "doi": "10.1186/s12862-023-02191-1",
+    "title": "Genetic approaches reveal a healthy population and an unexpectedly recent origin for an isolated desert spring fish",
+    "authors": [
+      {
+        "id": "A5070979744",
+        "name": "Brian L. Sidlauskas",
+        "institutions": [
+          "Oregon State University"
+        ]
+      },
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "The Ohio State University"
+        ]
+      },
+      {
+        "id": "",
+        "name": "Hakan Aydoğan",
+        "institutions": [
+          "Oregon State University"
+        ]
+      },
+      {
+        "id": "A5032428160",
+        "name": "Fred R. Monzyk",
+        "institutions": [
+          "Oregon Department of Fish and Wildlife"
+        ]
+      },
+      {
+        "id": "A5017535718",
+        "name": "Andrew N. Black",
+        "institutions": [
+          "Oregon State University"
+        ]
+      }
+    ],
+    "journal": "BMC Ecology and Evolution",
+    "year": 2024,
+    "month": 1,
+    "volume": "24",
+    "issue": "1",
+    "pages": "2",
+    "publisher": "Springer Science and Business Media LLC",
+    "kind": "article",
+    "citations": 1,
+    "abstract": "Foskett Spring in Oregon’s desert harbors a historically threatened population of Western Speckled Dace ( Rhinichthys klamathensis ). Though recently delisted, the dace’s recruitment depends upon regular removal of encroaching vegetation. Previous studies assumed that Foskett Dace separated from others in the Warner Valley about 10,000 years ago, thereby framing an enigma about the population’s surprising ability to persist for so long in a tiny habitat easily overrun by plants. To investigate that persistence and the effectiveness of interventions to augment population size, we assessed genetic diversity among daces inhabiting Foskett Spring, a refuge at Dace Spring, and three nearby streams. Analysis revealed a robust effective population size (N e ) of nearly 5000 within Foskett Spring, though N e in the Dace Spring refuge is just 10% of that value. Heterozygosity is slightly lower than expected based on random mating at all five sites, indicating mild inbreeding, but not at a level of concern. These results confirm the genetic health of Foskett Dace. Unexpectedly, genetic differentiation reveals closer similarity between Foskett Dace and a newly discovered population from Nevada’s Coleman Creek than between Foskett Dace and dace elsewhere in Oregon. Demographic modeling inferred Coleman Creek as the ancestral source of Foskett Dace fewer than 1000 years ago, much more recently than previously suspected and possibly coincident with the arrival of large herbivores whose grazing may have maintained open water suitable for reproduction. These results solve the enigma of persistence by greatly shortening the duration over which Foskett Dace have inhabited their isolated spring.",
+    "era": "OSU",
+    "highlights": []
+  },
+  {
+    "doi": "10.1111/mec.17210",
+    "title": "Genetic mechanisms and biological processes underlying host response to ophidiomycosis (snake fungal disease) inferred from tissue‐specific transcriptome analyses",
+    "authors": [
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "The Ohio State University"
+        ]
+      },
+      {
+        "id": "A5008765675",
+        "name": "Ellen K. Haynes",
+        "institutions": [
+          "University of Illinois Urbana-Champaign",
+          "University of Georgia"
+        ]
+      },
+      {
+        "id": "A5082235914",
+        "name": "Matthew C. Allender",
+        "institutions": [
+          "University of Illinois Urbana-Champaign",
+          "Brookfield Zoo Chicago"
+        ]
+      },
+      {
+        "id": "A5081289191",
+        "name": "H. Lisle Gibbs",
+        "institutions": [
+          "The Ohio State University"
+        ]
+      }
+    ],
+    "journal": "Molecular Ecology",
+    "year": 2023,
+    "month": 11,
+    "volume": "33",
+    "issue": "2",
+    "pages": "e17210",
+    "publisher": "Wiley",
+    "kind": "article",
+    "citations": 7,
+    "abstract": "Emerging infectious diseases in wildlife species caused by pathogenic fungi are of growing concern, yet crucial knowledge gaps remain for diseases with potentially large impacts. For example, there is detailed knowledge about host pathology and mechanisms underlying response for chytridiomycosis in amphibians and white‐nose syndrome in bats, but such information is lacking for other more recently described fungal infections. One such disease is ophidiomycosis, caused by the fungus Ophidiomyces ophidiicola , which has been identified in many species of snakes, yet the biological mechanisms and molecular changes occurring during infection are unknown. To gain this information, we performed a controlled experimental infection in captive Prairie rattlesnakes ( Crotalus viridis ) with O. ophidiicola at two different temperatures: 20 and 26°C. We then compared liver, kidney, and skin transcriptomes to assess tissue‐specific genetic responses to O. ophidiicola infection. Given previous histopathological studies and the fact that snakes are ectotherms, we expected highest fungal activity on skin and a significant impact of temperature on host response. Although we found fungal activity to be localized on skin, most of the differential gene expression occurred in internal tissues. Infected snakes at the lower temperature had the highest host mortality whereas two‐thirds of the infected snakes at the higher temperature survived. Our results suggest that ophidiomycosis is likely a systemic disease with long‐term effects on host response. Our analysis also identified candidate protein coding genes that are potentially involved in host response, providing genetic tools for studies of host response to ophidiomycosis in natural populations.",
+    "era": "OSU",
+    "highlights": []
+  },
+  {
+    "doi": "10.1073/pnas.2303043120",
+    "title": "Functional genomic diversity is correlated with neutral genomic diversity in populations of an endangered rattlesnake",
+    "authors": [
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "The Ohio State University"
+        ]
+      },
+      {
+        "id": "A5032123352",
+        "name": "Andrew J. Mason",
+        "institutions": [
+          "The Ohio State University"
+        ]
+      },
+      {
+        "id": "A5016544798",
+        "name": "Gideon S. Bradburd",
+        "institutions": [
+          "University of Michigan",
+          "Michigan State University"
+        ]
+      },
+      {
+        "id": "A5081289191",
+        "name": "H. Lisle Gibbs",
+        "institutions": [
+          "The Ohio State University"
+        ]
+      }
+    ],
+    "journal": "Proceedings of the National Academy of Sciences",
+    "year": 2023,
+    "month": 10,
+    "volume": "120",
+    "issue": "43",
+    "pages": "e2303043120",
+    "publisher": "National Academy of Sciences",
+    "kind": "article",
+    "citations": 51,
+    "abstract": "Theory predicts that genetic erosion in small, isolated populations of endangered species can be assessed using estimates of neutral genetic variation, yet this widely used approach has recently been questioned in the genomics era. Here, we leverage a chromosome-level genome assembly of an endangered rattlesnake ( Sistrurus catenatus ) combined with whole genome resequencing data (N = 110 individuals) to evaluate the relationship between levels of genome-wide neutral and functional diversity over historical and future timescales. As predicted, we found positive correlations between genome-wide estimates of neutral genetic diversity (π) and inferred levels of adaptive variation and an estimate of inbreeding mutation load, and a negative relationship between neutral diversity and an estimate of drift mutation load. However, these correlations were half as strong for projected future levels of neutral diversity based on contemporary effective population sizes. Broadly, our results confirm that estimates of neutral genetic diversity provide an accurate measure of genetic erosion in populations of a threatened vertebrate. They also provide nuance to the neutral-functional diversity controversy by suggesting that while these correlations exist, anthropogenetic impacts may have weakened these associations in the recent past and into the future.",
+    "era": "OSU",
+    "highlights": []
+  },
+  {
+    "doi": "10.22541/au.168371288.85881657/v1",
+    "title": "Conservation genomics of California towhee (Melozone crissalis) in relation to the official list of endangered and threatened wildlife",
+    "authors": [
+      {
+        "id": "A5017535718",
+        "name": "Andrew N. Black",
+        "institutions": [
+          "Point Blue Conservation Science",
+          "Purdue University West Lafayette",
+          "Western Association of Fish and Wildlife Agencies"
+        ]
+      },
+      {
+        "id": "A5042010029",
+        "name": "Jong Yoon Jeon",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5035927162",
+        "name": "Chris McCreedy",
+        "institutions": [
+          "Point Blue Conservation Science",
+          "Western Association of Fish and Wildlife Agencies",
+          "The Ohio State University"
+        ]
+      },
+      {
+        "id": "A5070334575",
+        "name": "Safia Janjua",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5050212068",
+        "name": "Erangi J. Heenkenda",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "Claremont McKenna College",
+          "Point Blue Conservation Science",
+          "The Ohio State University"
+        ]
+      },
+      {
+        "id": "A5013848913",
+        "name": "Elise D. Ferree",
+        "institutions": [
+          "Claremont McKenna College",
+          "Bureau of Land Management",
+          "Pitzer College",
+          "Scripps College",
+          "The Ohio State University"
+        ]
+      },
+      {
+        "id": "A5085523610",
+        "name": "Amy L. Fesnock",
+        "institutions": [
+          "Claremont McKenna College",
+          "Bureau of Land Management",
+          "Pitzer College",
+          "University of Illinois Urbana-Champaign",
+          "Scripps College"
+        ]
+      },
+      {
+        "id": "A5001434945",
+        "name": "Alvaro Gonzalo Hernandez",
+        "institutions": [
+          "Bureau of Land Management",
+          "University of Illinois Urbana-Champaign"
+        ]
+      },
+      {
+        "id": "A5056324109",
+        "name": "J. Andrew DeWoody",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      }
+    ],
+    "journal": "Authorea",
+    "year": 2023,
+    "month": 5,
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "publisher": "Wiley",
+    "kind": "preprint",
+    "citations": 3,
+    "abstract": "The Inyo County population of California towhee, now recognized as Melozone crissalis, was officially listed as Threatened under the U.S. Endangered Species Act in 1987. This isolated population in the Argus Mountains was then estimated to consist of less than 175 individuals. Its major threats were habitat destruction caused by grazing, mining, water exporting, and human recreational activities but stakeholders eventually developed a recovery plan to mitigate habitat damage. Due to the demographic success of the recovery plan, the U.S. Fish and Wildlife Service (USFWS) proposed to remove the California towhee from their formal list of threatened and endangered species in 2013. Herein, we generated a high-quality reference genome assembly for a typical representative of the California towhee (N50 = 22 Mb among 627 contigs, max contig size 89.1Mb), then conducted whole genome resequencing on birds sampled from geographic sites across much of the species’ range. Our findings indicate that the California towhee gene pool is relatively deep (i.e., diverse; mean individual heterozygosity = 0.0021, range = 0.0013-0.0026) and that moderately low levels of autozygosity in isolated populations are due to a combination of historic and contemporary inbreeding. Our population, landscape, and phylogeographic analyses indicate that the shallower (less diverse) regions of the gene pool are likely due to a combination of natural geography, anthropogenic impacts, and demographic histories associated with isolated habitats. None of our findings are inconsistent with the 2013 USFWS proposal and we see no reason to protest the delisting petition based exclusively on genetic/genomic data.",
+    "era": "OSU",
+    "highlights": []
+  },
+  {
+    "doi": "10.1093/evolut/qpac061",
+    "title": "An evolutionary perspective on genetic load in small, isolated populations as informed by whole genome resequencing and forward-time simulations",
+    "authors": [
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5031060631",
+        "name": "John M. Tomeček",
+        "institutions": [
+          "Texas A&M University"
+        ]
+      },
+      {
+        "id": "A5059081116",
+        "name": "Luis A. Tarango-Arámbula",
+        "institutions": [
+          "Colegio de Postgraduados"
+        ]
+      },
+      {
+        "id": "A5002633745",
+        "name": "Robert M. Perez",
+        "institutions": [
+          "Texas Parks and Wildlife Department"
+        ]
+      },
+      {
+        "id": "A5056324109",
+        "name": "J. Andrew DeWoody",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      }
+    ],
+    "journal": "Evolution",
+    "year": 2022,
+    "month": 12,
+    "volume": "77",
+    "issue": "3",
+    "pages": "690-704",
+    "publisher": "Oxford University Press (OUP)",
+    "kind": "article",
+    "citations": 67,
+    "abstract": "Small populations are vulnerable to increased genetic load and drift that can lead to reductions in fitness and adaptive potential. By analyzing 66 individual whole genomes of Montezuma Quail (Cyrtonyx montezumae) from multiple populations, we illustrate how genetic load is dynamic over evolutionary time. We show that Montezuma Quail are evolving like a ring species, where the terminal extant populations from Arizona and Texas have been separated for ~16,500 years. The Texas populations have remained small but stable since the separation, whereas the Arizona population is much larger today but has been contracting for thousands of years. Most deleterious mutations across the genome are young and segregating privately in each population and a greater number of deleterious alleles are present in the larger population. Our data indicate that ancestral load is purged during strong bottlenecks, but the reduced efficiency of selection in small populations means that segregating deleterious mutations are more likely to rise in frequency over time. Forward-time simulations indicate that severe population declines in historically large populations is more detrimental to individual fitness, whereas long-term small populations are more at risk for reduced adaptive potential and population-level fitness. Our study highlights the intimate connections among evolutionary history, historical demography, genetic load, and evolutionary potential in wild populations.",
+    "era": "Purdue",
+    "highlights": [
+      "SSE Presidents' Award 2024",
+      "TWS Outstanding Publication Award 2025",
+      "Journal cover"
+    ]
+  },
+  {
+    "doi": "10.3390/d14070577",
+    "title": "The First Complete Chloroplast Genome Sequence and Phylogenetic Analysis of Pistachio (Pistacia vera)",
+    "authors": [
+      {
+        "id": "A5090714202",
+        "name": "Abdolkarim Zarei",
+        "institutions": [
+          "Jahrom University"
+        ]
+      },
+      {
+        "id": "A5101943620",
+        "name": "Aziz Ebrahimi",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "The Ohio State University"
+        ]
+      },
+      {
+        "id": "A5000316851",
+        "name": "Shaneka S. Lawson",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      }
+    ],
+    "journal": "Diversity",
+    "year": 2022,
+    "month": 7,
+    "volume": "14",
+    "issue": "7",
+    "pages": "577",
+    "publisher": "MDPI AG",
+    "kind": "article",
+    "citations": 12,
+    "abstract": "Pistachio is one of the most economically important nut crops worldwide. However, there are no reports describing the chloroplast genome of this important fruit tree. In this investigation, we assembled and characterized the complete pistachio chloroplast sequence. The Pistacia vera chloroplast genome was 160,598 bp in size, similar to other members of Anacardiaceae (149,011–172,199 bp) and exhibited the typical four section structure, including a large single copy region (88,174 bp), a small single copy region (19,330 bp), and a pair of inverted repeats regions (26,547 bp). The genome contains 121 genes comprised of 87 protein-coding genes, 30 tRNA genes and 4 rRNA genes. Thirteen intron-containing genes were identified in the genome wherein two genes had more than two introns. The genomic patterns of GC content resembled those for other Anacardiaceae. P. vera displayed the highest number of simple sequence repeats (SSRs) among the genera studied, which may be useful for molecular marker development and future population studies. Amino acid analysis revealed that Leucine is the most frequent (10.69%) amino acid in the chloroplast genome followed by Isoleucine (8.53%) and Serine (7.77%). Cysteine (1.30%) and Tryptophan (1.74%) were the least frequent amino acids. Phylogenetic analysis revealed P. vera is most like its taxonomically close relative P. weinmaniifolia, followed by Rhus chinensis; all placed taxonomically in the tribe Rhoeae. Members of Anacardiaceae were most closely related to Rhoeae, followed by members of Spondieae. The reports of this chloroplast genome will be useful for future conservation studies, genetic evaluation and breeding of P. vera, and more comprehensive phylogenetic analysis of the Pistacia species and its closely-related genera.",
+    "era": "OSU",
+    "highlights": []
+  },
+  {
+    "doi": "10.1111/mec.16051",
+    "title": "The long‐standing significance of genetic diversity in conservation",
+    "authors": [
+      {
+        "id": "A5056324109",
+        "name": "J. Andrew DeWoody",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5058829061",
+        "name": "Avril M. Harder",
+        "institutions": [
+          "Auburn University"
+        ]
+      },
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "The Ohio State University"
+        ]
+      },
+      {
+        "id": "A5041603593",
+        "name": "Janna R. Willoughby",
+        "institutions": [
+          "Auburn University"
+        ]
+      }
+    ],
+    "journal": "Molecular Ecology",
+    "year": 2021,
+    "month": 7,
+    "volume": "30",
+    "issue": "17",
+    "pages": "4147-4154",
+    "publisher": "Wiley",
+    "kind": "article",
+    "citations": 323,
+    "abstract": "Since allozymes were first used to assess genetic diversity in the 1960s and 1970s, biologists have attempted to characterize gene pools and conserve the diversity observed in domestic crops, livestock, zoos and (more recently) natural populations. Recently, some authors have claimed that the importance of genetic diversity in conservation biology has been greatly overstated. Here, we argue that a voluminous literature indicates otherwise. We address four main points made by detractors of genetic diversity's role in conservation by using published literature to firmly establish that genetic diversity is intimately tied to evolutionary fitness, and that the associated demographic consequences are of paramount importance to many conservation efforts. We think that responsible management in the Anthropocene should, whenever possible, include the conservation of ecosystems, communities, populations and individuals, and their underlying genetic diversity.",
+    "era": "OSU",
+    "highlights": []
+  },
+  {
+    "doi": "10.1111/eva.13216",
+    "title": "Genetic load has potential in large populations but is realized in small inbred populations",
+    "authors": [
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5056324109",
+        "name": "J. Andrew DeWoody",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      }
+    ],
+    "journal": "Evolutionary Applications",
+    "year": 2021,
+    "month": 4,
+    "volume": "14",
+    "issue": "6",
+    "pages": "1540-1557",
+    "publisher": "Wiley",
+    "kind": "article",
+    "citations": 118,
+    "abstract": "Populations with higher genetic diversity and larger effective sizes have greater evolutionary capacity (i.e., adaptive potential) to respond to ecological stressors. We are interested in how the variation captured in protein‐coding genes fluctuates relative to overall genomic diversity and whether smaller populations suffer greater costs due to their genetic load of deleterious mutations compared with larger populations. We analyzed individual whole‐genome sequences ( N = 74) from three different populations of Montezuma quail ( Cyrtonyx montezumae ), a small ground‐dwelling bird that is sustainably harvested in some portions of its range but is of conservation concern elsewhere. Our historical demographic results indicate that Montezuma quail populations in the United States exhibit low levels of genomic diversity due in large part to long‐term declines in effective population sizes over nearly a million years. The smaller and more isolated Texas population is significantly more inbred than the large Arizona and the intermediate‐sized New Mexico populations we surveyed. The Texas gene pool has a significantly smaller proportion of strongly deleterious variants segregating in the population compared with the larger Arizona gene pool. Our results demonstrate that even in small populations, highly deleterious mutations are effectively purged and/or lost due to drift. However, we find that in small populations the realized genetic load is elevated because of inbreeding coupled with a higher frequency of slightly deleterious mutations that are manifested in homozygotes. Overall, our study illustrates how population genomics can be used to proactively assess both neutral and functional aspects of contemporary genetic diversity in a conservation framework while simultaneously considering deeper demographic histories.",
+    "era": "Purdue",
+    "highlights": [
+      "Top Cited Article 2021–22"
+    ]
+  },
+  {
+    "doi": "10.1007/s10709-019-00081-3",
+    "title": "Episodic positive diversifying selection on key immune system genes in major avian lineages",
+    "authors": [
+      {
+        "id": "A5036319970",
+        "name": "Jennifer D. Antonides",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5056324109",
+        "name": "J. Andrew DeWoody",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      }
+    ],
+    "journal": "Genetica",
+    "year": 2019,
+    "month": 11,
+    "volume": "147",
+    "issue": "5-6",
+    "pages": "337-350",
+    "publisher": "Springer Science and Business Media LLC",
+    "kind": "article",
+    "citations": 22,
+    "abstract": "",
+    "era": "Purdue",
+    "highlights": []
+  },
+  {
+    "doi": "10.1007/s10592-019-01218-9",
+    "title": "Evidence of genetic erosion in a peripheral population of a North American game bird: the Montezuma quail (Cyrtonyx montezumae)",
+    "authors": [
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5031060631",
+        "name": "John M. Tomeček",
+        "institutions": [
+          "Texas A&M University"
+        ]
+      },
+      {
+        "id": "A5058649434",
+        "name": "Ashlyn C. Heniff",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5037299015",
+        "name": "Ryan S. Luna",
+        "institutions": [
+          "Sul Ross State University"
+        ]
+      },
+      {
+        "id": "A5056324109",
+        "name": "J. Andrew DeWoody",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      }
+    ],
+    "journal": "Conservation Genetics",
+    "year": 2019,
+    "month": 8,
+    "volume": "20",
+    "issue": "6",
+    "pages": "1369-1381",
+    "publisher": "Springer Science and Business Media LLC",
+    "kind": "article",
+    "citations": 19,
+    "abstract": "",
+    "era": "Purdue",
+    "highlights": []
+  },
+  {
+    "doi": "10.1186/s12862-019-1435-y",
+    "title": "Immunogenetic response of the bananaquit in the face of malarial parasites",
+    "authors": [
+      {
+        "id": "A5036319970",
+        "name": "Jennifer D. Antonides",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5026129569",
+        "name": "Mekala Sundaram",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5016728178",
+        "name": "Robert E. Ricklefs",
+        "institutions": [
+          "University of Missouri–St. Louis",
+          "University of Missouri"
+        ]
+      },
+      {
+        "id": "A5056324109",
+        "name": "J. Andrew DeWoody",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      }
+    ],
+    "journal": "BMC Evolutionary Biology",
+    "year": 2019,
+    "month": 5,
+    "volume": "19",
+    "issue": "1",
+    "pages": "107",
+    "publisher": "Springer Science and Business Media LLC",
+    "kind": "article",
+    "citations": 26,
+    "abstract": "BACKGROUND: In the arms race between hosts and parasites, genes involved in the immune response are targets for natural selection. Toll-Like Receptor (TLR) genes play a role in parasite detection as part of the innate immune system whereas Major Histocompatibility Complex (MHC) genes encode proteins that display antigens as part of the vertebrate adaptive immune system. Thus, both gene families are under selection pressure from pathogens. The bananaquit (Coereba flaveola) is a passerine bird that is a common host of avian malarial parasites (Plasmodium sp. and Haemoproteus sp.). We assessed molecular variation of TLR and MHC genes in a wild population of bananaquits and identified allelic associations with resistance/susceptibility to parasitic infection to address hypotheses of avian immune response to haemosporidian parasites. RESULTS: We found that allele frequencies are associated with infection status at the immune loci studied. A consistent general trend showed the infected groups possessed more alleles at lower frequencies, and exhibited unique alleles, compared to the uninfected group. CONCLUSIONS: Our results support the theory of natural selection favoring particular alleles for resistance while maintaining overall genetic diversity in the population, a mechanism which has been demonstrated in some systems in MHC previously but understudied in TLRs.",
+    "era": "Purdue",
+    "highlights": []
+  },
+  {
+    "doi": "10.1038/s41598-019-39793-z",
+    "title": "Microsatellite Borders and Micro-sequence Conservation in Juglans",
+    "authors": [
+      {
+        "id": "A5101943620",
+        "name": "Aziz Ebrahimi",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5000316851",
+        "name": "Shaneka S. Lawson",
+        "institutions": [
+          "US Forest Service",
+          "Northern Research Station"
+        ]
+      },
+      {
+        "id": "A5064967130",
+        "name": "Nicholas R. LaBonte",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5051022839",
+        "name": "Adam H. Lorch",
+        "institutions": [
+          "Purdue University West Lafayette"
+        ]
+      },
+      {
+        "id": "A5030277593",
+        "name": "Mark V. Coggeshall",
+        "institutions": [
+          "US Forest Service",
+          "Northern Research Station"
+        ]
+      },
+      {
+        "id": "A5022353106",
+        "name": "Keith Woeste",
+        "institutions": [
+          "US Forest Service",
+          "Northern Research Station"
+        ]
+      }
+    ],
+    "journal": "Scientific Reports",
+    "year": 2019,
+    "month": 3,
+    "volume": "9",
+    "issue": "1",
+    "pages": "3748",
+    "publisher": "Springer Science and Business Media LLC",
+    "kind": "article",
+    "citations": 18,
+    "abstract": "Walnuts ( Juglans spp .) are economically important nut and timber species with a worldwide distribution. Using the published Persian walnut genome as a reference for the assembly of short reads from six Juglans species and several interspecific hybrids, we identified simple sequence repeats in 12 Juglans nuclear and organellar genomes. The genome-wide distribution and polymorphisms of nuclear and organellar microsatellites (SSRs) for most Juglans genomes have not been previously studied. We compared the frequency of nuclear SSR motifs and their lengths across Juglans , and identified section-specific chloroplast SSR motifs. Primer pairs were designed for more than 60,000 SSR-containing sequences based on alignment against assembled scaffold sequences. Of the >60,000 loci, 39,000 were validated by e-PCR using unique primer pairs. We identified primers containing 100% sequence identity in multiple species. Across species, sequence identity in the SSR-flanking regions was generally low. Although SSRs are common and highly dispersed in the genome, their flanking sequences are conserved at about 90 to 95% identity within Juglans and within species. In a few rare cases, flanking sequences are identical across species of Juglans . This comprehensive report of nuclear and organellar SSRs in Juglans and the generation of validated SSR primers will be a useful resource for future genetic analyses, walnut breeding programs, high-level taxonomic evaluations, and genomic studies in Juglandaceae .",
+    "era": "Purdue",
+    "highlights": []
+  },
+  {
+    "doi": "10.1016/j.jhazmat.2015.08.055",
+    "title": "A study on metabolic prowess of Pseudomonas sp. RPT 52 to degrade imidacloprid, endosulfan and coragen",
+    "authors": [
+      {
+        "id": "A5017731292",
+        "name": "Manasi Gupta",
+        "institutions": [
+          "Indian Institute of Technology Roorkee",
+          "Uttarakhand Technical University"
+        ]
+      },
+      {
+        "id": "A5081121778",
+        "name": "Samarth Mathur",
+        "institutions": [
+          "Indian Institute of Technology Roorkee"
+        ]
+      },
+      {
+        "id": "A5104253405",
+        "name": "Tarun K. Sharma",
+        "institutions": [
+          "Indian Institute of Technology Roorkee"
+        ]
+      },
+      {
+        "id": "A5108253826",
+        "name": "Manish Rana",
+        "institutions": [
+          "Indian Institute of Technology Roorkee"
+        ]
+      },
+      {
+        "id": "A5078420482",
+        "name": "Ajay Krishan Gairola",
+        "institutions": [
+          "Indian Institute of Technology Roorkee"
+        ]
+      },
+      {
+        "id": "A5045659968",
+        "name": "Naveen Kumar Navani",
+        "institutions": [
+          "Indian Institute of Technology Roorkee"
+        ]
+      },
+      {
+        "id": "A5047615062",
+        "name": "Ranjana Pathania",
+        "institutions": [
+          "Indian Institute of Technology Roorkee"
+        ]
+      }
+    ],
+    "journal": "Journal of Hazardous Materials",
+    "year": 2016,
+    "month": 1,
+    "volume": "301",
+    "issue": "",
+    "pages": "250-258",
+    "publisher": "Elsevier BV",
+    "kind": "article",
+    "citations": 89,
+    "abstract": "",
+    "era": "IITR",
+    "highlights": []
+  }
+]

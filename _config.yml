@@ -52,7 +52,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-title-img: "/assets/img/logo2.png"
+title-img: "/assets/img/logo2-transparent.png"
 
 
 #####################################
@@ -172,12 +172,12 @@ footer-hover-col: "#EA615C"
 #mobile-theme-col: "#0085A1"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
-#site-css:
-#  - "/assets/css/custom-styles.css"
+site-css:
+  - "/assets/css/site-theme.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
-#site-js:
-#  - "/assets/js/custom-script.js"
+site-js:
+  - "/assets/js/site.js"
 
 #################################
 # --- Web Analytics Section --- #
@@ -308,6 +308,7 @@ exclude:
   - README.md
   - screenshot.png
   - docs/
+  - scripts/
 
 plugins:
   - jekyll-paginate

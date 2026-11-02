@@ -342,3 +342,14 @@
   background-color: #f3e5f5; 
   color: #6a1b9a; 
 }
+
+/* Linked from the timeline / homepage track: /awards#<anchor> */
+.badge-item[id] { scroll-margin-top: 110px; }
+.badge-item:target {
+  border-radius: 12px;
+  animation: award-target 2.4s ease-out;
+}
+@keyframes award-target {
+  0%, 40% { box-shadow: 0 0 0 3px var(--award, #8e44ad); }
+  100% { box-shadow: 0 0 0 3px transparent; }
+}

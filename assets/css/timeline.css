@@ -1,20 +1,75 @@
-/* Modern Professional Timeline CSS */
-/* Compatible with Beautiful Jekyll theme */
+/* Professional Timeline
+   Positions sit across the spine, awards on the left, publications on the
+   right. The spine fills as you scroll (script in timeline.html). */
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
-/* Timeline container styling */
 .timeline-wrapper {
-    min-height: 100vh;
+    --tl-navy: #1a2a6c;
+    --tl-rose: #b33a6a;
+    --tl-card: rgba(255, 255, 255, 0.88);
+    --tl-line: rgba(26, 42, 108, 0.18);
     color: #0c1b33;
     line-height: 1.6;
     overflow-x: hidden;
-    padding: 4rem 0;
-    margin: -2rem -15px 0 -15px; /* Override Beautiful Jekyll container margins */
+    padding: 1rem 0 4rem;
     font-family: "Space Grotesk", system-ui, -apple-system, sans-serif;
-    background: transparent;
 }
 
+html[data-theme="dark"] .timeline-wrapper {
+    --tl-navy: #9db8ff;
+    --tl-rose: #f08bb4;
+    --tl-card: var(--surface);
+    --tl-line: rgba(157, 184, 255, 0.2);
+    color: var(--text);
+}
+
+.timeline-wrapper * { box-sizing: border-box; }
+.timeline-wrapper a { color: inherit; }
+.timeline-wrapper a:hover { text-decoration: none; }
+
+/* ---------- Filters ---------- */
+.timeline-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.tl-filter {
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    border: 1px solid var(--tl-line);
+    background: var(--tl-card);
+    color: var(--tl-navy);
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+.tl-filter span { opacity: 0.65; font-size: 0.8rem; margin-left: 0.15rem; }
+.tl-filter:hover { transform: translateY(-1px); }
+.tl-filter.active { background: var(--tl-navy); color: #fff; border-color: var(--tl-navy); }
+html[data-theme="dark"] .tl-filter.active { color: #17151a; }
+
+.timeline-columns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto 0.5rem;
+    padding: 0 2rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--tl-navy);
+    opacity: 0.6;
+}
+.timeline-columns[hidden] { display: none; }
+
+/* ---------- Spine ---------- */
 .timeline-container {
     max-width: 1000px;
     margin: 0 auto;
@@ -22,339 +77,178 @@
     position: relative;
 }
 
-.timeline-header {
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-.timeline-title {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #1a2a6c;
-    margin-bottom: 1rem;
-    position: relative;
-}
-
-.timeline-subtitle {
-    font-size: 1.2rem;
-    opacity: 0.8;
-    font-weight: 300;
-    color: #0c1b33;
-}
-
-.timeline {
-    position: relative;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Central line with animated gradient */
-.timeline::before {
+.timeline-container::before,
+.timeline-progress {
     content: '';
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    top: 0;
     width: 3px;
-    height: 100%;
-    background: #1a2a6c;
-    z-index: 1;
+    transform: translateX(-50%);
     border-radius: 999px;
 }
+.timeline-container::before { height: 100%; background: var(--tl-line); }
+.timeline-progress {
+    height: 100%;
+    z-index: 1;
+    clip-path: inset(0 0 100% 0);
+    background: linear-gradient(180deg, var(--era-NCI), var(--era-OSU), var(--era-Purdue), var(--era-IITR));
+    box-shadow: 0 0 10px rgba(234, 97, 92, 0.35);
+}
 
+.timeline { position: relative; list-style: none; padding: 0; margin: 0; }
+.timeline [hidden] { display: none !important; }
+
+.timeline-year {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin: 2rem 0 0.75rem;
+}
+.timeline-year span {
+    display: inline-block;
+    padding: 0.2rem 0.9rem;
+    border-radius: 999px;
+    background: var(--tl-navy);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+}
+html[data-theme="dark"] .timeline-year span { color: #17151a; }
+
+/* ---------- Items ---------- */
 .timeline-item {
     position: relative;
-    margin: 3.5rem 0;
+    z-index: 2;
+    margin: 1rem 0;
     opacity: 0;
-    animation: slideInUp 0.8s ease forwards;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
+.timeline-item.in-view { opacity: 1; transform: none; }
 
-.timeline-item:nth-child(1) { animation-delay: 0.2s; }
-.timeline-item:nth-child(2) { animation-delay: 0.4s; }
-.timeline-item:nth-child(3) { animation-delay: 0.6s; }
-.timeline-item:nth-child(4) { animation-delay: 0.8s; }
-.timeline-item:nth-child(5) { animation-delay: 1.0s; }
-
-@keyframes slideInUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+.timeline-item[data-era="IITR"] { --era: var(--era-IITR); }
+.timeline-item[data-era="Purdue"] { --era: var(--era-Purdue); }
+.timeline-item[data-era="OSU"] { --era: var(--era-OSU); }
+.timeline-item[data-era="NCI"] { --era: var(--era-NCI); }
 
 .timeline-content {
     position: relative;
     width: 45%;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.85);
+    padding: 1rem 1.25rem;
+    background: var(--tl-card);
     backdrop-filter: blur(14px);
-    border-radius: 18px;
-    border: 1px solid rgba(26, 42, 108, 0.08);
-    box-shadow: 
-        0 25px 60px rgba(26, 42, 108, 0.12),
-        inset 0 1px 0 rgba(255, 255, 255, 0.6);
-    transition: all 0.35s ease;
-    cursor: pointer;
+    border-radius: 14px;
+    border: 1px solid var(--tl-line);
+    box-shadow: 0 12px 30px rgba(26, 42, 108, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+html[data-theme="dark"] .timeline-content { box-shadow: var(--shadow); }
+
+.timeline-link:hover .timeline-content,
+.timeline-link:focus-visible .timeline-content {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(26, 42, 108, 0.16);
+    border-color: var(--era);
 }
 
-.timeline-content:hover {
-    transform: translateY(-8px) scale(1.01);
-    box-shadow: 
-        0 35px 70px rgba(26, 42, 108, 0.18),
-        0 0 0 1px rgba(79, 172, 254, 0.2);
-    border-color: rgba(79, 172, 254, 0.35);
-}
+.tl-award .timeline-content { margin-right: auto; border-left: 4px solid var(--award); }
+.tl-paper .timeline-content { margin-left: auto; border-right: 4px solid var(--era); }
 
-.timeline-content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    border-radius: 18px 18px 0 0;
-    background: #1a2a6c;
-}
-
-.timeline-item:nth-child(odd) .timeline-content {
-    margin-left: 0;
-    margin-right: auto;
-}
-
-.timeline-item:nth-child(even) .timeline-content {
-    margin-left: auto;
-    margin-right: 0;
-}
-
-.timeline-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    border-radius: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-.timeline-link:hover .timeline-content {
-    transform: translateY(-8px) scale(1.01);
-    box-shadow:
-      0 35px 70px rgba(26, 42, 108, 0.18),
-      0 0 0 1px rgba(79, 172, 254, 0.2);
-    border-color: rgba(79, 172, 254, 0.35);
-  }
-  
-
-/* Timeline dots with pulse animation */
 .timeline-dot {
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 3;
+    width: 12px;
+    height: 12px;
     transform: translate(-50%, -50%);
-    width: 18px;
-    height: 18px;
-    background: #1a2a6c;
     border-radius: 50%;
-    border: 2px solid #f4f8ff;
-    z-index: 10;
-    animation: pulse 2s infinite;
+    background: var(--page-col);
+    border: 2px solid var(--tl-navy);
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
-
-@keyframes pulse {
-    0%, 100% {
-        box-shadow: 0 0 0 0 #FF7F7F;
-    }
-    50% {
-        box-shadow: 0 0 0 15px #FFD1DC;
-    }
+.timeline-item.passed .timeline-dot {
+    background: var(--era);
+    border-color: var(--era);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--era) 25%, transparent);
 }
+.tl-award.passed .timeline-dot { background: var(--award); border-color: var(--award); }
 
-/* Content styling */
-.job-title {
-    font-size: 1.4rem;
+.tl-kicker {
+    font-size: 0.72rem;
     font-weight: 600;
-    color: #1a2a6c;
-    margin-bottom: 0.5rem;
-    text-decoration: none;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--era);
+    margin-bottom: 0.2rem;
+}
+.tl-award .tl-kicker { color: var(--award); }
+.tl-title { font-weight: 600; font-size: 0.98rem; line-height: 1.35; color: var(--tl-navy); }
+.tl-sub { font-size: 0.85rem; opacity: 0.8; margin-top: 0.2rem; }
+.tl-highlight {
     display: inline-block;
-    transition: color 0.3s ease;
+    margin: 0.4rem 0.3rem 0 0;
+    padding: 0.05rem 0.5rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    background: color-mix(in srgb, var(--award) 14%, transparent);
+    color: var(--award);
 }
 
-/* Class-based color split */
-.job-title,
-.company-full {
-    color: #b33a6a;
+/* Positions: era banners centred on the spine */
+.tl-position { margin: 1.75rem 0; }
+.tl-position .timeline-content {
+    width: 62%;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    border-top: 5px solid var(--era);
 }
+.tl-position .timeline-dot { top: -8px; width: 16px; height: 16px; }
 
-.company-name,
-.company-full-name,
-.timeline-date {
-    color: #1a2a6c;
-}
-
-.company-name {
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-}
-
-.company-full {
-    font-size: 1.15rem;
-    margin-bottom: 1rem;
-}
-
-.company-full-name {
-    font-size: 0.95rem;
-    margin-bottom: 1rem;
-}
-
+.job-title { font-size: 1.35rem; font-weight: 600; color: var(--tl-rose); margin-bottom: 0.25rem; }
+.company-full { font-size: 1.1rem; color: var(--tl-rose); margin-bottom: 0.5rem; }
+.company-full-name { font-size: 0.95rem; color: var(--tl-navy); }
 .timeline-date {
     display: inline-block;
-    padding: 0.5rem 1rem;
-    background: linear-gradient(135deg, #eef5ff 0%, #cde2ff 100%);
+    margin-top: 0.5rem;
+    padding: 0.35rem 0.9rem;
     border-radius: 999px;
     font-size: 0.85rem;
     font-weight: 500;
-    border: 1px solid rgba(26, 42, 108, 0.15);
-    margin-top: 1rem;
+    color: var(--tl-navy);
+    background: linear-gradient(135deg, #eef5ff 0%, #cde2ff 100%);
+    border: 1px solid var(--tl-line);
+}
+html[data-theme="dark"] .timeline-date { background: var(--surface-3); }
+
+@media (prefers-reduced-motion: reduce) {
+    .timeline-item { opacity: 1; transform: none; transition: none; }
 }
 
-/* Arrow pointers */
-.timeline-content::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    width: 0;
-    height: 0;
-    border: 15px solid transparent;
-    transform: translateY(-50%);
-}
-
-.timeline-item:nth-child(odd) .timeline-content::after {
-    right: -30px;
-    border-left-color: rgba(255, 255, 255, 0.7);
-}
-
-.timeline-item:nth-child(even) .timeline-content::after {
-    left: -30px;
-    border-right-color: rgba(255, 255, 255, 0.7);
-}
-
-/* Floating particles animation */
-/* .particle {
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    background: rgba(79, 172, 254, 0.6);
-    border-radius: 50%;
-    animation: float 6s ease-in-out infinite;
-    pointer-events: none;
-}
-
-.particle:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
-.particle:nth-child(2) { top: 60%; left: 85%; animation-delay: 1s; }
-.particle:nth-child(3) { top: 80%; left: 15%; animation-delay: 2s; }
-.particle:nth-child(4) { top: 30%; left: 90%; animation-delay: 3s; } */
-
-@keyframes float {
-    0%, 100% { transform: translateY(0px) scale(1); opacity: 0.7; }
-    50% { transform: translateY(-20px) scale(1.2); opacity: 1; }
-}
-
-/* Mobile responsiveness */
+/* ---------- Mobile: single column on a left spine ---------- */
 @media (max-width: 768px) {
-    .timeline-wrapper {
-        padding: 2rem 0;
-        margin: -2rem -15px 0 -15px;
+    .timeline-container { padding: 0 0.5rem 0 0; }
+    .timeline-container::before,
+    .timeline-progress { left: 14px; }
+    .timeline-columns { display: none; }
+
+    .timeline-year { text-align: left; }
+    .timeline-dot { left: 14px; }
+
+    .timeline-content,
+    .tl-position .timeline-content {
+        width: calc(100% - 38px);
+        margin: 0 0 0 38px !important;
+        padding: 0.9rem 1rem;
+        text-align: left;
     }
+    .tl-paper .timeline-content { border-right: 1px solid var(--tl-line); border-left: 4px solid var(--era); }
+    .tl-position .timeline-dot { top: 50%; }
 
-    .timeline-container {
-        padding: 0 1rem;
-    }
-
-    .timeline-title {
-        font-size: 2rem;
-    }
-
-    .timeline-subtitle {
-        font-size: 1rem;
-    }
-
-    .timeline::before {
-        left: 30px;
-    }
-
-    .timeline-content {
-        width: calc(100% - 80px);
-        margin-left: 60px !important;
-        margin-right: 0 !important;
-        padding: 1.5rem;
-    }
-
-    .timeline-content::after {
-        left: -30px !important;
-        right: auto !important;
-        border-right-color: rgba(255, 255, 255, 0.7) !important;
-        border-left-color: transparent !important;
-    }
-
-    .timeline-dot {
-        left: 30px;
-        transform: translateY(-50%);
-    }
-
-    .job-title {
-        font-size: 1.2rem;
-    }
-
-    .job-title {
-        font-size: 1rem;
-    }
-
-    .company-full-name {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .timeline-title {
-        font-size: 1.8rem;
-    }
-
-    .timeline-content {
-        width: calc(100% - 70px);
-        margin-left: 50px !important;
-        padding: 1.2rem;
-    }
-
-    .timeline-dot {
-        left: 25px;
-        width: 16px;
-        height: 16px;
-    }
-
-    .job-title {
-        font-size: 1.1rem;
-    }
-}
-
-/* Beautiful Jekyll theme compatibility */
-.timeline-wrapper .container {
-    max-width: none;
-    padding: 0;
-}
-
-/* Override any conflicting Beautiful Jekyll styles */
-.timeline-wrapper * {
-    box-sizing: border-box;
-}
-
-.timeline-wrapper a {
-    color: inherit;
-}
-
-.timeline-wrapper a:hover {
-    text-decoration: none;
+    .job-title { font-size: 1.1rem; }
+    .company-full { font-size: 1rem; }
 }

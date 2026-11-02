@@ -15,23 +15,43 @@ css : "assets/css/landing.css"
   </div>
 </div>
 
-<!-- Stats Section - Compact Single Line -->
+<!-- Stats: numbers come from _data/*.json, refreshed by .github/workflows/update-citations.yml -->
 <div class="stats-grid">
   <div class="stat-card scroll-animate animate-scale animate-delay-1">
-    <div class="stat-number">10+</div>
+    <div class="stat-number" data-count-to="10" data-count-suffix="+">10+</div>
     <div class="stat-label">Years Experience</div>
   </div>
 
   <div class="stat-card scroll-animate animate-scale animate-delay-2">
-    <div class="stat-number">25+</div>
+    <div class="stat-number" data-count-to="{{ site.data.publications.size }}">{{ site.data.publications.size }}</div>
     <div class="stat-label">Publications</div>
   </div>
 
   <div class="stat-card scroll-animate animate-scale animate-delay-3">
-    <!-- CITATION_COUNT_START -->
-    <div class="stat-number">860+</div>
-    <!-- CITATION_COUNT_END -->
+    <div class="stat-number" data-count-to="{{ site.data.metrics.citations }}" data-count-suffix="+">{{ site.data.metrics.citations }}+</div>
     <div class="stat-label">Citations</div>
+  </div>
+
+  <div class="stat-card scroll-animate animate-scale animate-delay-4">
+    <div class="stat-number" data-count-to="{{ site.data.metrics.h_index }}">{{ site.data.metrics.h_index }}</div>
+    <div class="stat-label">h-index</div>
+  </div>
+</div>
+
+<!-- Genome-browser view of my career (assets/js/genome-hero.js) -->
+<div class="genome-browser scroll-animate animate-fade-up">
+  <div class="genome-toolbar">
+    <span class="genome-locus" id="genome-locus">career:{{ site.time | date: "%b %Y" }}</span>
+    <span class="genome-counts" id="genome-counts"></span>
+  </div>
+  <div class="genome-track" id="genome-track"></div>
+  <div class="genome-legend">
+    <span><i style="background: var(--era-IITR)"></i>IIT Roorkee</span>
+    <span><i style="background: var(--era-Purdue)"></i>Purdue</span>
+    <span><i style="background: var(--era-OSU)"></i>Ohio State</span>
+    <span><i style="background: var(--era-NCI)"></i>NCI / NIH</span>
+    <span><i class="legend-award" style="background: var(--award)"></i>Award</span>
+    <span class="genome-hint">Hover to inspect · click to open</span>
   </div>
 </div>
 
@@ -69,3 +89,12 @@ document.addEventListener('DOMContentLoaded', function() {
   animatedElements.forEach(el => observer.observe(el));
 });
 </script>
+
+<script>
+window.CAREER = {
+  positions: {{ site.data.career.positions | jsonify }},
+  awards: {{ site.data.career.awards | jsonify }},
+  papers: [{% for p in site.data.publications %}{"doi": {{ p.doi | jsonify }}, "title": {{ p.title | jsonify }}, "journal": {{ p.journal | jsonify }}, "year": {{ p.year | jsonify }}, "month": {{ p.month | jsonify }}, "era": {{ p.era | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}]
+};
+</script>
+<script src="{{ '/assets/js/genome-hero.js' | relative_url }}"></script>

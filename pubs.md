@@ -2,40 +2,72 @@
 layout: page
 title: Publications
 subtitle: Research publications and academic contributions
+ext-js:
+  - "https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"
+js:
+  - "/assets/js/publications.js"
 ---
 
 <!-- Include custom CSS -->
 <link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}">
 
 <div class="publications-container">
-    <!-- Header Stats -->
     <div class="text-center mb-4">
-        <p class="text-muted">
         <a href="https://scholar.google.com/citations?user=kL0KaxQAAAAJ&hl=en" target="_blank" class="scholar-badge">🎓 My Google Scholar Profile</a>
-        <br>
-        <br>
-        </p>
-    </div>
-    <!-- Loading State -->
-    <div id="loading" class="text-center" style="display: none;">
-        <div class="spinner-border text-primary" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-        <p class="mt-2 text-muted">Loading publications...</p>
-    </div>
-    <!-- Publication Filters -->
-    <div class="pub-filter-row" id="pub-year-filters"></div>
-    <div class="pub-filter-row" id="pub-topic-filters"></div>
-    <div id="pub-no-results" class="pub-no-results" style="display:none;">
-        <i class="fas fa-filter"></i> No publications match the selected filters.
     </div>
 
-    <!-- Publications List -->
-    <div id="publications-list"></div>
-    <!-- Empty State -->
-    <div id="empty-state" class="text-center">
-        <div style="font-size: 4rem; color: #6c757d;"></div>
-        <p class="text-muted">Loading your research publications...</p>
+    <!-- Impact dashboard: data from _data/metrics.json + _data/publications.json -->
+    <section class="pub-dashboard" aria-label="Citation and impact dashboard">
+        <div class="pub-stats" id="pub-stats"></div>
+        <div class="pub-charts">
+            <figure class="pub-chart-card">
+                <figcaption>
+                    <span id="pub-bars-title">Citations per year</span>
+                    <span class="pub-toggle" role="group" aria-label="Chart metric">
+                        <button type="button" class="active" data-metric="citations">Citations</button>
+                        <button type="button" data-metric="papers">Papers</button>
+                    </span>
+                </figcaption>
+                <div class="pub-chart" id="pub-bars"></div>
+            </figure>
+            <figure class="pub-chart-card">
+                <figcaption><span>Research topics</span><span class="pub-chart-hint">click to filter</span></figcaption>
+                <div class="pub-donut-wrap">
+                    <div class="pub-chart" id="pub-donut"></div>
+                    <ul class="pub-donut-legend" id="pub-donut-legend"></ul>
+                </div>
+            </figure>
+        </div>
+        <p class="pub-data-note">
+            Citation data from <a href="https://openalex.org/authors/A5081121778" target="_blank" rel="noopener">OpenAlex</a>
+            and <a href="https://www.crossref.org/" target="_blank" rel="noopener">Crossref</a>{% if site.data.metrics.updated %}, updated {{ site.data.metrics.updated | date: "%B %-d, %Y" }}{% endif %}.
+        </p>
+    </section>
+
+    <!-- Tabs -->
+    <div class="pub-tabs" role="tablist">
+        <button type="button" role="tab" class="pub-tab active" id="tab-papers" aria-controls="panel-papers" aria-selected="true">📚 Papers</button>
+        <button type="button" role="tab" class="pub-tab" id="tab-network" aria-controls="panel-network" aria-selected="false">🕸️ Collaboration network</button>
+    </div>
+
+    <div role="tabpanel" id="panel-papers" aria-labelledby="tab-papers">
+        <!-- Publication Filters -->
+        <div class="pub-filter-row" id="pub-year-filters"></div>
+        <div class="pub-filter-row" id="pub-topic-filters"></div>
+        <div class="pub-active-coauthor" id="pub-active-coauthor" hidden></div>
+        <div id="pub-no-results" class="pub-no-results" style="display:none;">
+            <i class="fas fa-filter"></i> No publications match the selected filters.
+        </div>
+        <div id="publications-list"></div>
+    </div>
+
+    <div role="tabpanel" id="panel-network" aria-labelledby="tab-network" hidden>
+        <p class="pub-network-intro">
+            Everyone I have published with. Node size shows how many papers we share, and colour shows where I was at the time.
+            Hover to see shared papers, drag to rearrange, pinch or use +/− to zoom, and click a person to list our papers together.
+        </p>
+        <div class="pub-network-legend" id="pub-network-legend"></div>
+        <div class="pub-network" id="pub-network"></div>
     </div>
 </div>
 
@@ -43,369 +75,12 @@ subtitle: Research publications and academic contributions
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 
 <script>
-// Add your DOIs here
-const myDOIs = [
-    '10.1126/sciadv.aea4296', // Expanded GEP-NET organoid culture ...
-    '10.1136/jitc-2025-013726', // ENPP3 CAR T cells combined with CD206 ...
-    '10.1111/mec.70014', // Genomic Evaluation of Assisted Gene Flow Options in an ...
-    '10.21203/rs.3.rs-9077389/v1', // Acid Ceramidase Inhibition Disrupts Ceramide Homeostasis ...
-    '10.64898/2026.06.09.731222', // SCD1 inhibition synergizes with TMZ to improve ...
-    '10.1136/jitc-2025-SITC2025.0038', // 38 Liquid biopsy detects treatment resistance ...
-    '10.1093/jhered/esaf088', // A multifaceted approach to identify disease response ...
-    '10.1055/s-0045-1803100', // Evaluation of Targeted and Immunotherapeutic Approaches ...
-    '10.1101/2025.11.25.690472', // Phylogenomic and comparative genome analysis of the Juglandaceae ...
-    '10.1111/mec.16051', // The long‐standing significance of genetic diversity in ...
-    '10.1111/eva.13216', // Genetic load has potential in large populations but is ...
-    '10.1016/j.jhazmat.2015.08.055', // A study on metabolic prowess of Pseudomonas sp. RPT 52 ...
-    '10.1093/evolut/qpac061', // An evolutionary perspective on genetic load in small, isolated ...
-    '10.1073/pnas.2303043120', // Functional genomic diversity is correlated with neutral ...
-    '10.1007/s10592-019-01218-9', // Evidence of genetic erosion in a peripheral population ...
-    '10.1186/s12862-019-1435-y', // Immunogenetic response of the bananaquit in the face ...
-    '10.1038/s41598-019-39793-z', // Microsatellite Borders and Micro-sequence Conservation ...
-    '10.3390/d14070577', // The First Complete Chloroplast Genome Sequence and ...
-    '10.1073/pnas.2320040121', // Rapid vertebrate speciation via isolation, bottlenecks, and ...
-    '10.1371/journal.pcbi.1012566', // Detectability of runs of homozygosity is influenced by analysis ...
-    '10.1007/s10709-019-00081-3', // Episodic positive diversifying selection on key immune system ...
-    '10.1186/s12862-023-02191-1', // Genetic approaches reveal a healthy population and an ...
-    '10.1111/mec.17210', // Genetic mechanisms and biological processes underlying ...
-    '10.1186/s12870-025-07678-1', // Comparative analysis of butternut (Juglans cinerea) and Japanese ...
-    '10.22541/au.168371288.85881657/v1', // Conservation genomics of California towhee (Melozone ...
-    
-
-];
-
-let publications = [];
-let isLoading = false;
-let pubFilterState = { year: 'all', topic: 'all' };
-
-async function fetchWithRetry(url, options = {}, retries = 2, timeoutMs = 8000) {
-    let lastError = null;
-
-    for (let attempt = 0; attempt <= retries; attempt++) {
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
-
-        try {
-            const response = await fetch(url, {
-                ...options,
-                signal: controller.signal
-            });
-
-            clearTimeout(timeoutId);
-
-            if (response.ok) {
-                return response;
-            }
-
-            if (response.status === 404) {
-                return null;
-            }
-
-            if (response.status === 429 || response.status >= 500) {
-                lastError = new Error(`Crossref temporary error (${response.status})`);
-            } else {
-                return null;
-            }
-        } catch (error) {
-            clearTimeout(timeoutId);
-            lastError = error;
-        }
-
-        if (attempt < retries) {
-            const backoffMs = 500 * Math.pow(2, attempt);
-            await new Promise(resolve => setTimeout(resolve, backoffMs));
-        }
-    }
-
-    throw lastError || new Error('Request failed');
-}
-
-async function fetchPublication(doi) {
-    const doiUrl = `https://doi.org/${doi}`;
-
-    try {
-        const encodedDoi = encodeURIComponent(doi);
-        const response = await fetchWithRetry(`https://api.crossref.org/works/${encodedDoi}`);
-
-        // DOI not found or non-retriable response: show a graceful fallback card
-        if (!response) {
-            return {
-                title: 'Publication metadata unavailable',
-                authors: [],
-                journal: 'Unknown journal',
-                year: 'n.d.',
-                volume: '',
-                issue: '',
-                pages: '',
-                publisher: '',
-                doi: doi,
-                url: doiUrl,
-                type: 'journal-article',
-                originalDoi: doi,
-                citationCount: null
-            };
-        }
-
-        const data = await response.json();
-        const work = data.message;
-
-        return {
-            title: work.title?.[0] || 'Title not available',
-            authors: work.author?.map(author => 
-                `${author.given || ''} ${author.family || ''}`.trim()
-            ) || [],
-            journal: work['container-title']?.[0] || 'Journal not available',
-            year: work.published?.['date-parts']?.[0]?.[0] || 'Year not available',
-            volume: work.volume || '',
-            issue: work.issue || '',
-            pages: work.page || '',
-            publisher: work.publisher || '',
-            doi: work.DOI || doi,
-            url: work.URL || doiUrl,
-            type: work.type || 'journal-article',
-            originalDoi: doi,
-            citationCount: work['is-referenced-by-count'] ?? null
-        };
-    } catch (error) {
-        console.warn(`Crossref fetch failed for DOI ${doi}:`, error);
-        return {
-            title: 'Publication metadata unavailable',
-            authors: [],
-            journal: 'Unknown journal',
-            year: 'n.d.',
-            volume: '',
-            issue: '',
-            pages: '',
-            publisher: '',
-            doi: doi,
-            url: doiUrl,
-            type: 'journal-article',
-            originalDoi: doi,
-            citationCount: null
-        };
-    }
-}
-
-function formatAuthors(authors, highlightName = 'Singh, N') {
-    if (authors.length === 0) return 'Authors not available';
-    
-    const formattedAuthors = authors.map(author => {
-        // Customize this logic to match your name variations
-        if (author.includes('Singh') && author.includes('N')) {
-            return `<strong>${author}</strong>`;
-        }
-        return author;
-    });
-    
-    if (formattedAuthors.length === 1) return formattedAuthors[0];
-    if (formattedAuthors.length === 2) return `${formattedAuthors[0]} and ${formattedAuthors[1]}`;
-    if (formattedAuthors.length <= 5) {
-        return `${formattedAuthors.slice(0, -1).join(', ')}, and ${formattedAuthors[formattedAuthors.length - 1]}`;
-    }
-    return `${formattedAuthors.slice(0, 3).join(', ')}, et al.`;
-}
-
-const TOPIC_KEYWORDS = {
-    'Cancer & Oncology': ['cancer', 'tumor', 'tumour', 'oncolog', 'carcinoma', 'organoid', 'car t', 'chimeric antigen', 'immunotherap', 'liquid biopsy', 'ceramide', 'glioma', 'sarcoma', 'leukemia', 'biomarker'],
-    'Population Genetics': ['population genetic', 'genetic diversity', 'genetic load', 'gene flow', 'heterozygosity', 'runs of homozygosity', 'inbreeding', 'genetic erosion', 'effective population size'],
-    'Conservation Genomics': ['conservation', 'endanger', 'threatened species', 'assisted gene flow', 'wildlife', 'reintroduc'],
-    'Evolutionary Biology': ['evolution', 'speciation', 'adaptive', 'selection', 'diversifying selection'],
-    'Immunogenetics': ['immune', 'immunogenetic', 'mhc', 'major histocompatibility', 'disease response', 'pathogen'],
-    'Genomics & Bioinformatics': ['genome', 'genomic', 'sequenc', 'microsatellite', 'chloroplast', 'assembly', 'comparative genome'],
-    'Plant Science': ['juglandaceae', 'walnut', 'butternut', 'plant'],
-    'Microbiology': ['pseudomonas', 'bacteri', 'microbial', 'bioremediation', 'metabolic'],
+// Prebuilt by scripts/update_publications.py. To add a paper, add its DOI to
+// _data/pub_list.yml; until the Action runs, publications.js fetches any DOI
+// missing here live from Crossref.
+window.PUB_DATA = {
+    list: {{ site.data.pub_list | jsonify }},
+    publications: {{ site.data.publications | jsonify }},
+    metrics: {{ site.data.metrics | jsonify }}
 };
-
-function extractTopics(pub) {
-    const text = `${pub.title || ''} ${pub.journal || ''}`.toLowerCase();
-    const topics = Object.keys(TOPIC_KEYWORDS).filter(topic =>
-        TOPIC_KEYWORDS[topic].some(keyword => text.includes(keyword))
-    );
-    return topics.length > 0 ? topics : ['General Biology'];
-}
-
-function createPublicationCard(pub) {
-    const scholarSearchUrl = `https://scholar.google.com/scholar?q=${encodeURIComponent(pub.title)}`;
-    const topics = pub.topics || [];
-
-    return `
-        <div class="publication-card" data-year="${pub.year || ''}" data-topics="${topics.join(',')}">
-            <h3 class="publication-title">${pub.title}</h3>
-            
-            <div class="publication-authors">
-                ${formatAuthors(pub.authors)}
-            </div>
-            
-            <div class="publication-details">
-                <span class="journal-name">${pub.journal}</span> (${pub.year})${pub.volume ? `, ${pub.volume}` : ''}${pub.issue ? `(${pub.issue})` : ''}${pub.pages ? `, ${pub.pages}` : ''}
-            </div>
-            
-            <div class="publication-footer">
-                <div>
-                    <a href="https://doi.org/${pub.doi}" target="_blank" class="doi-link">
-                        🔗 https://doi.org/${pub.doi}
-                    </a>
-                </div>
-                
-                <div class="metrics-section">
-                    <span class="metrics-label">📊 Metrics:</span>
-                    ${pub.citationCount !== null ? 
-                        `<span class="citation-badge"> ${pub.citationCount} citations</span>` : 
-                        '<span class="citation-loading"> N/A</span>'
-                    }
-                    <a href="${scholarSearchUrl}" target="_blank" class="scholar-badge">
-                        🎓 Google Scholar
-                    </a>
-                    <div class="altmetric-embed" data-badge-type="donut" data-doi="${pub.doi}" data-badge-popover="right" data-badge-details="right"></div>
-                </div>
-            </div>
-            
-            ${pub.publisher ? `<div class="publisher-info">Published by ${pub.publisher}</div>` : ''}
-        </div>
-    `;
-}
-
-function getSortedYears() {
-    const years = [...new Set(
-        publications.map(p => p.year).filter(y => y && y !== 'n.d.' && y !== 'Year not available')
-    )];
-    return years.sort((a, b) => b - a);
-}
-
-function getSortedTopics() {
-    const counts = {};
-    publications.forEach(pub => {
-        (pub.topics || []).forEach(topic => {
-            counts[topic] = (counts[topic] || 0) + 1;
-        });
-    });
-    return Object.entries(counts).sort((a, b) => b[1] - a[1]);
-}
-
-function renderPubFilters() {
-    const yearContainer = document.getElementById('pub-year-filters');
-    const topicContainer = document.getElementById('pub-topic-filters');
-    if (!yearContainer || !topicContainer) return;
-
-    const years = getSortedYears();
-    yearContainer.innerHTML = [
-        `<button type="button" class="pub-filter-btn${pubFilterState.year === 'all' ? ' active' : ''}" data-year="all">All years</button>`,
-        ...years.map(y => `<button type="button" class="pub-filter-btn${pubFilterState.year === String(y) ? ' active' : ''}" data-year="${y}">${y}</button>`)
-    ].join('');
-
-    const topics = getSortedTopics();
-    topicContainer.innerHTML = [
-        `<button type="button" class="pub-filter-btn${pubFilterState.topic === 'all' ? ' active' : ''}" data-topic="all">All topics</button>`,
-        ...topics.map(([label, count]) => `<button type="button" class="pub-filter-btn${pubFilterState.topic === label ? ' active' : ''}" data-topic="${label}">${label} <span class="count">${count}</span></button>`)
-    ].join('');
-
-    yearContainer.querySelectorAll('.pub-filter-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const value = btn.dataset.year;
-            pubFilterState.year = (pubFilterState.year === value) ? 'all' : value;
-            renderPubFilters();
-            applyPubFilters();
-        });
-    });
-
-    topicContainer.querySelectorAll('.pub-filter-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const value = btn.dataset.topic;
-            pubFilterState.topic = (pubFilterState.topic === value) ? 'all' : value;
-            renderPubFilters();
-            applyPubFilters();
-        });
-    });
-}
-
-function applyPubFilters() {
-    const cards = document.querySelectorAll('#publications-list .publication-card');
-    let visibleCount = 0;
-    cards.forEach(card => {
-        const matchesYear = pubFilterState.year === 'all' || card.dataset.year === pubFilterState.year;
-        const cardTopics = (card.dataset.topics || '').split(',').filter(Boolean);
-        const matchesTopic = pubFilterState.topic === 'all' || cardTopics.includes(pubFilterState.topic);
-        const visible = matchesYear && matchesTopic;
-        card.style.display = visible ? '' : 'none';
-        if (visible) visibleCount++;
-    });
-
-    const noResults = document.getElementById('pub-no-results');
-    if (noResults) {
-        noResults.style.display = (cards.length > 0 && visibleCount === 0) ? 'block' : 'none';
-    }
-}
-
-function updateUI() {
-    const publicationsList = document.getElementById('publications-list');
-    const emptyState = document.getElementById('empty-state');
-
-    publications.forEach(pub => {
-        if (!pub.topics) pub.topics = extractTopics(pub);
-    });
-
-    // Show/hide empty state and publications
-    if (publications.length === 0) {
-        emptyState.style.display = 'block';
-        publicationsList.innerHTML = '';
-    } else {
-        emptyState.style.display = 'none';
-        publicationsList.innerHTML = publications
-            .map(pub => createPublicationCard(pub))
-            .join('');
-        
-        // Reinitialize Altmetric badges
-        if (window._altmetric_embed_init) {
-            window._altmetric_embed_init();
-        }
-    }
-
-    // Filter pill rows only rebuild once loading has finished, so they
-    // don't visibly reshuffle while publications are still streaming in.
-    if (!isLoading) {
-        renderPubFilters();
-    }
-    applyPubFilters();
-}
-
-async function loadPublications() {
-    if (isLoading) return;
-    
-    isLoading = true;
-    const loadingDiv = document.getElementById('loading');
-    
-    loadingDiv.style.display = 'block';
-    
-    publications = [];
-
-    for (const doi of myDOIs) {
-        const publication = await fetchPublication(doi);
-        publications.push(publication);
-        
-        // Update UI after each publication loads to show progressive total
-        updateUI();
-    }
-
-    // Sort publications by year (newest first)
-    publications.sort((a, b) => {
-        const yearA = parseInt(a.year) || 0;
-        const yearB = parseInt(b.year) || 0;
-        return yearB - yearA;
-    });
-
-    loadingDiv.style.display = 'none';
-    isLoading = false;
-    
-    updateUI();
-}
-
-// Initialize
-document.addEventListener('DOMContentLoaded', function() {
-    updateUI();
-    
-    // Auto-load publications
-    if (myDOIs.length > 0) {
-        loadPublications();
-    }
-});
 </script>

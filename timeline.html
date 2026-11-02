@@ -4,63 +4,161 @@ title: "Professional Timeline"
 css: "assets/css/timeline.css"
 ---
 
+{% comment %}
+  Positions and awards come from _data/career.yml, papers from
+  _data/publications.json. Each item gets a sortable key
+  "YYYY-MM-priority|type|index" so the three lists merge newest-first.
+{% endcomment %}
+{%- assign keys = "" | split: "" -%}
+{%- for p in site.data.career.positions -%}
+  {%- assign key = p.start | append: "-3|position|" | append: forloop.index0 -%}
+  {%- assign keys = keys | push: key -%}
+{%- endfor -%}
+{%- for a in site.data.career.awards -%}
+  {%- assign key = a.year | append: "-06-2|award|" | append: forloop.index0 -%}
+  {%- assign keys = keys | push: key -%}
+{%- endfor -%}
+{%- for p in site.data.publications -%}
+  {%- if p.year -%}
+    {%- assign month = p.month | default: 6 -%}
+    {%- capture mm -%}{%- if month < 10 -%}0{%- endif -%}{{ month }}{%- endcapture -%}
+    {%- assign key = p.year | append: "-" | append: mm | append: "-1|paper|" | append: forloop.index0 -%}
+    {%- assign keys = keys | push: key -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign keys = keys | sort | reverse -%}
+
 <div class="timeline-wrapper">
-    <!-- Floating particles -->
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
+  <div class="timeline-filters" role="group" aria-label="Filter timeline">
+    <button type="button" class="tl-filter active" data-filter="all">All</button>
+    <button type="button" class="tl-filter" data-filter="position"><i class="fas fa-briefcase"></i> Positions <span>{{ site.data.career.positions.size }}</span></button>
+    <button type="button" class="tl-filter" data-filter="award"><i class="fas fa-trophy"></i> Awards <span>{{ site.data.career.awards.size }}</span></button>
+    <button type="button" class="tl-filter" data-filter="paper"><i class="fas fa-file-alt"></i> Publications <span>{{ site.data.publications.size }}</span></button>
+  </div>
+  <div class="timeline-columns" aria-hidden="true">
+    <span>Honors &amp; Awards</span><span>Publications</span>
+  </div>
 
-    <div class="timeline-container">
-        <ul class="timeline">
+  <div class="timeline-container">
+    <div class="timeline-progress" aria-hidden="true"></div>
+    <ul class="timeline">
+      {%- assign current_year = "" -%}
+      {%- for k in keys -%}
+        {%- assign parts = k | split: "|" -%}
+        {%- assign year = parts[0] | slice: 0, 4 -%}
+        {%- assign type = parts[1] -%}
+        {%- assign i = parts[2] | plus: 0 -%}
 
-            <li class="timeline-item">
-                <a href="../nci" class="timeline-link">
-                  <div class="timeline-content">
-                    <div class="job-title">Bioinformatics Analyst</div>
-                    <div class="company-full-name">Frederick National Lab for Cancer Research</div>
-                    <div class="company-full">National Cancer Institute</div>
-                    <div class="timeline-date">March 2023 - Present</div>
-                  </div>
-                </a>
-                <div class="timeline-dot"></div>
-              </li>
+        {%- if year != current_year -%}
+          {%- assign current_year = year %}
+      <li class="timeline-year" data-year="{{ year }}"><span>{{ year }}</span></li>
+        {%- endif -%}
 
-            <li class="timeline-item">
-                <a href="../osu" class="timeline-link">
-                <div class="timeline-content">
-                    <div class="job-title">Postdoctoral Research Scholar</div>
-                    <div class="company-full-name">Evolution, Ecology, & Organismal Biology</div>
-                    <div class="company-full">The Ohio State University</div>
-                    <div class="timeline-date">January 2021 - February 2023 </div>
-                </div>
-                </a>
-                <div class="timeline-dot"></div>
-            </li>
-
-            <li class="timeline-item">
-                <a href="../purdue" class="timeline-link">
-                <div class="timeline-content">
-                    <div class="job-title">Graduate Research Fellow</div>
-                    <div class="company-full-name">Biological Sciences</div>
-                    <div class="company-full">Purdue University</div>
-                    <div class="timeline-date">August 2015 - December 2020 </div>
-                </div>
-                </a>
-                <div class="timeline-dot"></div>
-            </li>
-
-            <li class="timeline-item">
-                <a href="../iitr" class="timeline-link">
-                <div class="timeline-content">
-                    <div class="job-title">Undergraduate Research Assistant</div>
-                    <div class="company-full-name">Biotechnology</div>
-                    <div class="company-full">Indian Institute of Technology, Roorkee</div>
-                    <div class="timeline-date">June 2013 - June 2015 </div>
-                </div>
-                </a>
-                <div class="timeline-dot"></div>
-            </li>
-        </ul>
-    </div>
+        {%- if type == "position" -%}
+          {%- assign p = site.data.career.positions[i] %}
+      <li class="timeline-item tl-position" data-type="position" data-year="{{ year }}" data-era="{{ p.era }}">
+        <div class="timeline-dot"></div>
+        <a href="{{ p.url | relative_url }}" class="timeline-link">
+          <div class="timeline-content">
+            <div class="job-title">{{ p.title }}</div>
+            <div class="company-full-name">{{ p.detail }}</div>
+            <div class="company-full">{{ p.org }}</div>
+            <div class="timeline-date">{{ p.start | append: "-01" | date: "%B %Y" }} – {% if p.end %}{{ p.end | append: "-01" | date: "%B %Y" }}{% else %}Present{% endif %}</div>
+          </div>
+        </a>
+      </li>
+        {%- elsif type == "award" -%}
+          {%- assign a = site.data.career.awards[i] %}
+      <li class="timeline-item tl-award" data-type="award" data-year="{{ year }}" data-era="{{ a.era }}">
+        <div class="timeline-dot"></div>
+        <a href="{{ '/awards' | relative_url }}#{{ a.anchor }}" class="timeline-link">
+          <div class="timeline-content">
+            <div class="tl-kicker"><i class="fas fa-trophy"></i> Award · {{ a.year }}</div>
+            <div class="tl-title">{{ a.title }}</div>
+            <div class="tl-sub">{{ a.org }}</div>
+          </div>
+        </a>
+      </li>
+        {%- else -%}
+          {%- assign p = site.data.publications[i] %}
+      <li class="timeline-item tl-paper" data-type="paper" data-year="{{ year }}" data-era="{{ p.era }}">
+        <div class="timeline-dot"></div>
+        <a href="https://doi.org/{{ p.doi }}" class="timeline-link" target="_blank" rel="noopener">
+          <div class="timeline-content">
+            <div class="tl-kicker"><i class="fas fa-file-alt"></i> {% if p.kind == "preprint" %}Preprint{% elsif p.kind == "abstract" %}Abstract{% else %}Paper{% endif %} · {{ p.year }}{% if p.citations > 0 %} · {{ p.citations }} citations{% endif %}</div>
+            <div class="tl-title">{{ p.title }}</div>
+            <div class="tl-sub"><em>{{ p.journal }}</em></div>
+            {%- for h in p.highlights %}
+            <span class="tl-highlight">★ {{ h }}</span>
+            {%- endfor %}
+          </div>
+        </a>
+      </li>
+        {%- endif -%}
+      {%- endfor %}
+    </ul>
+  </div>
 </div>
+
+<script>
+(function () {
+  const container = document.querySelector('.timeline-container');
+  const progress = document.querySelector('.timeline-progress');
+  const items = Array.from(document.querySelectorAll('.timeline-item'));
+  const years = Array.from(document.querySelectorAll('.timeline-year'));
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Fade items in as they enter the viewport
+  if ('IntersectionObserver' in window && !reduceMotion) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -10% 0px' });
+    items.forEach((item) => observer.observe(item));
+  } else {
+    items.forEach((item) => item.classList.add('in-view'));
+  }
+
+  // Fill the spine down to the middle of the viewport and light up passed dots
+  let ticking = false;
+  function updateProgress() {
+    ticking = false;
+    const box = container.getBoundingClientRect();
+    const mark = window.innerHeight * 0.6;
+    const filled = Math.max(0, Math.min(box.height, mark - box.top));
+    progress.style.clipPath = `inset(0 0 ${box.height - filled}px 0)`;
+    items.forEach((item) => {
+      if (item.offsetParent === null) return;
+      const dot = item.querySelector('.timeline-dot').getBoundingClientRect();
+      item.classList.toggle('passed', dot.top + dot.height / 2 < mark);
+    });
+  }
+  window.addEventListener('scroll', () => {
+    if (!ticking) { ticking = true; requestAnimationFrame(updateProgress); }
+  }, { passive: true });
+  window.addEventListener('resize', updateProgress);
+  updateProgress();
+
+  // Type filters; year markers hide when nothing in that year is visible
+  document.querySelectorAll('.tl-filter').forEach((button) => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.filter;
+      document.querySelectorAll('.tl-filter').forEach((b) => b.classList.toggle('active', b === button));
+      items.forEach((item) => {
+        const show = filter === 'all' || item.dataset.type === filter;
+        item.hidden = !show;
+        if (show) item.classList.add('in-view');
+      });
+      years.forEach((year) => {
+        year.hidden = !items.some((item) => !item.hidden && item.dataset.year === year.dataset.year);
+      });
+      document.querySelector('.timeline-columns').hidden = filter === 'position';
+      updateProgress();
+    });
+  });
+})();
+</script>

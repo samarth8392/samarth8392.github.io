@@ -1,0 +1,170 @@
+/* =========================================================
+   Site theme tokens + dark mode
+   Light values mirror _config.yml; dark mode is switched by
+   html[data-theme="dark"], set in _includes/head.html before
+   first paint and toggled from the navbar (assets/js/site.js).
+   ========================================================= */
+
+:root {
+  --surface: #ffffff;
+  --surface-2: #FEF8F7;
+  --surface-3: #f6eeec;
+  --border: #f0d9d2;
+  --border-strong: #fad1c5;
+  --text: #030303;
+  --muted: #5f5a5a;
+  --accent: #EA615C;
+  --accent-2: #004aad;
+  --gold: #b7860b;
+  --gold-bg: #fff6dc;
+  --award: #8e44ad;
+  --shadow: 0 6px 22px rgba(234, 97, 92, 0.12);
+  --heading-gradient: linear-gradient(135deg, #030303, #004aad);
+
+  /* Career eras: shared by the hero track, timeline and co-author network */
+  --era-IITR: #2a9d8f;
+  --era-Purdue: #c9940a;
+  --era-OSU: #bb0000;
+  --era-NCI: #004aad;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+
+  --page-col: #17151a;
+  --text-col: #ece6e4;
+  --link-col: #8db7ff;
+  --hover-col: #ff8f8a;
+  --navbar-col: #231d22;
+  --navbar-text-col: #ece6e4;
+  --navbar-border-col: #3a3038;
+  --footer-col: #231d22;
+  --footer-text-col: #c9c1bf;
+  --footer-link-col: #8db7ff;
+  --footer-hover-col: #ff8f8a;
+
+  --surface: #211e25;
+  --surface-2: #26222b;
+  --surface-3: #2e2933;
+  --border: #3a3440;
+  --border-strong: #4a3f47;
+  --text: #ece6e4;
+  --muted: #a9a1a6;
+  --accent: #ff7a74;
+  --accent-2: #8db7ff;
+  --gold: #e8bb4a;
+  --gold-bg: rgba(232, 187, 74, 0.12);
+  --award: #c39bf0;
+  --shadow: 0 6px 22px rgba(0, 0, 0, 0.35);
+  --heading-gradient: linear-gradient(135deg, #ffffff, #8db7ff);
+
+  --era-IITR: #4fc7b8;
+  --era-Purdue: #e6b83c;
+  --era-OSU: #f0605f;
+  --era-NCI: #6f9ef0;
+}
+
+/* ---------- Theme toggle button (navbar) ---------- */
+.theme-toggle {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+}
+.theme-icon {
+  width: 18px;
+  height: 18px;
+  vertical-align: -3px;
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+.theme-icon.icon-moon { stroke: none; }
+.theme-toggle .icon-sun { display: none; }
+html[data-theme="dark"] .theme-toggle .icon-sun { display: inline-block; }
+html[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
+@media (prefers-reduced-motion: no-preference) {
+  html.theme-transition,
+  html.theme-transition * {
+    transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease !important;
+  }
+}
+
+/* ---------- Dark overrides for existing (hardcoded-colour) components ---------- */
+html[data-theme="dark"] body { background-color: var(--page-col); color: var(--text-col); }
+
+html[data-theme="dark"] .navbar-custom .dropdown-menu,
+html[data-theme="dark"] .navbar-custom .navbar-collapse.show .dropdown-menu {
+  background: var(--surface-2);
+  border-color: var(--border);
+}
+html[data-theme="dark"] .navbar-custom .dropdown-item { color: var(--text-col); }
+html[data-theme="dark"] .navbar-custom .dropdown-item:hover { background: var(--surface-3); color: var(--hover-col); }
+html[data-theme="dark"] .navbar-light .navbar-toggler-icon { filter: invert(1); }
+
+html[data-theme="dark"] .intro-header .page-heading h1,
+html[data-theme="dark"] .intro-header .page-heading .page-subheading,
+html[data-theme="dark"] h1, html[data-theme="dark"] h2, html[data-theme="dark"] h3,
+html[data-theme="dark"] h4, html[data-theme="dark"] h5 { color: var(--text-col); }
+html[data-theme="dark"] .text-muted { color: var(--muted) !important; }
+html[data-theme="dark"] hr { border-color: var(--border); }
+html[data-theme="dark"] #beautifuljekyll-search-overlay { background: rgba(23, 21, 26, 0.96); }
+
+/* Landing page */
+html[data-theme="dark"] .hero-title { background-image: var(--heading-gradient); }
+html[data-theme="dark"] .hero-description { color: var(--text-col); }
+html[data-theme="dark"] .hero-welcome-banner {
+  background: var(--surface-2);
+  border-color: var(--border);
+  color: var(--accent-2);
+}
+html[data-theme="dark"] .stat-card { background: var(--surface-2); border-color: var(--border); box-shadow: var(--shadow); }
+html[data-theme="dark"] .stat-number { background-image: linear-gradient(135deg, #ff8f8a, #8db7ff); }
+
+/* Awards */
+html[data-theme="dark"] .category-badges,
+html[data-theme="dark"] .badge-item { background: var(--surface); }
+html[data-theme="dark"] .badge-description { color: var(--muted); }
+html[data-theme="dark"] .badge-description em { color: var(--muted); border-color: var(--border); }
+html[data-theme="dark"] .badge-logo { background: rgba(255, 255, 255, 0.92); }
+html[data-theme="dark"] .badge { filter: brightness(0.92); }
+
+/* Experience pages, callouts, galleries */
+html[data-theme="dark"] .callout,
+html[data-theme="dark"] .callout::before { background: var(--surface-2); border-color: var(--border-strong); }
+html[data-theme="dark"] .callout.info { border-color: var(--accent-2); }
+html[data-theme="dark"] .callout.warning { border-color: var(--accent); }
+html[data-theme="dark"] .image-card,
+html[data-theme="dark"] .inline-image {
+  background: var(--surface-2);
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow);
+}
+html[data-theme="dark"] .image-caption {
+  color: var(--muted);
+  background: var(--surface-3);
+  border-left-color: var(--accent);
+}
+html[data-theme="dark"] .conference-item,
+html[data-theme="dark"] .event-item { background: var(--surface); }
+html[data-theme="dark"] .conference-title,
+html[data-theme="dark"] .event-title,
+html[data-theme="dark"] .detail-label,
+html[data-theme="dark"] .conference-details strong { color: var(--text-col); }
+html[data-theme="dark"] .conference-subtitle,
+html[data-theme="dark"] .conference-details,
+html[data-theme="dark"] .detail-content { color: var(--muted); }
+html[data-theme="dark"] .square-logo,
+html[data-theme="dark"] .square-logo-small { background-color: #f1eeee; }
+
+/* Blog */
+html[data-theme="dark"] .blog-header,
+html[data-theme="dark"] .post-card { background: var(--surface-2); color: var(--text-col); border-color: var(--border); }
+html[data-theme="dark"] .blog-header p,
+html[data-theme="dark"] .stat-label { color: var(--text-col); }
+
+/* Resume viewer: PDFs stay light, so give them a frame */
+html[data-theme="dark"] .pdf-container { background: var(--surface); }

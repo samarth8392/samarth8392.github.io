@@ -1,0 +1,97 @@
+# Career milestones used by the homepage genome track and the /timeline page.
+# Publications are added to both automatically from _data/publications.json.
+#
+# era must be one of IITR, Purdue, OSU, NCI (sets the colour).
+# Dates are YYYY-MM; leave `end` empty for a current position.
+# Award `anchor` is the id of that award's card on /awards.
+
+positions:
+  - title: Bioinformatics Analyst
+    org: National Cancer Institute
+    detail: Frederick National Lab for Cancer Research
+    short: NCI / NIH
+    start: 2023-03
+    end:
+    era: NCI
+    url: /nci
+  - title: Postdoctoral Research Scholar
+    org: The Ohio State University
+    detail: Evolution, Ecology, & Organismal Biology
+    short: Ohio State
+    start: 2021-01
+    end: 2023-02
+    era: OSU
+    url: /osu
+  - title: Graduate Research Fellow
+    org: Purdue University
+    detail: Biological Sciences
+    short: Purdue PhD
+    start: 2015-08
+    end: 2020-12
+    era: Purdue
+    url: /purdue
+  - title: Undergraduate Research Assistant
+    org: Indian Institute of Technology, Roorkee
+    detail: Biotechnology
+    short: IIT Roorkee
+    start: 2013-06
+    end: 2015-06
+    era: IITR
+    url: /iitr
+
+awards:
+  - title: Excellence in Collaboration Achievement Award
+    anchor: excellence-in-collaboration
+    org: Frederick National Laboratory for Cancer Research
+    year: 2026
+    era: NCI
+  - title: NCI Director's Award for Translational Science
+    anchor: nci-directors-award
+    org: National Cancer Institute / NIH
+    year: 2025
+    era: NCI
+  - title: Outstanding Scientific Publication Award
+    anchor: tws-publication-award
+    org: Texas Chapter of The Wildlife Society
+    year: 2025
+    era: NCI
+  - title: SSE Presidents' Award for Outstanding Dissertation Paper
+    anchor: sse-presidents-award
+    org: Society for the Study of Evolution
+    year: 2024
+    era: NCI
+  - title: Top Cited Author, 2021–22
+    anchor: top-cited-author
+    org: Evolutionary Applications (Wiley)
+    year: 2023
+    era: OSU
+  - title: Most Outstanding Interdisciplinary Project Award
+    anchor: purdue-interdisciplinary-award
+    org: Purdue University Graduate School
+    year: 2020
+    era: Purdue
+  - title: 1st Place, Clarence Cottam Award
+    anchor: clarence-cottam-award
+    org: Texas Chapter of The Wildlife Society
+    year: 2020
+    era: Purdue
+  - title: SSE Graduate Travel Award
+    anchor: sse-travel-award
+    org: Society for the Study of Evolution
+    year: 2019
+    era: Purdue
+  - title: Yeunkyung Woo Achieve Excellence Travel Award
+    anchor: woo-travel-award
+    org: Purdue University
+    year: 2017
+    era: Purdue
+  - title: Rosemberg Award for Outstanding Applicant
+    anchor: rosemberg-award
+    org: Purdue University
+    year: 2015
+    era: Purdue
+  - title: Institute Silver Medal for Best Undergraduate Research Project
+    anchor: iitr-silver-medal
+    org: Indian Institute of Technology Roorkee
+    year: 2014
+    era: IITR
