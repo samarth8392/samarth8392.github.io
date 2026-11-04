@@ -1088,7 +1088,7 @@
     "pages": "e70014",
     "publisher": "Wiley",
     "kind": "article",
-    "citations": 5,
+    "citations": 6,
     "abstract": "Assisted gene flow is used to counteract genetic erosion in small populations of endangered species, yet an evaluation of genetic compatibility of potential donor populations and recipient populations is rare. We developed new metrics for assessing the genetic impact of genetic augmentation based on genotype identity of functional variants between donor and recipient genomes and used these metrics to evaluate options for assisted gene flow in Eastern Massasauga rattlesnake ( Sistrurus catenatus ) populations in Ohio, USA. We used putatively deleterious variants and genetic variants likely under positive selection (termed ‘adaptive’ variants) as the two components of functional variation. For potential donor and recipient populations, we estimated three key aspects of genetic compatibility: (a) introduction of novel variants, (b) masking or unmasking of existing deleterious variants and (c) potential for outbreeding depression through disruption of local adaptation. The main impact of augmentation from diverse donor populations was to introduce novel deleterious variants and to a lesser extent novel adaptive variants into each recipient population. Both donor populations had a similar minor impact in terms of masking existing deleterious variants. Finally, only ~7% of adaptive variants show evidence for local adaptation, arguing that the negative effect of outbreeding depression would be small. These results draw attention to the importance of considering the potential impact of both deleterious and adaptive genetic variants in augmentation efforts and suggest that in the case of these endangered rattlesnakes, the net effect of proposed assisted gene flow may lead to an increase in absolute levels of mutation load.",
     "era": "OSU",
     "highlights": []
@@ -1297,7 +1297,7 @@
     "pages": "e2320040121",
     "publisher": "National Academy of Sciences",
     "kind": "article",
-    "citations": 23,
+    "citations": 22,
     "abstract": "Speciation is often driven by selective processes like those associated with viability, mate choice, or local adaptation, and “speciation genes” have been identified in many eukaryotic lineages. In contrast, neutral processes are rarely considered as the primary drivers of speciation, especially over short evolutionary timeframes. Here, we describe a rapid vertebrate speciation event driven primarily by genetic drift. The White Sands pupfish ( Cyprinodon tularosa ) is endemic to New Mexico’s Tularosa Basin where the species is currently managed as two Evolutionarily significant units (ESUs) and is of international conservation concern (Endangered). Whole-genome resequencing data from each ESU showed remarkably high and uniform levels of differentiation across the entire genome (global F ST ≈ 0.40). Despite inhabiting ecologically dissimilar springs and streams, our whole-genome analysis revealed no discrete islands of divergence indicative of strong selection, even when we focused on an array of candidate genes. Demographic modeling of the joint allele frequency spectrum indicates the two ESUs split only ~4 to 5 kya and that both ESUs have undergone major bottlenecks within the last 2.5 millennia. Our results indicate the genome-wide disparities between the two ESUs are not driven by divergent selection but by neutral drift due to small population sizes, geographic isolation, and repeated bottlenecks. While rapid speciation is often driven by natural or sexual selection, here we show that isolation and drift have led to speciation within a few thousand generations. We discuss these evolutionary insights in light of the conservation management challenges they pose.",
     "era": "OSU",
     "highlights": []
@@ -1445,7 +1445,7 @@
     "pages": "e2303043120",
     "publisher": "National Academy of Sciences",
     "kind": "article",
-    "citations": 51,
+    "citations": 52,
     "abstract": "Theory predicts that genetic erosion in small, isolated populations of endangered species can be assessed using estimates of neutral genetic variation, yet this widely used approach has recently been questioned in the genomics era. Here, we leverage a chromosome-level genome assembly of an endangered rattlesnake ( Sistrurus catenatus ) combined with whole genome resequencing data (N = 110 individuals) to evaluate the relationship between levels of genome-wide neutral and functional diversity over historical and future timescales. As predicted, we found positive correlations between genome-wide estimates of neutral genetic diversity (π) and inferred levels of adaptive variation and an estimate of inbreeding mutation load, and a negative relationship between neutral diversity and an estimate of drift mutation load. However, these correlations were half as strong for projected future levels of neutral diversity based on contemporary effective population sizes. Broadly, our results confirm that estimates of neutral genetic diversity provide an accurate measure of genetic erosion in populations of a threatened vertebrate. They also provide nuance to the neutral-functional diversity controversy by suggesting that while these correlations exist, anthropogenetic impacts may have weakened these associations in the recent past and into the future.",
     "era": "OSU",
     "highlights": []
@@ -1548,7 +1548,7 @@
     "pages": "",
     "publisher": "Wiley",
     "kind": "preprint",
-    "citations": 3,
+    "citations": 2,
     "abstract": "The Inyo County population of California towhee, now recognized as Melozone crissalis, was officially listed as Threatened under the U.S. Endangered Species Act in 1987. This isolated population in the Argus Mountains was then estimated to consist of less than 175 individuals. Its major threats were habitat destruction caused by grazing, mining, water exporting, and human recreational activities but stakeholders eventually developed a recovery plan to mitigate habitat damage. Due to the demographic success of the recovery plan, the U.S. Fish and Wildlife Service (USFWS) proposed to remove the California towhee from their formal list of threatened and endangered species in 2013. Herein, we generated a high-quality reference genome assembly for a typical representative of the California towhee (N50 = 22 Mb among 627 contigs, max contig size 89.1Mb), then conducted whole genome resequencing on birds sampled from geographic sites across much of the species’ range. Our findings indicate that the California towhee gene pool is relatively deep (i.e., diverse; mean individual heterozygosity = 0.0021, range = 0.0013-0.0026) and that moderately low levels of autozygosity in isolated populations are due to a combination of historic and contemporary inbreeding. Our population, landscape, and phylogeographic analyses indicate that the shallower (less diverse) regions of the gene pool are likely due to a combination of natural geography, anthropogenic impacts, and demographic histories associated with isolated habitats. None of our findings are inconsistent with the 2013 USFWS proposal and we see no reason to protest the delisting petition based exclusively on genetic/genomic data.",
     "era": "OSU",
     "highlights": []
@@ -1877,7 +1877,7 @@
     "pages": "107",
     "publisher": "Springer Science and Business Media LLC",
     "kind": "article",
-    "citations": 26,
+    "citations": 25,
     "abstract": "BACKGROUND: In the arms race between hosts and parasites, genes involved in the immune response are targets for natural selection. Toll-Like Receptor (TLR) genes play a role in parasite detection as part of the innate immune system whereas Major Histocompatibility Complex (MHC) genes encode proteins that display antigens as part of the vertebrate adaptive immune system. Thus, both gene families are under selection pressure from pathogens. The bananaquit (Coereba flaveola) is a passerine bird that is a common host of avian malarial parasites (Plasmodium sp. and Haemoproteus sp.). We assessed molecular variation of TLR and MHC genes in a wild population of bananaquits and identified allelic associations with resistance/susceptibility to parasitic infection to address hypotheses of avian immune response to haemosporidian parasites. RESULTS: We found that allele frequencies are associated with infection status at the immune loci studied. A consistent general trend showed the infected groups possessed more alleles at lower frequencies, and exhibited unique alleles, compared to the uninfected group. CONCLUSIONS: Our results support the theory of natural selection favoring particular alleles for resistance while maintaining overall genetic diversity in the population, a mechanism which has been demonstrated in some systems in MHC previously but understudied in TLRs.",
     "era": "Purdue",
     "highlights": []
