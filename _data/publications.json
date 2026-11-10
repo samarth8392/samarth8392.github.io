@@ -1222,7 +1222,7 @@
     "pages": "e1012566",
     "publisher": "Public Library of Science (PLoS)",
     "kind": "article",
-    "citations": 32,
+    "citations": 34,
     "abstract": "Wild populations are increasingly threatened by human-mediated climate change and land use changes. As populations decline, the probability of inbreeding increases, along with the potential for negative effects on individual fitness. Detecting and characterizing runs of homozygosity (ROHs) is a popular strategy for assessing the extent of individual inbreeding present in a population and can also shed light on the genetic mechanisms contributing to inbreeding depression. Here, we analyze simulated and empirical datasets to demonstrate the downstream effects of program selection and long-term demographic history on ROH inference, leading to context-dependent biases in the results. Through a sensitivity analysis we evaluate how various parameter values impact ROH-calling results, highlighting its utility as a tool for parameter exploration. Our results indicate that ROH inferences are sensitive to factors such as sequencing depth and ROH length distribution, with bias direction and magnitude varying with demographic history and the programs used. Estimation biases are particularly pronounced at lower sequencing depths, potentially leading to either underestimation or overestimation of inbreeding. These results are particularly important for the management of endangered species, as underestimating inbreeding signals in the genome can substantially undermine conservation initiatives. We also found that small true ROHs can be incorrectly lumped together and called as longer ROHs, leading to erroneous inference of recent inbreeding. To address these challenges, we suggest using a combination of ROH detection tools and ROH length-specific inferences, along with sensitivity analysis, to generate robust and context-appropriate population inferences regarding inbreeding history. We outline these recommendations for ROH estimation at multiple levels of sequencing effort, which are typical of conservation genomics studies.",
     "era": "OSU",
     "highlights": []
@@ -1297,7 +1297,7 @@
     "pages": "e2320040121",
     "publisher": "National Academy of Sciences",
     "kind": "article",
-    "citations": 24,
+    "citations": 25,
     "abstract": "Speciation is often driven by selective processes like those associated with viability, mate choice, or local adaptation, and “speciation genes” have been identified in many eukaryotic lineages. In contrast, neutral processes are rarely considered as the primary drivers of speciation, especially over short evolutionary timeframes. Here, we describe a rapid vertebrate speciation event driven primarily by genetic drift. The White Sands pupfish ( Cyprinodon tularosa ) is endemic to New Mexico’s Tularosa Basin where the species is currently managed as two Evolutionarily significant units (ESUs) and is of international conservation concern (Endangered). Whole-genome resequencing data from each ESU showed remarkably high and uniform levels of differentiation across the entire genome (global F ST ≈ 0.40). Despite inhabiting ecologically dissimilar springs and streams, our whole-genome analysis revealed no discrete islands of divergence indicative of strong selection, even when we focused on an array of candidate genes. Demographic modeling of the joint allele frequency spectrum indicates the two ESUs split only ~4 to 5 kya and that both ESUs have undergone major bottlenecks within the last 2.5 millennia. Our results indicate the genome-wide disparities between the two ESUs are not driven by divergent selection but by neutral drift due to small population sizes, geographic isolation, and repeated bottlenecks. While rapid speciation is often driven by natural or sexual selection, here we show that isolation and drift have led to speciation within a few thousand generations. We discuss these evolutionary insights in light of the conservation management challenges they pose.",
     "era": "OSU",
     "highlights": []
@@ -1350,7 +1350,7 @@
     "pages": "2",
     "publisher": "Springer Science and Business Media LLC",
     "kind": "article",
-    "citations": 1,
+    "citations": 2,
     "abstract": "Foskett Spring in Oregon’s desert harbors a historically threatened population of Western Speckled Dace ( Rhinichthys klamathensis ). Though recently delisted, the dace’s recruitment depends upon regular removal of encroaching vegetation. Previous studies assumed that Foskett Dace separated from others in the Warner Valley about 10,000 years ago, thereby framing an enigma about the population’s surprising ability to persist for so long in a tiny habitat easily overrun by plants. To investigate that persistence and the effectiveness of interventions to augment population size, we assessed genetic diversity among daces inhabiting Foskett Spring, a refuge at Dace Spring, and three nearby streams. Analysis revealed a robust effective population size (N e ) of nearly 5000 within Foskett Spring, though N e in the Dace Spring refuge is just 10% of that value. Heterozygosity is slightly lower than expected based on random mating at all five sites, indicating mild inbreeding, but not at a level of concern. These results confirm the genetic health of Foskett Dace. Unexpectedly, genetic differentiation reveals closer similarity between Foskett Dace and a newly discovered population from Nevada’s Coleman Creek than between Foskett Dace and dace elsewhere in Oregon. Demographic modeling inferred Coleman Creek as the ancestral source of Foskett Dace fewer than 1000 years ago, much more recently than previously suspected and possibly coincident with the arrival of large herbivores whose grazing may have maintained open water suitable for reproduction. These results solve the enigma of persistence by greatly shortening the duration over which Foskett Dace have inhabited their isolated spring.",
     "era": "OSU",
     "highlights": []
@@ -1601,7 +1601,7 @@
     "pages": "690-704",
     "publisher": "Oxford University Press (OUP)",
     "kind": "article",
-    "citations": 66,
+    "citations": 67,
     "abstract": "Small populations are vulnerable to increased genetic load and drift that can lead to reductions in fitness and adaptive potential. By analyzing 66 individual whole genomes of Montezuma Quail (Cyrtonyx montezumae) from multiple populations, we illustrate how genetic load is dynamic over evolutionary time. We show that Montezuma Quail are evolving like a ring species, where the terminal extant populations from Arizona and Texas have been separated for ~16,500 years. The Texas populations have remained small but stable since the separation, whereas the Arizona population is much larger today but has been contracting for thousands of years. Most deleterious mutations across the genome are young and segregating privately in each population and a greater number of deleterious alleles are present in the larger population. Our data indicate that ancestral load is purged during strong bottlenecks, but the reduced efficiency of selection in small populations means that segregating deleterious mutations are more likely to rise in frequency over time. Forward-time simulations indicate that severe population declines in historically large populations is more detrimental to individual fitness, whereas long-term small populations are more at risk for reduced adaptive potential and population-level fitness. Our study highlights the intimate connections among evolutionary history, historical demography, genetic load, and evolutionary potential in wild populations.",
     "era": "Purdue",
     "highlights": [
@@ -1697,7 +1697,7 @@
     "pages": "4147-4154",
     "publisher": "Wiley",
     "kind": "article",
-    "citations": 325,
+    "citations": 331,
     "abstract": "Since allozymes were first used to assess genetic diversity in the 1960s and 1970s, biologists have attempted to characterize gene pools and conserve the diversity observed in domestic crops, livestock, zoos and (more recently) natural populations. Recently, some authors have claimed that the importance of genetic diversity in conservation biology has been greatly overstated. Here, we argue that a voluminous literature indicates otherwise. We address four main points made by detractors of genetic diversity's role in conservation by using published literature to firmly establish that genetic diversity is intimately tied to evolutionary fitness, and that the associated demographic consequences are of paramount importance to many conservation efforts. We think that responsible management in the Anthropocene should, whenever possible, include the conservation of ecosystems, communities, populations and individuals, and their underlying genetic diversity.",
     "era": "OSU",
     "highlights": []
@@ -1729,7 +1729,7 @@
     "pages": "1540-1557",
     "publisher": "Wiley",
     "kind": "article",
-    "citations": 126,
+    "citations": 128,
     "abstract": "Populations with higher genetic diversity and larger effective sizes have greater evolutionary capacity (i.e., adaptive potential) to respond to ecological stressors. We are interested in how the variation captured in protein‐coding genes fluctuates relative to overall genomic diversity and whether smaller populations suffer greater costs due to their genetic load of deleterious mutations compared with larger populations. We analyzed individual whole‐genome sequences ( N = 74) from three different populations of Montezuma quail ( Cyrtonyx montezumae ), a small ground‐dwelling bird that is sustainably harvested in some portions of its range but is of conservation concern elsewhere. Our historical demographic results indicate that Montezuma quail populations in the United States exhibit low levels of genomic diversity due in large part to long‐term declines in effective population sizes over nearly a million years. The smaller and more isolated Texas population is significantly more inbred than the large Arizona and the intermediate‐sized New Mexico populations we surveyed. The Texas gene pool has a significantly smaller proportion of strongly deleterious variants segregating in the population compared with the larger Arizona gene pool. Our results demonstrate that even in small populations, highly deleterious mutations are effectively purged and/or lost due to drift. However, we find that in small populations the realized genetic load is elevated because of inbreeding coupled with a higher frequency of slightly deleterious mutations that are manifested in homozygotes. Overall, our study illustrates how population genomics can be used to proactively assess both neutral and functional aspects of contemporary genetic diversity in a conservation framework while simultaneously considering deeper demographic histories.",
     "era": "Purdue",
     "highlights": [
@@ -1823,7 +1823,7 @@
     "pages": "1369-1381",
     "publisher": "Springer Science and Business Media LLC",
     "kind": "article",
-    "citations": 19,
+    "citations": 20,
     "abstract": "",
     "era": "Purdue",
     "highlights": []
@@ -2015,7 +2015,7 @@
     "pages": "250-258",
     "publisher": "Elsevier BV",
     "kind": "article",
-    "citations": 91,
+    "citations": 92,
     "abstract": "",
     "era": "IITR",
     "highlights": []
