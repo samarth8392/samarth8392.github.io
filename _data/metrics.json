@@ -1,7 +1,7 @@
 {
-  "citations": 908,
+  "citations": 909,
   "h_index": 12,
-  "i10_index": 12,
+  "i10_index": 13,
   "citations_by_year": [
     {
       "year": 2015,
@@ -49,8 +49,8 @@
     },
     {
       "year": 2026,
-      "citations": 219
+      "citations": 220
     }
   ],
-  "updated": "2026-11-16"
+  "updated": "2026-11-19"
 }
